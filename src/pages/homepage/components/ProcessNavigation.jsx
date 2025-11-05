@@ -109,18 +109,18 @@ const ProcessNavigation = () => {
       };
 
   return (
-    <section className="py-20 bg-background">
+    <section className="py-12 md:py-20 bg-background">
       <div className="brutalist-container">
         {/* Header */}
         <motion.div 
-          className="text-center mb-12"
+          className="text-center mb-8 md:mb-12"
           variants={headerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
         >
           <motion.h2 
-            className="text-4xl lg:text-6xl brutalist-heading text-primary mb-4"
+            className="text-3xl md:text-4xl lg:text-6xl brutalist-heading text-primary mb-4"
             initial={shouldReduceMotion ? false : { opacity: 0, scale: 0.8 }}
             whileInView={shouldReduceMotion ? false : { opacity: 1, scale: 1 }}
             viewport={{ once: true }}
@@ -129,7 +129,7 @@ const ProcessNavigation = () => {
             HOW WE WORK
           </motion.h2>
           <motion.p 
-            className="text-lg brutalist-text text-foreground"
+            className="text-base md:text-lg brutalist-text text-foreground"
             initial={shouldReduceMotion ? false : { opacity: 0, y: 20 }}
             whileInView={shouldReduceMotion ? false : { opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -139,7 +139,7 @@ const ProcessNavigation = () => {
           </motion.p>
         </motion.div>
 
-        {/* Process Grid */}
+        {/* Process Grid - Responsive columns */}
         <motion.div 
           className="brutalist-grid"
           variants={containerVariants}
@@ -150,13 +150,13 @@ const ProcessNavigation = () => {
           {steps?.map((step, index) => (
             <motion.div 
               key={step?.id}
-              className="col-span-3 p-4"
+              className="col-span-12 sm:col-span-6 lg:col-span-3 p-2 md:p-4"
               variants={cardVariants}
               whileHover="hover"
               custom={index}
             >
               <motion.div 
-                className="brutalist-border brutalist-shadow p-8 bg-background h-full relative overflow-hidden group cursor-pointer"
+                className="brutalist-border brutalist-shadow p-6 md:p-8 bg-background h-full relative overflow-hidden group cursor-pointer"
                 whileHover={{
                   boxShadow: shouldReduceMotion ? undefined : "8px 8px 0px rgba(0,0,0,0.3)",
                   transition: { duration: 0.2 }
@@ -176,7 +176,7 @@ const ProcessNavigation = () => {
                 {/* Content */}
                 <div className="relative z-10">
                   <motion.div 
-                    className="text-4xl font-black text-accent mb-4"
+                    className="text-3xl md:text-4xl font-black text-accent mb-4"
                     variants={numberVariants}
                     whileHover="hover"
                   >
@@ -184,7 +184,7 @@ const ProcessNavigation = () => {
                   </motion.div>
                   
                   <motion.h3 
-                    className="text-2xl font-black text-primary mb-4 group-hover:text-accent transition-colors duration-300"
+                    className="text-xl md:text-2xl font-black text-primary mb-4 group-hover:text-accent transition-colors duration-300"
                     initial={shouldReduceMotion ? false : { x: -20, opacity: 0 }}
                     whileInView={shouldReduceMotion ? false : { x: 0, opacity: 1 }}
                     viewport={{ once: true }}
@@ -194,7 +194,7 @@ const ProcessNavigation = () => {
                   </motion.h3>
                   
                   <motion.p 
-                    className="brutalist-text text-foreground group-hover:text-foreground/80 transition-colors duration-300"
+                    className="brutalist-text text-foreground text-sm md:text-base group-hover:text-foreground/80 transition-colors duration-300"
                     initial={shouldReduceMotion ? false : { x: -20, opacity: 0 }}
                     whileInView={shouldReduceMotion ? false : { x: 0, opacity: 1 }}
                     viewport={{ once: true }}

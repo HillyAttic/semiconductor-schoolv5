@@ -88,18 +88,18 @@ const CapabilitiesGrid = () => {
       };
 
   return (
-    <section className="py-20 bg-muted">
+    <section className="py-12 md:py-20 bg-muted">
       <div className="brutalist-container">
         {/* Header */}
         <motion.div 
-          className="text-center mb-12"
+          className="text-center mb-8 md:mb-12"
           initial="initial"
           whileInView="animate"
           viewport={{ once: true, margin: "-100px" }}
           variants={headerVariants}
         >
           <motion.h2 
-            className="text-4xl lg:text-6xl brutalist-heading text-primary mb-4"
+            className="text-3xl md:text-4xl lg:text-6xl brutalist-heading text-primary mb-4"
             variants={shouldReduceMotion ? {} : {
               initial: { opacity: 0, scale: 0.8 },
               animate: { 
@@ -116,7 +116,7 @@ const CapabilitiesGrid = () => {
             WHAT WE DO
           </motion.h2>
           <motion.p 
-            className="text-lg brutalist-text text-foreground"
+            className="text-base md:text-lg brutalist-text text-foreground"
             variants={shouldReduceMotion ? {} : {
               initial: { opacity: 0, y: 20 },
               animate: { 
@@ -134,7 +134,7 @@ const CapabilitiesGrid = () => {
           </motion.p>
         </motion.div>
 
-        {/* Capabilities Grid */}
+        {/* Capabilities Grid - Responsive columns */}
         <motion.div 
           className="brutalist-grid"
           initial="initial"
@@ -145,12 +145,12 @@ const CapabilitiesGrid = () => {
           {capabilities?.map((capability, index) => (
             <motion.div 
               key={capability?.id}
-              className="col-span-3 p-4"
+              className="col-span-12 sm:col-span-6 lg:col-span-3 p-2 md:p-4"
               variants={cardVariants}
               {...hoverVariants}
             >
               <motion.div 
-                className="brutalist-border brutalist-shadow p-8 bg-background h-full cursor-pointer overflow-hidden relative"
+                className="brutalist-border brutalist-shadow p-6 md:p-8 bg-background h-full cursor-pointer overflow-hidden relative"
                 whileHover={shouldReduceMotion ? {} : {
                   boxShadow: "8px 8px 0px 0px rgba(0,0,0,1)",
                   transition: { duration: 0.2 }
@@ -165,7 +165,7 @@ const CapabilitiesGrid = () => {
                 />
                 <div className="relative z-10">
                   <motion.h3 
-                    className="text-2xl font-black text-primary mb-4"
+                    className="text-xl md:text-2xl font-black text-primary mb-4"
                     whileHover={shouldReduceMotion ? {} : {
                       x: 8,
                       transition: { duration: 0.2 }
@@ -174,7 +174,7 @@ const CapabilitiesGrid = () => {
                     {capability?.title}
                   </motion.h3>
                   <motion.p 
-                    className="brutalist-text text-foreground"
+                    className="brutalist-text text-foreground text-sm md:text-base"
                     whileHover={shouldReduceMotion ? {} : {
                       x: 4,
                       transition: { duration: 0.2, delay: 0.1 }

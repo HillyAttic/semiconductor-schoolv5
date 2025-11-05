@@ -105,21 +105,21 @@ const ClientLogos = () => {
     };
 
   return (
-    <section className="py-20 bg-background">
+    <section className="py-12 md:py-20 bg-background">
       <div className="brutalist-container">
         {/* Header */}
         <motion.div
-          className="text-center mb-16"
+          className="text-center mb-8 md:mb-16"
           {...headerMotionProps}>
-          <h2 className="text-4xl lg:text-6xl brutalist-heading text-primary mb-4">
+          <h2 className="text-3xl md:text-4xl lg:text-6xl brutalist-heading text-primary mb-4">
             TRUSTED BY LEADERS
           </h2>
-          <p className="text-lg brutalist-text text-foreground">
+          <p className="text-base md:text-lg brutalist-text text-foreground">
             Brands that chose results over comfort zones.
           </p>
         </motion.div>
 
-        {/* Logo Grid with Enhanced Animations */}
+        {/* Logo Grid with Enhanced Animations - Responsive columns */}
         <motion.div
           className="brutalist-grid"
           variants={containerVariants}
@@ -129,10 +129,10 @@ const ClientLogos = () => {
           {clients?.map((client) => (
             <motion.div
               key={client?.id}
-              className="col-span-2 p-4"
+              className="col-span-6 sm:col-span-4 lg:col-span-2 p-2 md:p-4"
               variants={cardVariants}>
               <motion.div
-                className="brutalist-border p-6 bg-background h-24 flex items-center justify-center relative overflow-hidden cursor-pointer group"
+                className="brutalist-border p-4 md:p-6 bg-background h-20 md:h-24 flex items-center justify-center relative overflow-hidden cursor-pointer group"
                 variants={hoverVariants}
                 whileHover="hover"
                 whileTap="tap">

@@ -106,7 +106,7 @@ const AboutSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-background">
+    <section className="py-12 md:py-20 bg-background">
       <div className="brutalist-container">
         <motion.div 
           className="brutalist-grid"
@@ -117,11 +117,11 @@ const AboutSection = () => {
         >
           {/* Header - 12 columns */}
           <motion.div 
-            className="col-span-12 p-8 text-center"
+            className="col-span-12 p-4 md:p-8 text-center"
             variants={headerVariants}
           >
             <motion.h2 
-              className="text-5xl lg:text-7xl brutalist-heading text-primary mb-6"
+              className="text-3xl md:text-5xl lg:text-7xl brutalist-heading text-primary mb-4 md:mb-6"
               whileHover={shouldReduceMotion ? {} : {
                 scale: 1.02,
                 transition: { duration: 0.2 }
@@ -130,18 +130,18 @@ const AboutSection = () => {
               NO FLUFF. PURE RESULTS.
             </motion.h2>
             <motion.p 
-              className="text-xl brutalist-text text-foreground max-w-2xl mx-auto"
+              className="text-base md:text-xl brutalist-text text-foreground max-w-2xl mx-auto"
               variants={subtitleVariants}
             >
               We build brands that demand attention through strategic creativity.
             </motion.p>
           </motion.div>
 
-          {/* Content Grid - 3 columns each */}
+          {/* Content Grid - Responsive columns */}
           {cards?.map((card, index) => (
             <motion.div 
               key={card?.id}
-              className="col-span-4 p-8"
+              className="col-span-12 sm:col-span-6 lg:col-span-4 p-4 md:p-8"
               variants={cardVariants}
               {...hoverVariants}
             >
@@ -169,7 +169,7 @@ const AboutSection = () => {
                 />
                 <div className="relative z-10">
                   <motion.h3 
-                    className="text-2xl font-black text-primary mb-4"
+                    className="text-xl md:text-2xl font-black text-primary mb-4"
                     whileHover={shouldReduceMotion ? {} : {
                       x: 10,
                       color: "#000000",
@@ -179,7 +179,7 @@ const AboutSection = () => {
                     {card?.title}
                   </motion.h3>
                   <motion.p 
-                    className="brutalist-text text-foreground"
+                    className="brutalist-text text-foreground text-sm md:text-base"
                     whileHover={shouldReduceMotion ? {} : {
                       x: 6,
                       transition: { duration: 0.2, delay: 0.05 }

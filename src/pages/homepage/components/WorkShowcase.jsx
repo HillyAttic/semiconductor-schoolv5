@@ -56,27 +56,27 @@ const WorkShowcase = () => {
     };
 
   return (
-    <section className="py-20 bg-background">
+    <section className="py-12 md:py-20 bg-background">
       <div className="brutalist-container">
         {/* Header */}
         <motion.div 
-          className="text-center mb-12"
+          className="text-center mb-8 md:mb-12"
           {...motionProps}
         >
-          <h2 className="text-4xl lg:text-6xl brutalist-heading text-primary mb-4">
+          <h2 className="text-3xl md:text-4xl lg:text-6xl brutalist-heading text-primary mb-4">
             WORK THAT WORKS
           </h2>
-          <p className="text-lg brutalist-text text-foreground">
+          <p className="text-base md:text-lg brutalist-text text-foreground">
             Results speak louder than awards and accolades.
           </p>
         </motion.div>
 
-        {/* Projects Grid */}
+        {/* Projects Grid - Responsive columns */}
         <div className="brutalist-grid">
           {projects?.map((project) => (
             <motion.div
               key={project?.id}
-              className="col-span-4 p-4"
+              className="col-span-12 sm:col-span-6 lg:col-span-4 p-2 md:p-4"
               {...motionProps}
             >
               <motion.div 
@@ -89,18 +89,18 @@ const WorkShowcase = () => {
                   <Image
                     src={project?.image}
                     alt={project?.alt}
-                    className="w-full h-64 object-cover brutalist-border-thin 
+                    className="w-full h-48 md:h-64 object-cover brutalist-border-thin 
                              transition-transform duration-500 ease-out
                              group-hover:scale-105"
                   />
                 </div>
                 
-                <div className="p-6 transition-colors duration-300 group-hover:bg-gray-50">
+                <div className="p-4 md:p-6 transition-colors duration-300 group-hover:bg-gray-50">
                   <div className="text-xs font-black text-accent mb-2 
                                 transition-colors duration-300 group-hover:text-red-600">
                     {project?.category}
                   </div>
-                  <h3 className="text-xl font-black text-primary transition-colors duration-300 group-hover:text-gray-800">
+                  <h3 className="text-lg md:text-xl font-black text-primary transition-colors duration-300 group-hover:text-gray-800">
                     {project?.title}
                   </h3>
                 </div>

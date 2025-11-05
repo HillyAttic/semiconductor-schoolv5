@@ -22,9 +22,9 @@ const Homepage = () => {
         <ContactForm />
       </main>
       {/* Footer */}
-      <footer className="bg-background border-t-2 border-concrete py-12">
-        <div className="container mx-auto px-6 lg:px-8">
-          <div className="grid md:grid-cols-4 gap-8">
+      <footer className="bg-background border-t-2 border-concrete py-8 md:py-12">
+        <div className="container mx-auto px-4 md:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {/* Brand */}
             <div className="md:col-span-2">
               <div className="flex items-center space-x-2 mb-4">
@@ -33,7 +33,7 @@ const Homepage = () => {
                 </div>
                 <span className="text-xl font-black text-primary">Brand Forge</span>
               </div>
-              <p className="text-muted-foreground mb-4 max-w-md">
+              <p className="text-muted-foreground mb-4 text-sm md:text-base max-w-md">
                 Making brands impossible to ignore through brutalist design principles and strategic thinking.
               </p>
               <div className="flex space-x-4">
