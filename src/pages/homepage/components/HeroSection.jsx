@@ -17,7 +17,7 @@ const HeroSection = () => {
   // Animated counter effect
   useEffect(() => {
     if (shouldReduceMotion) {
-      setCounters({ brands: 150, success: 98, growth: 5 });
+      setCounters({ brands: 500, success: 95, growth: 3 });
       return;
     }
 
@@ -32,14 +32,14 @@ const HeroSection = () => {
         const progress = step / steps;
         
         setCounters({
-          brands: Math.floor(150 * progress),
-          success: Math.floor(98 * progress),
-          growth: Math.floor(5 * progress)
+          brands: Math.floor(500 * progress),
+          success: Math.floor(95 * progress),
+          growth: Math.floor(3 * progress)
         });
         
         if (step >= steps) {
           clearInterval(timer);
-          setCounters({ brands: 150, success: 98, growth: 5 });
+          setCounters({ brands: 500, success: 95, growth: 3 });
         }
       }, interval);
     };
@@ -155,7 +155,7 @@ const HeroSection = () => {
               className="text-3xl md:text-5xl lg:text-7xl brutalist-heading text-primary mb-3 md:mb-4"
               variants={shouldReduceMotion ? {} : itemVariants}
             >
-              MAKE BRANDS IMPOSSIBLE TO IGNORE
+              TRANSFORMING MINDS THROUGH TECHNOLOGY
             </motion.h1>
             
             {/* Subline - Max 12 words */}
@@ -163,7 +163,7 @@ const HeroSection = () => {
               className="text-base md:text-xl lg:text-2xl brutalist-text text-foreground mb-6 md:mb-8"
               variants={shouldReduceMotion ? {} : itemVariants}
             >
-              Strategic creativity that cuts through noise and drives results.
+              Cutting-edge education that shapes the future of semiconductor innovation.
             </motion.p>
 
             {/* CTA Buttons - Responsive stacking */}
@@ -184,7 +184,7 @@ const HeroSection = () => {
                   className="w-full sm:w-auto bg-accent hover:bg-accent text-white font-black px-6 py-3 md:px-8 md:py-4 brutalist-border brutalist-shadow uppercase tracking-wider transition-all duration-300 cursor-pointer text-sm md:text-base"
                   style={{ pointerEvents: 'auto' }}
                 >
-                  START A BRIEF
+                  ENROLL NOW
                 </Button>
               </motion.div>
               <motion.div
@@ -199,36 +199,36 @@ const HeroSection = () => {
                   className="w-full sm:w-auto border-2 border-primary text-primary hover:bg-primary hover:text-white font-black px-6 py-3 md:px-8 md:py-4 brutalist-border brutalist-shadow uppercase tracking-wider transition-all duration-300 cursor-pointer text-sm md:text-base"
                   style={{ pointerEvents: 'auto' }}
                 >
-                  VIEW WORK
+                  VIEW COURSES
                 </Button>
               </motion.div>
             </motion.div>
 
             {/* Three Metric Pills Only - Responsive grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 md:gap-4 w-full mt-6 md:mt-8">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 md:gap-4 w-full mt-6 md:mt-8 border border-concrete p-4">
               <div className="w-full">
                 <motion.div 
-                  className="brutalist-border brutalist-shadow p-3 md:p-4 bg-background text-center hover:scale-105 transition-transform duration-300 w-full"
+                  className="border-3 border-concrete brutalist-shadow p-3 md:p-4 bg-background text-center hover:scale-105 transition-transform duration-300 w-full border"
                   variants={shouldReduceMotion ? {} : metricVariants}
                   whileHover={shouldReduceMotion ? {} : { scale: 1.05 }}
                 >
                   <div className="text-2xl md:text-3xl font-black text-primary">{counters?.brands}+</div>
-                  <div className="text-xs md:text-sm brutalist-text">BRANDS</div>
+                  <div className="text-xs md:text-sm brutalist-text">STUDENTS</div>
                 </motion.div>
               </div>
-              <div className="w-full">
+              <div className="w-full mt-3 sm:mt-0">
                 <motion.div 
-                  className="brutalist-border brutalist-shadow p-3 md:p-4 bg-background text-center hover:scale-105 transition-transform duration-300 w-full"
+                  className="border-3 border-concrete brutalist-shadow p-3 md:p-4 bg-background text-center hover:scale-105 transition-transform duration-300 w-full border"
                   variants={shouldReduceMotion ? {} : metricVariants}
                   whileHover={shouldReduceMotion ? {} : { scale: 1.05 }}
                 >
                   <div className="text-2xl md:text-3xl font-black text-primary">{counters?.success}%</div>
-                  <div className="text-xs md:text-sm brutalist-text">SUCCESS</div>
+                  <div className="text-xs md:text-sm brutalist-text">PLACEMENT</div>
                 </motion.div>
               </div>
-              <div className="w-full">
+              <div className="w-full mt-3 sm:mt-0">
                 <motion.div 
-                  className="brutalist-border brutalist-shadow p-3 md:p-4 bg-background text-center hover:scale-105 transition-transform duration-300 w-full"
+                  className="border-3 border-concrete brutalist-shadow p-3 md:p-4 bg-background text-center hover:scale-105 transition-transform duration-300 w-full border"
                   variants={shouldReduceMotion ? {} : metricVariants}
                   whileHover={shouldReduceMotion ? {} : { scale: 1.05 }}
                 >

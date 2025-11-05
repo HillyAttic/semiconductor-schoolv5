@@ -70,7 +70,7 @@ const Header = () => {
                 <div className="w-full h-full bg-accent transform translate-x-1 translate-y-1 group-hover:translate-x-0 group-hover:translate-y-0 transition-transform duration-300"></div>
               </div>
               <span className="text-xl font-black text-primary tracking-tight">
-                Brand Forge
+                Semiconductor School
               </span>
             </Link>
 

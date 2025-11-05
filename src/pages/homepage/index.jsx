@@ -31,7 +31,7 @@ const Homepage = () => {
                 <div className="w-8 h-8 bg-primary border-2 border-primary">
                   <div className="w-full h-full bg-accent transform translate-x-1 translate-y-1"></div>
                 </div>
-                <span className="text-xl font-black text-primary">Brand Forge</span>
+                <span className="text-xl font-black text-primary">Semiconductor School</span>
               </div>
               <p className="text-muted-foreground mb-4 text-sm md:text-base max-w-md">
                 Making brands impossible to ignore through brutalist design principles and strategic thinking.
@@ -101,7 +101,7 @@ const Homepage = () => {
 
           <div className="border-t-2 border-concrete-light mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm text-muted-foreground">
-              © {new Date()?.getFullYear()} Brand Forge. All rights reserved.
+              © {new Date()?.getFullYear()} Semiconductor School. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-sm text-muted-foreground hover:text-accent transition-colors">
