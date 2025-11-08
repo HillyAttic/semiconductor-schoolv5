@@ -9,10 +9,10 @@ const TeamCredits = ({ teamMembers, projectLead }) => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-black text-primary mb-4">
-              The Team Behind the Magic
+              Academic & Mentor Team
             </h2>
             <p className="text-xl text-muted-foreground">
-              Meet the talented individuals who brought this vision to life
+              Meet the educators and mentors who turn complex semiconductor science into clear, career-ready skills
             </p>
           </div>
 
@@ -133,9 +133,9 @@ const TeamCredits = ({ teamMembers, projectLead }) => {
           <div className="mt-16 text-center">
             <div className="inline-block p-6 bg-concrete-light border-2 border-concrete">
               <Icon name="Users" size={32} className="mx-auto mb-4 text-accent" />
-              <h4 className="font-bold text-primary mb-2">Interested in Collaboration?</h4>
+              <h4 className="font-bold text-primary mb-2">Interested in Mentoring or Partnering on Labs?</h4>
               <p className="text-sm text-muted-foreground mb-4">
-                Our team is always open to working with talented creatives and agencies.
+                Our team is always open to working with industry experts and educational partners.
               </p>
               <a
                 href="/contact"

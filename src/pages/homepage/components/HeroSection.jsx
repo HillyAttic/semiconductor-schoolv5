@@ -155,7 +155,7 @@ const HeroSection = () => {
               className="text-3xl md:text-5xl lg:text-7xl brutalist-heading text-primary mb-3 md:mb-4"
               variants={shouldReduceMotion ? {} : itemVariants}
             >
-              TRANSFORMING MINDS THROUGH TECHNOLOGY
+              LEARN SEMICONDUCTORS FROM SAND TO SILICON
             </motion.h1>
             
             {/* Subline - Max 12 words */}
@@ -163,7 +163,7 @@ const HeroSection = () => {
               className="text-base md:text-xl lg:text-2xl brutalist-text text-foreground mb-6 md:mb-8"
               variants={shouldReduceMotion ? {} : itemVariants}
             >
-              Cutting-edge education that shapes the future of semiconductor innovation.
+              Modern semiconductor education through visual, hands-on learning.
             </motion.p>
 
             {/* CTA Buttons - Responsive stacking */}
@@ -213,7 +213,7 @@ const HeroSection = () => {
                   whileHover={shouldReduceMotion ? {} : { scale: 1.05 }}
                 >
                   <div className="text-2xl md:text-3xl font-black text-primary">{counters?.brands}+</div>
-                  <div className="text-xs md:text-sm brutalist-text">STUDENTS</div>
+                  <div className="text-xs md:text-sm brutalist-text">COURSES</div>
                 </motion.div>
               </div>
               <div className="w-full mt-3 sm:mt-0">
@@ -223,7 +223,7 @@ const HeroSection = () => {
                   whileHover={shouldReduceMotion ? {} : { scale: 1.05 }}
                 >
                   <div className="text-2xl md:text-3xl font-black text-primary">{counters?.success}%</div>
-                  <div className="text-xs md:text-sm brutalist-text">PLACEMENT</div>
+                  <div className="text-xs md:text-sm brutalist-text">SATISFACTION</div>
                 </motion.div>
               </div>
               <div className="w-full mt-3 sm:mt-0">
@@ -233,7 +233,7 @@ const HeroSection = () => {
                   whileHover={shouldReduceMotion ? {} : { scale: 1.05 }}
                 >
                   <div className="text-2xl md:text-3xl font-black text-primary">{counters?.growth}X</div>
-                  <div className="text-xs md:text-sm brutalist-text">GROWTH</div>
+                  <div className="text-xs md:text-sm brutalist-text">LEARNING</div>
                 </motion.div>
               </div>
             </div>

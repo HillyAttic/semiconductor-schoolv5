@@ -106,17 +106,17 @@ const ServiceCard = ({ service, isExpanded, onToggle }) => {
                 {/* Investment & Case Studies */}
                 <div className="mt-8 pt-6 border-t-2 border-concrete-light">
                   <div className="grid lg:grid-cols-3 gap-6">
-                    {/* Investment Range */}
+                    {/* Duration & Level */}
                     <div className="bg-background p-4 border-2 border-concrete">
                       <h5 className="font-bold text-primary mb-2 flex items-center">
-                        <Icon name="DollarSign" size={16} className="mr-2 text-accent" />
-                        Investment Range
+                        <Icon name="Clock" size={16} className="mr-2 text-accent" />
+                        Duration
                       </h5>
                       <p className="text-2xl font-black text-accent">{service?.priceRange}</p>
                       <p className="text-xs text-muted-foreground mt-1">{service?.timeline}</p>
                     </div>
 
-                    {/* Industries */}
+                    {/* Target Audience */}
                     <div className="bg-background p-4 border-2 border-concrete">
                       <h5 className="font-bold text-primary mb-2 flex items-center">
                         <Icon name="Target" size={16} className="mr-2 text-accent" />
@@ -134,11 +134,11 @@ const ServiceCard = ({ service, isExpanded, onToggle }) => {
                       </div>
                     </div>
 
-                    {/* Case Study Link */}
+                    {/* Student Projects */}
                     <div className="bg-background p-4 border-2 border-concrete">
                       <h5 className="font-bold text-primary mb-2 flex items-center">
                         <Icon name="ExternalLink" size={16} className="mr-2 text-accent" />
-                        See It In Action
+                        Student Work
                       </h5>
                       <Button
                         variant="outline"
@@ -147,7 +147,7 @@ const ServiceCard = ({ service, isExpanded, onToggle }) => {
                         iconName="ArrowRight"
                         iconPosition="right"
                       >
-                        View Case Study
+                        View Projects
                       </Button>
                     </div>
                   </div>
@@ -161,14 +161,14 @@ const ServiceCard = ({ service, isExpanded, onToggle }) => {
                     iconName="MessageCircle"
                     iconPosition="left"
                   >
-                    Discuss This Service
+                    Enroll Now
                   </Button>
                   <Button
                     variant="outline"
                     iconName="Download"
                     iconPosition="left"
                   >
-                    Download Service Brief
+                    View Curriculum
                   </Button>
                 </div>
               </div>

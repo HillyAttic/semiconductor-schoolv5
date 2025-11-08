@@ -8,88 +8,113 @@ const ProcessSteps = () => {
   const processSteps = [
     {
       id: 1,
-      title: "Discovery & Strategy",
-      subtitle: "Foundation Phase",
-      duration: "2-3 Weeks",
-      involvement: "High - Daily collaboration required",
-      description: `We dive deep into your brand's DNA, market position, and competitive landscape. This isn't surface-level research—we're excavating the core truths that will drive every creative decision.\n\nThrough intensive workshops and strategic analysis, we uncover what makes your brand genuinely different and how to amplify that difference into market dominance.`,
+      title: "Discovery & Foundation",
+      subtitle: "Understanding the Building Blocks of Silicon",
+      duration: "2–3 Weeks",
+      involvement: "High – Daily live sessions and quizzes",
+      description: `We begin by diving deep into the science behind semiconductors — exploring atoms, materials, and the physics that power modern chips.
+This phase sets your foundation through structured lessons, live mentor discussions, and visual experiments explaining how sand becomes silicon.`,
       deliverables: [
-        "Brand audit and competitive analysis",
-        "Stakeholder interview synthesis",
-        "Market positioning framework",
-        "Strategic brand platform",
-        "Creative brief and project roadmap"
+        "Fundamentals of semiconductor materials",
+        "Atomic structure and conductivity principles",
+        "Visual simulations of sand refining and silicon extraction",
+        "Foundation workbook and learning roadmap"
       ],
       transitionCriteria: [
-        "Strategic platform approved by all stakeholders",
-        "Creative brief signed off",
-        "Project timeline confirmed"
+        "Material fundamentals mastered",
+        "Foundation quiz passed",
+        "Instructor approval for advanced modules"
       ],
       icon: "Search",
       color: "bg-accent"
     },
     {
       id: 2,
-      title: "Concept & Design",
-      subtitle: "Creation Phase",
-      duration: "3-4 Weeks",
-      involvement: "Medium - Weekly reviews and feedback",
-      description: `Armed with strategic clarity, we architect your brand's visual and verbal identity. Every element is purposeful, every choice defensible.\n\nWe don't chase trends—we create timeless brand systems that work across every touchpoint, from business cards to billboards.`,
+      title: "Crystal Growth & Wafer Science",
+      subtitle: "Formation Phase",
+      duration: "3–4 Weeks",
+      involvement: "Medium – Weekly lab reviews and assignments",
+      description: `With a solid foundation, students now enter the crystal growth and wafer preparation stage — where theory meets visualization.
+Through lab demonstrations and digital twins, you'll witness how pure silicon transforms into flawless wafers ready for chip design.`,
       deliverables: [
-        "Logo and visual identity system",
-        "Brand guidelines and standards",
-        "Typography and color palette",
-        "Voice and tone framework",
-        "Initial application concepts"
+        "Silicon purification techniques",
+        "Czochralski crystal growth process study",
+        "Wafer slicing and polishing simulation",
+        "Practical assessment & visual project"
       ],
       transitionCriteria: [
-        "Core identity elements approved",
-        "Brand guidelines finalized",
-        "Application strategy confirmed"
+        "Wafer manufacturing concept approved",
+        "Lab report submitted",
+        "Mentor feedback completed"
       ],
-      icon: "Palette",
+      icon: "Wrench",
       color: "bg-primary"
     },
     {
       id: 3,
-      title: "Build & Refine",
-      subtitle: "Development Phase",
-      duration: "2-4 Weeks",
-      involvement: "Medium - Bi-weekly check-ins",
-      description: `Your brand comes to life across every touchpoint. We build comprehensive brand systems that maintain consistency while allowing for creative flexibility.\n\nEvery application is tested, refined, and optimized to ensure your brand performs flawlessly in the real world.`,
+      title: "Fabrication & Chip Design",
+      subtitle: "Creation Phase",
+      duration: "3–5 Weeks",
+      involvement: "Medium – Project-based learning with peer collaboration",
+      description: `Now the real magic begins — turning polished wafers into intelligent chips.
+Students design and simulate transistor layouts, explore photolithography, and apply VLSI design logic using real-world EDA tools.
+This is where creativity meets precision.`,
       deliverables: [
-        "Complete brand asset library",
-        "Marketing collateral templates",
-        "Digital brand applications",
-        "Brand implementation toolkit",
-        "Quality assurance documentation"
+        "Chip architecture and circuit design basics",
+        "Photolithography and etching tutorials",
+        "Mask design and process simulation",
+        "Mini-project: Design a basic logic gate circuit"
       ],
       transitionCriteria: [
-        "All brand assets delivered and approved",
-        "Implementation toolkit tested",
-        "Team training materials prepared"
+        "Fabrication workflow understood",
+        "Circuit simulation results verified",
+        "Mentor sign-off on project prototype"
       ],
-      icon: "Wrench",
+      icon: "Cpu",
       color: "bg-secondary"
     },
     {
       id: 4,
-      title: "Launch & Optimize",
-      subtitle: "Activation Phase",
-      duration: "1-2 Weeks",
-      involvement: "Low - Final approvals and monitoring",
-      description: `We don't just hand over files and disappear. The launch phase ensures your team is equipped to maintain brand excellence and your brand makes its market debut with maximum impact.\n\nOngoing optimization ensures your brand continues to evolve and improve based on real-world performance data.`,
+      title: "Testing & Optimization",
+      subtitle: "Development Phase",
+      duration: "2–3 Weeks",
+      involvement: "Moderate – Guided testing sessions",
+      description: `A chip's success lies in its performance.
+Students learn how semiconductor devices are tested, analyzed, and optimized for efficiency, power, and scalability.
+You'll perform diagnostic studies and explore defect analysis techniques — preparing you for real fabrication challenges.`,
       deliverables: [
-        "Brand launch strategy and timeline",
-        "Team training and documentation",
-        "Performance monitoring setup",
-        "30-day optimization report",
-        "Long-term brand evolution roadmap"
+        "Electrical testing and measurement principles",
+        "Yield optimization techniques",
+        "Fault detection and analysis report",
+        "Optimization toolkit documentation"
       ],
       transitionCriteria: [
-        "Successful brand launch executed",
-        "Team fully trained on brand standards",
-        "Performance metrics established"
+        "Testing simulation completed",
+        "Optimization strategies documented",
+        "Peer review and mentor approval"
+      ],
+      icon: "Activity",
+      color: "bg-warning"
+    },
+    {
+      id: 5,
+      title: "Integration & Innovation",
+      subtitle: "Activation Phase",
+      duration: "1–2 Weeks",
+      involvement: "Low – Final project presentation & mentor evaluation",
+      description: `Your learning now converges into a capstone innovation project.
+You integrate everything learned — from sand to silicon — into a practical prototype or research presentation.
+We don't just teach you; we prepare you to contribute to the semiconductor revolution.`,
+      deliverables: [
+        "Capstone semiconductor project",
+        "Presentation & documentation",
+        "Mentor feedback and evaluation report",
+        "Industry showcase opportunity"
+      ],
+      transitionCriteria: [
+        "Project successfully presented",
+        "Evaluation criteria met",
+        "Certificate of completion awarded"
       ],
       icon: "Rocket",
       color: "bg-success"
@@ -180,7 +205,7 @@ const ProcessSteps = () => {
                     <div className="flex items-center space-x-2 mb-3">
                       <Icon name="Users" size={16} className="text-accent" />
                       <span className="font-bold text-sm uppercase tracking-wider text-muted-foreground">
-                        Client Involvement
+                        Learner Involvement
                       </span>
                     </div>
                     <p className="font-semibold text-primary">{step?.involvement}</p>

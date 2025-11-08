@@ -16,14 +16,14 @@ const ProcessCTA = () => {
           className="text-center"
         >
           <h2 className="text-4xl md:text-6xl font-black mb-6 leading-none">
-            Ready to Start
+            Ready to Begin Your
             <br />
-            <span className="text-accent">Your Journey?</span>
+            <span className="text-accent">Semiconductor Journey?</span>
           </h2>
-          
+
           <p className="text-xl md:text-2xl text-primary-foreground/80 max-w-3xl mx-auto mb-12 leading-relaxed">
-            Every impossible-to-ignore brand starts with a single conversation. 
-            Let's discuss your vision and map out your path to market dominance.
+            Every great engineer starts with curiosity — and transforms it into innovation.
+            Let's take you from sand to silicon chip through hands-on, visual, and industry-ready education.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-16">
@@ -33,18 +33,18 @@ const ProcessCTA = () => {
               className="bg-accent hover:bg-accent/90 text-accent-foreground font-bold border-2 border-accent brutalist-shadow hover:shadow-none transition-all duration-300 px-8 py-4 text-lg"
             >
               <Link to="/contact">
-                Start Your Brief
+                Start Learning
                 <Icon name="ArrowRight" size={20} className="ml-2" />
               </Link>
             </Button>
-            
+
             <Button
               asChild
               variant="outline"
               className="border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary font-bold px-8 py-4 text-lg"
             >
-              <Link to="/case-study">
-                See Our Work
+              <Link to="/about">
+                Learn More
                 <Icon name="ExternalLink" size={20} className="ml-2" />
               </Link>
             </Button>

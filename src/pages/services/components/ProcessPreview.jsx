@@ -9,31 +9,31 @@ const ProcessPreview = () => {
   const processSteps = [
     {
       icon: "Search",
-      title: "Discovery & Strategy",
-      duration: "1-2 weeks",
-      description: "Deep dive into your brand, market, and competitive landscape to uncover the impossible-to-ignore opportunity.",
-      deliverables: ["Brand audit", "Market analysis", "Strategic framework", "Creative brief"]
+      title: "Discover & Learn",
+      duration: "2-6 weeks",
+      description: "Foundations, concepts, and guided exploration. Master semiconductor fundamentals, physics, and material science through interactive modules.",
+      deliverables: ["Fundamental concepts", "Interactive labs", "Material science projects", "Atomic theory mastery"]
     },
     {
-      icon: "Palette",
-      title: "Creative Development",
-      duration: "2-3 weeks",
-      description: "Brutalist design principles meet strategic thinking to create brand expressions that demand attention.",
-      deliverables: ["Visual identity", "Brand guidelines", "Asset library", "Application examples"]
+      icon: "CircuitBoard",
+      title: "Design & Develop",
+      duration: "3-8 weeks",
+      description: "RTL or Analog design and practical simulations. Build digital circuits, create Verilog designs, and simulate analog circuits with industry tools.",
+      deliverables: ["RTL modules", "Analog designs", "Simulation reports", "Design portfolios"]
     },
     {
-      icon: "Layers",
-      title: "System Architecture",
-      duration: "1-2 weeks",
-      description: "Building scalable brand systems that maintain impact across every touchpoint and interaction.",
-      deliverables: ["Brand system", "Template library", "Usage guidelines", "Digital assets"]
+      icon: "CheckCircle",
+      title: "Verify & Implement",
+      duration: "2-6 weeks",
+      description: "Hands-on testing and layout generation. Learn verification methodology, UVM frameworks, and complete physical design workflows.",
+      deliverables: ["UVM testbenches", "Physical layouts", "DRC/LVS reports", "Timing sign-off"]
     },
     {
       icon: "Rocket",
-      title: "Launch & Optimization",
-      duration: "1-2 weeks",
-      description: "Strategic rollout with performance monitoring to ensure your brand makes the impact it deserves.",
-      deliverables: ["Launch strategy", "Performance metrics", "Optimization plan", "Ongoing support"]
+      title: "Launch & Showcase",
+      duration: "1-4 weeks",
+      description: "Capstone project and portfolio presentation. Work on real-world design problems and showcase your silicon-ready expertise.",
+      deliverables: ["Capstone project", "Portfolio presentation", "Industry mentorship", "Job readiness"]
     }
   ];
 
@@ -42,10 +42,10 @@ const ProcessPreview = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-black text-primary mb-4">
-            Our Brutalist Process
+            Our Learning Process
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Four strategic phases that transform brands from forgettable to impossible to ignore.
+            Four structured phases that turn learners into professionals. Timeline: 8–24 weeks total depending on course track.
           </p>
         </div>
 
@@ -144,14 +144,14 @@ const ProcessPreview = () => {
                 iconName="MessageCircle"
                 iconPosition="left"
               >
-                Discuss This Phase
+                Join This Phase
               </Button>
               <Button
                 variant="outline"
                 iconName="ExternalLink"
                 iconPosition="right"
               >
-                View Full Process
+                View Full Curriculum
               </Button>
             </div>
           </motion.div>

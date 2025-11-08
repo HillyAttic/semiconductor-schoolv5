@@ -22,319 +22,372 @@ const ServicesPage = () => {
   const services = [
     {
       id: 1,
-      icon: "Palette",
-      title: "Brand Identity & Visual Systems",
-      description: "Complete brand architecture from logo to comprehensive visual systems that demand attention across every touchpoint.",
-      priceRange: "$15K - $50K",
-      timeline: "4-8 weeks",
-      industries: ["Tech", "Healthcare", "Finance", "Retail"],
+      icon: "Cpu",
+      title: "Semiconductor Fundamentals & Material Science",
+      description: "Learn how semiconductors work at the atomic level — from sand to silicon. Understand doping, crystal growth, wafer formation, and PN junction behavior.",
+      priceRange: "4–6 weeks",
+      timeline: "Beginners",
+      industries: ["Students", "Professionals", "Institutions"],
       features: [
         {
-          name: "Logo & Brand Mark Design",
-          description: "Distinctive visual identity that cuts through market noise"
+          name: "Visual Modules",
+          description: "Interactive learning materials covering atomic structure and electron behavior"
         },
         {
-          name: "Visual Identity System",
-          description: "Comprehensive guidelines for consistent brand application"
+          name: "Interactive Labs",
+          description: "Hands-on simulations of semiconductor physics and material properties"
         },
         {
-          name: "Typography & Color Architecture",
-          description: "Strategic font and color systems that reinforce brand personality"
+          name: "Material Science Projects",
+          description: "Practical exercises in crystal growth and wafer preparation"
         },
         {
-          name: "Brand Asset Library",
-          description: "Complete collection of brand elements for immediate use"
+          name: "PN Junction Theory",
+          description: "Deep dive into diode behavior and junction physics"
         },
         {
-          name: "Application Examples",
-          description: "Real-world applications across digital and print touchpoints"
+          name: "Doping Techniques",
+          description: "Understanding n-type and p-type semiconductor formation"
         }
       ],
       process: [
         {
-          phase: "Brand Discovery",
+          phase: "Atomic Foundation",
           duration: "1 week",
-          description: "Deep dive into brand positioning, competitive landscape, and target audience insights"
+          description: "Electron configuration, bonding, and crystal structure basics"
         },
         {
-          phase: "Concept Development",
+          phase: "Semiconductor Physics",
           duration: "2 weeks",
-          description: "Multiple creative directions exploring different brand expressions and visual approaches"
+          description: "Band theory, carrier dynamics, and junction behavior"
         },
         {
-          phase: "Refinement & System Building",
+          phase: "Material Processing",
           duration: "2 weeks",
-          description: "Selected concept development into comprehensive visual system with guidelines"
+          description: "Crystal growth, wafer fabrication, and doping processes"
         },
         {
-          phase: "Delivery & Implementation",
+          phase: "Lab Integration",
           duration: "1 week",
-          description: "Final asset delivery with implementation support and team training"
+          description: "Virtual lab exercises and real-world application projects"
         }
       ]
     },
     {
       id: 2,
-      icon: "Globe",
-      title: "Digital Brand Experience",
-      description: "Websites, apps, and digital platforms that translate your brand into impossible-to-ignore online experiences.",
-      priceRange: "$25K - $75K",
-      timeline: "6-12 weeks",
-      industries: ["SaaS", "E-commerce", "Professional Services", "Education"],
+      icon: "CircuitBoard",
+      title: "VLSI & Digital IC Design",
+      description: "Build digital circuits and systems using Verilog, SystemVerilog, and logic synthesis. Design your own digital blocks, simulate timing, and explore full RTL-to-GDSII workflows.",
+      priceRange: "8–10 weeks",
+      timeline: "Intermediate learners",
+      industries: ["Students", "Aspiring Engineers", "Professionals"],
       features: [
         {
-          name: "Website Design & Development",
-          description: "Custom websites that convert visitors into customers"
+          name: "RTL Design Projects",
+          description: "Hands-on Verilog/SystemVerilog coding with real design examples"
         },
         {
-          name: "User Experience Architecture",
-          description: "Intuitive navigation and interaction design for optimal user journeys"
+          name: "Logic Synthesis",
+          description: "Complete flow from RTL to gate-level implementation"
         },
         {
-          name: "Mobile-First Responsive Design",
-          description: "Seamless experiences across all devices and screen sizes"
+          name: "Timing Analysis",
+          description: "Static timing analysis and constraint management"
         },
         {
-          name: "Content Management System",
-          description: "Easy-to-use CMS for ongoing content updates and management"
+          name: "Digital Block Design",
+          description: "ALUs, controllers, and complex digital system architectures"
         },
         {
-          name: "Performance Optimization",
-          description: "Fast-loading, SEO-optimized sites that rank well and convert better"
+          name: "Simulation Reports",
+          description: "Functional verification and timing validation reports"
         }
       ],
       process: [
         {
-          phase: "Digital Strategy",
-          duration: "1-2 weeks",
-          description: "User research, competitive analysis, and digital experience strategy development"
+          phase: "Digital Logic Fundamentals",
+          duration: "2 weeks",
+          description: "Boolean algebra, logic gates, and combinational circuit design"
         },
         {
-          phase: "UX/UI Design",
-          duration: "3-4 weeks",
-          description: "Wireframing, prototyping, and visual design of all digital touchpoints"
+          phase: "RTL Coding Mastery",
+          duration: "3 weeks",
+          description: "Verilog/SystemVerilog for synthesis and testbench development"
         },
         {
-          phase: "Development & Integration",
-          duration: "3-4 weeks",
-          description: "Custom development with CMS integration and third-party tool connections"
+          phase: "Synthesis & Implementation",
+          duration: "3 weeks",
+          description: "Logic synthesis, place & route, and timing closure"
         },
         {
-          phase: "Testing & Launch",
-          duration: "1-2 weeks",
-          description: "Quality assurance testing, performance optimization, and go-live support"
+          phase: "Verification & Sign-off",
+          duration: "2 weeks",
+          description: "Functional verification, timing analysis, and design validation"
         }
       ]
     },
     {
       id: 3,
-      icon: "Megaphone",
-      title: "Brand Strategy & Positioning",
-      description: "Strategic foundation that defines how your brand shows up in the world and why customers should care.",
-      priceRange: "$10K - $30K",
-      timeline: "3-6 weeks",
-      industries: ["Startups", "Scale-ups", "Established Brands", "Non-profits"],
+      icon: "Zap",
+      title: "Analog IC Design & Simulation",
+      description: "Master the art of transistor-level design — biasing, amplifiers, and stability analysis. Use open-source EDA tools like Ngspice and Xschem to simulate analog circuits.",
+      priceRange: "10–12 weeks",
+      timeline: "Advanced learners",
+      industries: ["Analog Designers", "Graduate Students", "Professionals"],
       features: [
         {
-          name: "Brand Positioning Framework",
-          description: "Clear positioning that differentiates you from competitors"
+          name: "Amplifier Design",
+          description: "Op-amp design, feedback analysis, and compensation techniques"
         },
         {
-          name: "Target Audience Definition",
-          description: "Detailed customer personas and behavioral insights"
+          name: "Transistor-Level Analysis",
+          description: "Deep submicron MOSFET behavior and modeling"
         },
         {
-          name: "Brand Voice & Messaging",
-          description: "Consistent communication style and key messaging architecture"
+          name: "SPICE Simulations",
+          description: "Ngspice-based circuit simulation and optimization"
         },
         {
-          name: "Competitive Analysis",
-          description: "Market landscape analysis and opportunity identification"
+          name: "Biasing Circuits",
+          description: "Current mirrors, voltage references, and bias networks"
         },
         {
-          name: "Brand Architecture",
-          description: "Strategic framework for brand extensions and sub-brands"
+          name: "Stability Analysis",
+          description: "Frequency response,极点位置, and compensation design"
         }
       ],
       process: [
         {
-          phase: "Research & Analysis",
-          duration: "1-2 weeks",
-          description: "Market research, competitor analysis, and stakeholder interviews"
+          phase: "Transistor Fundamentals",
+          duration: "2 weeks",
+          description: "MOSFET physics, small-signal modeling, and biasing principles"
         },
         {
-          phase: "Strategy Development",
-          duration: "2-3 weeks",
-          description: "Brand positioning, messaging framework, and strategic recommendations"
+          phase: "Basic Amplifier Design",
+          duration: "3 weeks",
+          description: "Single-stage and multi-stage amplifier topologies"
         },
         {
-          phase: "Validation & Refinement",
-          duration: "1 week",
-          description: "Strategy testing with target audiences and stakeholder feedback integration"
+          phase: "Advanced Analog Circuits",
+          duration: "4 weeks",
+          description: "Op-amps, comparators, and precision analog design"
         },
         {
-          phase: "Implementation Planning",
-          duration: "1 week",
-          description: "Rollout strategy and implementation roadmap development"
+          phase: "Layout & Simulation",
+          duration: "3 weeks",
+          description: "Physical layout considerations and comprehensive SPICE verification"
         }
       ]
     },
     {
       id: 4,
-      icon: "Package",
-      title: "Brand Packaging & Product Design",
-      description: "Physical brand expressions that stand out on shelves and create memorable unboxing experiences.",
-      priceRange: "$20K - $60K",
-      timeline: "6-10 weeks",
-      industries: ["Consumer Goods", "Food & Beverage", "Beauty", "Retail"],
+      icon: "Layers",
+      title: "Physical Design & Implementation (RTL → GDSII)",
+      description: "Learn backend chip design steps — floorplanning, placement, routing, DRC/LVS, and sign-off. Practice with real tools like OpenROAD, KLayout, and Magic.",
+      priceRange: "10–12 weeks",
+      timeline: "Advanced learners",
+      industries: ["PD Engineers", "Graduate Students", "Professionals"],
       features: [
         {
-          name: "Package Design & Structure",
-          description: "Eye-catching packaging that drives purchase decisions"
+          name: "Full Physical Layout",
+          description: "Complete chip layout from floorplanning to final output"
         },
         {
-          name: "Product Label Design",
-          description: "Information hierarchy and visual design for product labels"
+          name: "DRC/LVS Reports",
+          description: "Design rule checking and layout vs. schematic verification"
         },
         {
-          name: "Unboxing Experience Design",
-          description: "Memorable moments that encourage social sharing and repeat purchases"
+          name: "Timing Sign-off",
+          description: "Clock tree synthesis and timing closure verification"
         },
         {
-          name: "Retail Display Strategy",
-          description: "Point-of-sale materials and retail environment optimization"
+          name: "OpenROAD Flow",
+          description: "Hands-on experience with open-source physical design tools"
         },
         {
-          name: "Production-Ready Files",
-          description: "Print-ready artwork with specifications for manufacturing"
+          name: "GDSII Generation",
+          description: "Final mask data preparation and manufacturing output"
         }
       ],
       process: [
         {
-          phase: "Product & Market Research",
-          duration: "1-2 weeks",
-          description: "Product analysis, retail environment study, and consumer behavior research"
+          phase: "Floorplanning & Placement",
+          duration: "3 weeks",
+          description: "Die area planning, macro placement, and power grid design"
         },
         {
-          phase: "Concept Development",
-          duration: "2-3 weeks",
-          description: "Multiple packaging concepts with structural and visual design exploration"
+          phase: "Clock Tree & Routing",
+          duration: "4 weeks",
+          description: "CTS, global routing, and detailed routing optimization"
         },
         {
-          phase: "Prototyping & Testing",
-          duration: "2-3 weeks",
-          description: "Physical prototypes, consumer testing, and design refinement"
+          phase: "Optimization & Sign-off",
+          duration: "3 weeks",
+          description: "Timing optimization, power analysis, and physical verification"
         },
         {
-          phase: "Production Preparation",
-          duration: "1-2 weeks",
-          description: "Final artwork preparation, print specifications, and production support"
+          phase: "Mask Preparation",
+          duration: "2 weeks",
+          description: "GDSII generation, process design rules, and manufacturing handoff"
         }
       ]
     },
     {
       id: 5,
-      icon: "Video",
-      title: "Motion Design & Brand Animation",
-      description: "Animated brand elements that bring your identity to life across digital and video content.",
-      priceRange: "$8K - $25K",
-      timeline: "3-6 weeks",
-      industries: ["Tech", "Entertainment", "Social Media", "Advertising"],
+      icon: "CheckCircle",
+      title: "Design Verification (UVM & SystemVerilog)",
+      description: "Understand verification methodology, write reusable testbenches, and analyze functional coverage. Get hands-on with SystemVerilog UVM frameworks and practical verification projects.",
+      priceRange: "8–10 weeks",
+      timeline: "Intermediate learners",
+      industries: ["Verification Engineers", "Students", "Professionals"],
       features: [
         {
-          name: "Animated Logo & Brand Elements",
-          description: "Dynamic logo animations for video content and digital applications"
+          name: "Verification Plan",
+          description: "Systematic test planning and coverage-driven verification"
         },
         {
-          name: "Brand Video Production",
-          description: "Promotional videos that communicate brand story and values"
+          name: "Reusable UVM Environment",
+          description: "Complete UVM testbench framework with best practices"
         },
         {
-          name: "Social Media Animation",
-          description: "Engaging animated content optimized for social platforms"
+          name: "Coverage Reports",
+          description: "Functional and code coverage analysis and optimization"
         },
         {
-          name: "UI Animation Systems",
-          description: "Micro-interactions and animations for digital products"
+          name: "SystemVerilog UVM",
+          description: "Advanced verification techniques using industry-standard methodologies"
         },
         {
-          name: "Motion Guidelines",
-          description: "Animation principles and guidelines for consistent brand motion"
+          name: "Constraint Random Testing",
+          description: "Smart test generation and verification automation"
         }
       ],
       process: [
         {
-          phase: "Motion Strategy",
-          duration: "1 week",
-          description: "Animation style development and motion principles definition"
+          phase: "Verification Fundamentals",
+          duration: "2 weeks",
+          description: "Verification concepts, testbench architecture, and methodology overview"
         },
         {
-          phase: "Concept & Storyboarding",
-          duration: "1-2 weeks",
-          description: "Animation concepts, storyboards, and style frame development"
+          phase: "SystemVerilog Mastery",
+          duration: "3 weeks",
+          description: "SV language features, OOP, and testbench development"
         },
         {
-          phase: "Animation Production",
-          duration: "2-3 weeks",
-          description: "Animation creation, sound design, and post-production"
+          phase: "UVM Framework",
+          duration: "3 weeks",
+          description: "UVM components, sequences, and reusable verification environments"
         },
         {
-          phase: "Delivery & Guidelines",
-          duration: "1 week",
-          description: "Final deliverables and motion guidelines documentation"
+          phase: "Coverage & Closure",
+          duration: "2 weeks",
+          description: "Coverage analysis, debugging techniques, and verification closure"
         }
       ]
     },
     {
       id: 6,
-      icon: "Layout",
-      title: "Brand Guidelines & System Documentation",
-      description: "Comprehensive brand standards that ensure consistent application across all touchpoints and teams.",
-      priceRange: "$5K - $15K",
-      timeline: "2-4 weeks",
-      industries: ["All Industries", "Enterprise", "Franchises", "Agencies"],
+      icon: "Factory",
+      title: "Fabrication & Cleanroom Training",
+      description: "Experience the journey from raw silicon to fabricated chips through guided modules. Understand lithography, etching, doping, metallization, and wafer packaging.",
+      priceRange: "4–6 weeks",
+      timeline: "Beginners & professionals",
+      industries: ["Students", "Process Engineers", "Professionals"],
       features: [
         {
-          name: "Comprehensive Brand Guidelines",
-          description: "Detailed documentation of all brand elements and usage rules"
+          name: "Virtual Cleanroom Walkthroughs",
+          description: "Immersive 3D tours of semiconductor fabrication facilities"
         },
         {
-          name: "Digital Asset Management",
-          description: "Organized library of brand assets with easy access and download"
+          name: "Wafer Process Simulation",
+          description: "Step-by-step wafer processing with virtual lab exercises"
         },
         {
-          name: "Application Examples",
-          description: "Real-world examples showing correct brand implementation"
+          name: "Lithography Process",
+          description: "Photolithography principles, mask design, and pattern transfer"
         },
         {
-          name: "Team Training Materials",
-          description: "Resources for educating teams on proper brand usage"
+          name: "Etching & Deposition",
+          description: "Material removal and film deposition techniques"
         },
         {
-          name: "Brand Compliance Tools",
-          description: "Checklists and templates to ensure consistent brand application"
+          name: "Lab Reports",
+          description: "Process documentation and analysis of fabrication outcomes"
         }
       ],
       process: [
         {
-          phase: "Audit & Documentation",
+          phase: "Cleanroom Fundamentals",
           duration: "1 week",
-          description: "Complete brand asset audit and documentation requirements gathering"
+          description: "Cleanroom environment, safety protocols, and contamination control"
         },
         {
-          phase: "Guidelines Development",
+          phase: "Wafer Preparation",
+          duration: "1 week",
+          description: "Silicon wafer handling, cleaning, and initial processing"
+        },
+        {
+          phase: "Pattern Transfer",
           duration: "2 weeks",
-          description: "Comprehensive guidelines creation with usage rules and examples"
+          description: "Photolithography, etching, and pattern definition"
         },
         {
-          phase: "Asset Organization",
-          duration: "1 week",
-          description: "Digital asset library setup and organization system implementation"
+          phase: "Final Processing",
+          duration: "2 weeks",
+          description: "Doping, metallization, packaging, and testing procedures"
+        }
+      ]
+    },
+    {
+      id: 7,
+      icon: "Users",
+      title: "Industry Projects & Mentorship",
+      description: "Work on real-world design problems under expert supervision. Build a verified chip block, analog IP, or end-to-end design as your capstone project.",
+      priceRange: "4–8 weeks",
+      timeline: "Advanced cohorts",
+      industries: ["Graduate Students", "Professionals", "Career Changers"],
+      features: [
+        {
+          name: "Full Project Documentation",
+          description: "Professional-quality technical documentation and design reports"
         },
         {
-          phase: "Training & Rollout",
+          name: "Demo Video",
+          description: "Project presentation and demonstration materials"
+        },
+        {
+          name: "Mentor Feedback",
+          description: "One-on-one guidance from industry professionals"
+        },
+        {
+          name: "Real-World Problems",
+          description: "Industry-relevant design challenges and constraints"
+        },
+        {
+          name: "Portfolio Development",
+          description: "Silicon-ready projects for career advancement"
+        }
+      ],
+      process: [
+        {
+          phase: "Project Definition",
           duration: "1 week",
-          description: "Team training sessions and guidelines rollout support"
+          description: "Requirements gathering, scope definition, and team formation"
+        },
+        {
+          phase: "Design & Development",
+          duration: "3-4 weeks",
+          description: "Active development with regular mentor check-ins and progress reviews"
+        },
+        {
+          phase: "Verification & Testing",
+          duration: "2-3 weeks",
+          description: "Comprehensive verification, validation, and optimization"
+        },
+        {
+          phase: "Presentation & Delivery",
+          duration: "1 week",
+          description: "Project presentation, documentation completion, and knowledge transfer"
         }
       ]
     }
@@ -347,9 +400,9 @@ const ServicesPage = () => {
   return (
     <>
       <Helmet>
-        <title>Services - Brand Forge | Capabilities Matrix</title>
-        <meta name="description" content="Explore Brand Forge's comprehensive service offerings. From brand identity to digital experiences, discover capabilities that make brands impossible to ignore." />
-        <meta name="keywords" content="brand identity, digital design, brand strategy, packaging design, motion design, brand guidelines" />
+        <title>Semiconductor School — VLSI, Chip Design, and Fabrication Learning Services</title>
+        <meta name="description" content="Discover Semiconductor School's industry-ready courses and services in semiconductor design, VLSI, verification, and fabrication. Hands-on labs, mentor-led training, and real-world projects." />
+        <meta name="keywords" content="semiconductor education, VLSI training, chip design courses, physical design, verification, analog IC, fabrication, open-source EDA" />
       </Helmet>
       <div className="min-h-screen bg-background">
         <Header />
@@ -365,7 +418,7 @@ const ServicesPage = () => {
                 Capabilities Matrix
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Click any service to explore detailed capabilities, process, and investment information.
+                Learn, Design, Verify, Fabricate — All Under One Platform. Each service is a practical step toward mastering the semiconductor ecosystem.
               </p>
             </div>
 
@@ -401,12 +454,12 @@ const ServicesPage = () => {
               viewport={{ once: true }}
             >
               <h2 className="text-3xl lg:text-4xl font-black mb-6">
-                Ready to Make Your Brand
-                <span className="block text-accent">Impossible to Ignore?</span>
+                Ready to Start Your
+                <span className="block text-accent">Semiconductor Journey?</span>
               </h2>
               <p className="text-lg text-white/80 mb-8 max-w-2xl mx-auto">
-                Let's discuss which services align with your brand transformation goals. 
-                Our brutalist approach ensures results that demand attention.
+                Semiconductor School offers complete pathways — from foundation learning to silicon-ready expertise.
+                Choose your specialization, join a cohort, and become part of India's growing semiconductor ecosystem.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button
@@ -415,7 +468,7 @@ const ServicesPage = () => {
                   iconName="MessageCircle"
                   iconPosition="left"
                 >
-                  Start a Brief
+                  Start Your Cohort
                 </Button>
                 <Button
                   variant="outline"
@@ -439,10 +492,10 @@ const ServicesPage = () => {
                   <div className="w-8 h-8 bg-primary border-2 border-primary">
                     <div className="w-full h-full bg-accent transform translate-x-1 translate-y-1"></div>
                   </div>
-                  <span className="text-xl font-black text-primary">Brand Forge</span>
+                  <span className="text-xl font-black text-primary">Semiconductor School</span>
                 </div>
                 <p className="text-muted-foreground mb-4 max-w-md">
-                  Making brands impossible to ignore through brutalist design principles and strategic thinking.
+                  Empowering the next generation of chip engineers through structured, mentor-led, and visually engaging learning.
                 </p>
                 <div className="flex space-x-4">
                   {['Twitter', 'LinkedIn', 'Instagram', 'Dribbble']?.map((social) => (
@@ -458,21 +511,21 @@ const ServicesPage = () => {
               </div>
               
               <div>
-                <h4 className="font-bold text-primary mb-4">Services</h4>
+                <h4 className="font-bold text-primary mb-4">Courses</h4>
                 <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li><a href="#" className="hover:text-accent transition-colors">Brand Identity</a></li>
-                  <li><a href="#" className="hover:text-accent transition-colors">Digital Experience</a></li>
-                  <li><a href="#" className="hover:text-accent transition-colors">Brand Strategy</a></li>
-                  <li><a href="#" className="hover:text-accent transition-colors">Motion Design</a></li>
+                  <li><a href="#" className="hover:text-accent transition-colors">Semiconductor Fundamentals</a></li>
+                  <li><a href="#" className="hover:text-accent transition-colors">VLSI Design</a></li>
+                  <li><a href="#" className="hover:text-accent transition-colors">Physical Design</a></li>
+                  <li><a href="#" className="hover:text-accent transition-colors">Verification</a></li>
                 </ul>
               </div>
-              
+
               <div>
                 <h4 className="font-bold text-primary mb-4">Company</h4>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li><a href="/about" className="hover:text-accent transition-colors">About</a></li>
-                  <li><a href="/case-study" className="hover:text-accent transition-colors">Case Studies</a></li>
-                  <li><a href="/process" className="hover:text-accent transition-colors">Process</a></li>
+                  <li><a href="/projects" className="hover:text-accent transition-colors">Student Projects</a></li>
+                  <li><a href="/process" className="hover:text-accent transition-colors">Learning Process</a></li>
                   <li><a href="/contact" className="hover:text-accent transition-colors">Contact</a></li>
                 </ul>
               </div>
@@ -480,7 +533,7 @@ const ServicesPage = () => {
             
             <div className="border-t-2 border-concrete-light mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
               <p className="text-sm text-muted-foreground">
-                © {new Date()?.getFullYear()} Brand Forge. All rights reserved.
+                © {new Date()?.getFullYear()} Semiconductor School. All rights reserved.
               </p>
               <div className="flex space-x-6 mt-4 md:mt-0">
                 <a href="#" className="text-sm text-muted-foreground hover:text-accent transition-colors">Terms of Service</a>

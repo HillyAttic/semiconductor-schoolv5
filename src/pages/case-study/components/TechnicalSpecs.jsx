@@ -17,10 +17,10 @@ const TechnicalSpecs = ({ specifications, challenges }) => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-black text-primary mb-4">
-              Technical Specifications
+              Learning Architecture
             </h2>
             <p className="text-xl text-muted-foreground">
-              Deep dive into the technical implementation and challenges overcome
+              Deep dive into the learning platform and educational technology implementation
             </p>
           </div>
 
@@ -82,7 +82,7 @@ const TechnicalSpecs = ({ specifications, challenges }) => {
             {/* Technical Challenges */}
             <div className="space-y-6">
               <h3 className="text-2xl font-bold text-primary mb-6">
-                Technical Challenges
+                Learning Challenges
               </h3>
               
               {challenges?.map((challenge, index) => (

@@ -5,7 +5,6 @@ import WorkShowcase from './components/WorkShowcase';
 import CapabilitiesGrid from './components/CapabilitiesGrid';
 import ProcessNavigation from './components/ProcessNavigation';
 import AboutSection from './components/AboutSection';
-import ClientLogos from './components/ClientLogos';
 import ContactForm from './components/ContactForm';
 
 const Homepage = () => {
@@ -18,7 +17,6 @@ const Homepage = () => {
         <CapabilitiesGrid />
         <ProcessNavigation />
         <AboutSection />
-        <ClientLogos />
         <ContactForm />
       </main>
       {/* Footer */}

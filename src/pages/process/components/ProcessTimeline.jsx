@@ -5,55 +5,68 @@ import Icon from '../../../components/AppIcon';
 const ProcessTimeline = () => {
   const timelineData = [
     {
-      week: "Weeks 1-3",
-      phase: "Discovery & Strategy",
+      week: "Weeks 1–3",
+      phase: "Discovery & Foundation",
       status: "Foundation",
       activities: [
-        "Stakeholder interviews and workshops",
-        "Market research and competitive analysis", 
-        "Brand audit and positioning framework",
-        "Strategic platform development"
+        "Fundamentals of semiconductor materials",
+        "Atomic structure and conductivity principles",
+        "Visual simulations of sand refining and silicon extraction",
+        "Foundation workbook and learning roadmap"
       ],
-      milestone: "Strategic Brief Approval",
+      milestone: "Fundamentals of Semiconductor Science",
       color: "bg-accent"
     },
     {
-      week: "Weeks 4-7",
-      phase: "Concept & Design",
-      status: "Creation",
+      week: "Weeks 4–7",
+      phase: "Crystal Growth & Wafer Science",
+      status: "Formation",
       activities: [
-        "Visual identity exploration",
-        "Logo design and refinement",
-        "Brand guidelines development",
-        "Voice and tone framework"
+        "Silicon purification techniques",
+        "Czochralski crystal growth process study",
+        "Wafer slicing and polishing simulation",
+        "Practical assessment & visual project"
       ],
-      milestone: "Brand Identity Approval",
+      milestone: "Wafer Simulation and Analysis",
       color: "bg-primary"
     },
     {
-      week: "Weeks 8-11",
-      phase: "Build & Refine",
-      status: "Development",
+      week: "Weeks 8–12",
+      phase: "Fabrication & Chip Design",
+      status: "Creation",
       activities: [
-        "Brand system applications",
-        "Marketing collateral creation",
-        "Digital asset development",
-        "Quality assurance testing"
+        "Chip architecture and circuit design basics",
+        "Photolithography and etching tutorials",
+        "Mask design and process simulation",
+        "Mini-project: Design a basic logic gate circuit"
       ],
-      milestone: "Asset Library Completion",
+      milestone: "Functional Circuit Prototype",
       color: "bg-secondary"
     },
     {
-      week: "Weeks 12-14",
-      phase: "Launch & Optimize",
+      week: "Weeks 13–15",
+      phase: "Testing & Optimization",
+      status: "Development",
+      activities: [
+        "Electrical testing and measurement principles",
+        "Yield optimization techniques",
+        "Fault detection and analysis report",
+        "Optimization toolkit documentation"
+      ],
+      milestone: "Performance Evaluation Completed",
+      color: "bg-warning"
+    },
+    {
+      week: "Weeks 16–18",
+      phase: "Integration & Innovation",
       status: "Activation",
       activities: [
-        "Launch strategy execution",
-        "Team training and handoff",
-        "Performance monitoring setup",
-        "Optimization recommendations"
+        "Capstone semiconductor project",
+        "Presentation & documentation",
+        "Mentor feedback and evaluation report",
+        "Industry showcase opportunity"
       ],
-      milestone: "Successful Brand Launch",
+      milestone: "Capstone Project Presentation",
       color: "bg-success"
     }
   ];
@@ -69,18 +82,18 @@ const ProcessTimeline = () => {
           className="text-center mb-16"
         >
           <span className="inline-block px-4 py-2 bg-concrete text-primary text-sm font-bold uppercase tracking-wider border-2 border-primary transform rotate-1 mb-6">
-            Project Timeline
+            Learning Timeline
           </span>
-          
+
           <h2 className="text-4xl md:text-5xl font-black text-primary mb-6">
-            Your Brand Journey
+            Your Semiconductor Journey
             <br />
             <span className="text-accent">Week by Week</span>
           </h2>
-          
+
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Transparent timeline with clear milestones, deliverables, and expectations. 
-            No surprises, no delays—just systematic progress toward brand excellence.
+            Transparent timeline with clear milestones, deliverables, and expectations.
+            No surprises, no delays—just systematic progress toward semiconductor mastery.
           </p>
         </motion.div>
 
@@ -146,7 +159,7 @@ const ProcessTimeline = () => {
                           Phase Completion
                         </h4>
                         <p className="text-muted-foreground mb-4">
-                          This phase concludes when all deliverables are approved and the milestone is achieved.
+                          This phase concludes when all learning objectives are met and the milestone is achieved.
                         </p>
                         <div className="flex items-center space-x-2 text-success font-semibold">
                           <Icon name="Flag" size={16} />
@@ -170,21 +183,21 @@ const ProcessTimeline = () => {
           className="mt-20 grid sm:grid-cols-3 gap-8"
         >
           <div className="text-center bg-card border-2 border-concrete p-8">
-            <div className="text-4xl font-black text-accent mb-2">8-16</div>
+            <div className="text-4xl font-black text-accent mb-2">12–20</div>
             <div className="text-lg font-bold text-primary mb-1">Weeks Total</div>
-            <div className="text-sm text-muted-foreground">Depending on project scope</div>
+            <div className="text-sm text-muted-foreground">Depending on learning pace</div>
           </div>
-          
+
           <div className="text-center bg-card border-2 border-concrete p-8">
-            <div className="text-4xl font-black text-accent mb-2">4</div>
-            <div className="text-lg font-bold text-primary mb-1">Major Phases</div>
-            <div className="text-sm text-muted-foreground">Clear milestone progression</div>
+            <div className="text-4xl font-black text-accent mb-2">5</div>
+            <div className="text-lg font-bold text-primary mb-1">Learning Phases</div>
+            <div className="text-sm text-muted-foreground">Clear skill progression</div>
           </div>
-          
+
           <div className="text-center bg-card border-2 border-concrete p-8">
             <div className="text-4xl font-black text-accent mb-2">100%</div>
-            <div className="text-lg font-bold text-primary mb-1">Transparency</div>
-            <div className="text-sm text-muted-foreground">No hidden steps or surprises</div>
+            <div className="text-lg font-bold text-primary mb-1">Mentor Support</div>
+            <div className="text-sm text-muted-foreground">Guided learning path</div>
           </div>
         </motion.div>
       </div>

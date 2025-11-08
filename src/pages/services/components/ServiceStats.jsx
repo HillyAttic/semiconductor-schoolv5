@@ -6,27 +6,27 @@ const ServiceStats = () => {
   const stats = [
     {
       icon: "TrendingUp",
-      value: "300%",
-      label: "Average Brand Recognition Increase",
-      description: "Measured across 50+ client projects over 24 months"
+      value: "240%",
+      label: "Learner Engagement Increase",
+      description: "Measured across all semiconductor courses and cohorts"
+    },
+    {
+      icon: "CheckCircle",
+      value: "90%+",
+      label: "Project Completion Rate",
+      description: "Students completing hands-on chip design projects"
     },
     {
       icon: "Users",
-      value: "150+",
-      label: "Brands Transformed",
-      description: "From startups to Fortune 500 companies"
+      value: "500+",
+      label: "Trained Learners Worldwide",
+      description: "From students to professionals in semiconductor industry"
     },
     {
       icon: "Award",
-      value: "25+",
-      label: "Industry Awards",
-      description: "Recognition for creative excellence and results"
-    },
-    {
-      icon: "Clock",
-      value: "6-12",
-      label: "Weeks Average Timeline",
-      description: "From brief to brand launch"
+      value: "85%",
+      label: "Job Interview Readiness",
+      description: "Students prepared for semiconductor industry roles"
     }
   ];
 
@@ -35,10 +35,10 @@ const ServiceStats = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-black text-primary mb-4">
-            Results That Demand Attention
+            Results That Matter
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Our brutalist approach to brand building delivers measurable impact across every metric that matters.
+            We measure outcomes, not attendance. Hands-on completion • Portfolio quality • Concept retention • Placement readiness
           </p>
         </div>
 

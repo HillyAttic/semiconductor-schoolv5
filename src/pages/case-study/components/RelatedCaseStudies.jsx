@@ -10,10 +10,10 @@ const RelatedCaseStudies = ({ relatedStudies }) => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-black text-primary mb-4">
-              More Case Studies
+              More Programs & Stories
             </h2>
             <p className="text-xl text-muted-foreground">
-              Explore other transformations we've crafted
+              Explore more transformations we've crafted with learners and partners
             </p>
           </div>
 
@@ -75,7 +75,7 @@ const RelatedCaseStudies = ({ relatedStudies }) => {
               to="/case-study"
               className="inline-flex items-center space-x-3 px-8 py-4 bg-primary text-primary-foreground font-bold border-2 border-primary hover:bg-primary/90 transition-colors duration-300 brutalist-shadow"
             >
-              <span>View All Case Studies</span>
+              <span>View All Programs</span>
               <Icon name="ArrowRight" size={20} />
             </Link>
           </div>

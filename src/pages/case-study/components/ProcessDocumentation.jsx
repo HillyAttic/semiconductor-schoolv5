@@ -14,7 +14,7 @@ const ProcessDocumentation = ({ processSteps }) => {
               Behind the Scenes
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Transparent documentation of our creative process, challenges faced, and solutions discovered.
+              Transparent documentation of our education design process, learner challenges, and how we solved them.
             </p>
           </div>
 

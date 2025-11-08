@@ -7,58 +7,58 @@ const IndustryFocus = () => {
 
   const industries = [
     {
-      icon: "Rocket",
-      name: "Tech & SaaS",
-      description: "Startups to scale-ups disrupting traditional industries",
-      challenges: ["Differentiation in crowded markets", "Technical complexity communication", "Rapid growth scaling"],
-      solutions: ["Bold visual systems that cut through noise", "Clear value proposition architecture", "Scalable brand frameworks"],
-      caseStudy: "How we helped CloudSync increase brand recognition by 400%",
-      clients: ["CloudSync", "DataFlow", "TechNova", "StartupX"]
+      icon: "Cpu",
+      name: "Chip Design",
+      description: "RTL design, synthesis, timing, and architecture",
+      challenges: ["Complex system integration", "Timing closure issues", "Power optimization"],
+      solutions: ["SystemVerilog expertise", "Static timing analysis", "Low-power design techniques"],
+      caseStudy: "Chip Verification Sprint: +163% inquiry conversion, -54% time-to-first-lab, 96% capstone pass rate",
+      clients: ["Students", "Aspiring Engineers", "Professionals"]
     },
     {
-      icon: "Heart",
-      name: "Healthcare & Wellness",
-      description: "Medical practices, wellness brands, and health tech companies",
-      challenges: ["Trust and credibility building", "Complex service explanation", "Regulatory compliance"],
-      solutions: ["Professional yet approachable branding", "Clear information hierarchy", "Compliant visual systems"],
-      caseStudy: "Transforming MedCare\'s patient experience through brand",
-      clients: ["MedCare Plus", "Wellness Hub", "HealthTech Pro", "VitalCare"]
+      icon: "Layers",
+      name: "VLSI Physical Design",
+      description: "Place & route, CTS, routing, and sign-off",
+      challenges: ["Area optimization", "Clock tree synthesis", "Signal integrity"],
+      solutions: ["OpenROAD flow mastery", "DRC/LVS verification", "Timing sign-off expertise"],
+      caseStudy: "Graduate student achieved 12% area reduction in final layout",
+      clients: ["PD Engineers", "Graduate Students", "Professionals"]
     },
     {
-      icon: "TrendingUp",
-      name: "Finance & Fintech",
-      description: "Financial services, investment firms, and fintech startups",
-      challenges: ["Security and trust perception", "Complex product simplification", "Regulatory requirements"],
-      solutions: ["Authority-building visual identity", "Simplified communication design", "Compliant brand systems"],
-      caseStudy: "How InvestPro gained 200% more qualified leads",
-      clients: ["InvestPro", "FinanceFlow", "CryptoVault", "WealthWise"]
+      icon: "CheckCircle",
+      name: "Verification",
+      description: "SystemVerilog, UVM, and coverage analysis",
+      challenges: ["Functional coverage goals", "Testbench reusability", "Verification closure"],
+      solutions: ["UVM methodology", "Coverage-driven verification", "Constraint random testing"],
+      caseStudy: "Team achieved 98% code coverage in complex processor verification",
+      clients: ["Verification Engineers", "Students", "Professionals"]
     },
     {
-      icon: "ShoppingBag",
-      name: "E-commerce & Retail",
-      description: "Online stores, retail brands, and consumer products",
-      challenges: ["Brand differentiation", "Customer loyalty building", "Multi-channel consistency"],
-      solutions: ["Memorable brand experiences", "Emotional connection design", "Omnichannel brand systems"],
-      caseStudy: "StyleCo\'s 300% increase in brand loyalty scores",
-      clients: ["StyleCo", "RetailMax", "ShopSmart", "BrandBox"]
+      icon: "Zap",
+      name: "Analog Design",
+      description: "Transistors, op-amps, and layout techniques",
+      challenges: ["Mismatch compensation", "Noise analysis", "Process variation"],
+      solutions: ["Advanced transistor modeling", "SPICE simulation", "Layout best practices"],
+      caseStudy: "Student designed low-noise amplifier with 1.2µV/√Hz noise",
+      clients: ["Analog Designers", "Graduate Students", "Professionals"]
+    },
+    {
+      icon: "Factory",
+      name: "Fabrication",
+      description: "Cleanroom process and wafer technology",
+      challenges: ["Yield optimization", "Process control", "Defect reduction"],
+      solutions: ["Virtual cleanroom training", "Process simulation", "Quality control methods"],
+      caseStudy: "Virtual wafer processing reduced learning curve by 60%",
+      clients: ["Process Engineers", "Students", "Professionals"]
     },
     {
       icon: "Users",
-      name: "Professional Services",
-      description: "Consulting firms, agencies, and B2B service providers",
-      challenges: ["Expertise demonstration", "Trust building", "Service differentiation"],
-      solutions: ["Authority-focused branding", "Credibility-building design", "Professional visual systems"],
-      caseStudy: "ConsultPro\'s transformation to industry leader",
-      clients: ["ConsultPro", "ServiceMax", "ExpertHub", "ProAdvice"]
-    },
-    {
-      icon: "GraduationCap",
-      name: "Education & Training",
-      description: "Educational institutions, online courses, and training providers",
-      challenges: ["Engagement and motivation", "Complex content delivery", "Diverse audience needs"],
-      solutions: ["Engaging visual systems", "Clear learning pathways", "Inclusive design approaches"],
-      caseStudy: "EduTech\'s 250% enrollment increase through rebranding",
-      clients: ["EduTech", "LearnMore", "SkillUp", "KnowledgeHub"]
+      name: "Who We Work With",
+      description: "Students, institutions, and organizations",
+      challenges: ["Skill gap in semiconductor", "Limited practical experience", "Industry readiness"],
+      solutions: ["Hands-on training", "Mentor-led learning", "Real-world projects"],
+      caseStudy: "500+ learners trained across 15+ countries worldwide",
+      clients: ["Students", "Colleges", "Professionals", "Organizations"]
     }
   ];
 
@@ -70,7 +70,7 @@ const IndustryFocus = () => {
             Industry Expertise
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Deep understanding of industry challenges enables us to create brands that resonate with your specific audience.
+            Our courses and mentorship align with the key verticals of the semiconductor industry.
           </p>
         </div>
 
@@ -94,13 +94,13 @@ const IndustryFocus = () => {
                 >
                   <div className="flex items-center space-x-3">
                     <div className={`w-10 h-10 border-2 flex items-center justify-center ${
-                      activeIndustry === index 
+                      activeIndustry === index
                         ? 'border-white bg-white' :'border-primary bg-concrete-light'
                     }`}>
-                      <Icon 
-                        name={industry?.icon} 
-                        size={20} 
-                        color={activeIndustry === index ? "#FF6B35" : "#1A1A1A"} 
+                      <Icon
+                        name={industry?.icon}
+                        size={20}
+                        color={activeIndustry === index ? "#FF6B35" : "#1A1A1A"}
                       />
                     </div>
                     <div>
@@ -146,7 +146,7 @@ const IndustryFocus = () => {
                 <div>
                   <h4 className="font-bold text-primary mb-3 flex items-center">
                     <Icon name="AlertTriangle" size={16} className="mr-2 text-conversion" />
-                    Common Challenges
+                    Key Challenges
                   </h4>
                   <div className="space-y-2">
                     {industries?.[activeIndustry]?.challenges?.map((challenge, index) => (
@@ -181,19 +181,19 @@ const IndustryFocus = () => {
                   <div>
                     <h4 className="font-bold text-primary mb-2 flex items-center">
                       <Icon name="ExternalLink" size={16} className="mr-2 text-accent" />
-                      Featured Case Study
+                      Student Success
                     </h4>
                     <p className="text-sm text-muted-foreground mb-3">
                       {industries?.[activeIndustry]?.caseStudy}
                     </p>
                     <button className="text-accent font-semibold text-sm hover:underline">
-                      Read Full Case Study →
+                      View Student Projects →
                     </button>
                   </div>
                   <div>
                     <h4 className="font-bold text-primary mb-2 flex items-center">
                       <Icon name="Users" size={16} className="mr-2 text-accent" />
-                      Recent Clients
+                      Target Audience
                     </h4>
                     <div className="flex flex-wrap gap-2">
                       {industries?.[activeIndustry]?.clients?.map((client, index) => (

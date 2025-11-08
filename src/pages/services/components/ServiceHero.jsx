@@ -22,13 +22,13 @@ const ServiceHero = () => {
             </div>
             
             <h1 className="text-4xl lg:text-6xl font-black text-primary mb-6 leading-tight">
-              Services That Make Brands
-              <span className="block text-accent">Impossible to Ignore</span>
+              Semiconductor School —
+              <span className="block text-accent">Our Services</span>
             </h1>
-            
+
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Our brutalist approach strips away the unnecessary to reveal the powerful core of your brand. 
-              Each service is architected to demand attention and refuse to be forgotten.
+              Empowering the Next Generation of Chip Engineers. We simplify the complex world of semiconductors through structured,
+              mentor-led, and visually engaging learning for students, institutions, and organizations.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
@@ -38,30 +38,30 @@ const ServiceHero = () => {
                 iconName="MessageCircle"
                 iconPosition="left"
               >
-                Start a Brief
+                Start Your Cohort
               </Button>
               <Button
                 variant="outline"
                 iconName="Play"
                 iconPosition="left"
               >
-                See Our Process
+                See Learning Process
               </Button>
             </div>
 
             {/* Quick Stats */}
             <div className="grid grid-cols-3 gap-6 pt-8 border-t-2 border-concrete-light">
               <div>
-                <div className="text-2xl font-black text-accent">150+</div>
-                <div className="text-xs text-muted-foreground">Brands Transformed</div>
+                <div className="text-2xl font-black text-accent">500+</div>
+                <div className="text-xs text-muted-foreground">Learners Trained</div>
               </div>
               <div>
-                <div className="text-2xl font-black text-accent">6-12</div>
-                <div className="text-xs text-muted-foreground">Weeks Timeline</div>
+                <div className="text-2xl font-black text-accent">8-24</div>
+                <div className="text-xs text-muted-foreground">Weeks Duration</div>
               </div>
               <div>
-                <div className="text-2xl font-black text-accent">300%</div>
-                <div className="text-xs text-muted-foreground">Avg. Recognition Boost</div>
+                <div className="text-2xl font-black text-accent">90%+</div>
+                <div className="text-xs text-muted-foreground">Project Completion</div>
               </div>
             </div>
           </motion.div>
@@ -105,12 +105,12 @@ const ServiceHero = () => {
             {/* Service Icons Grid */}
             <div className="grid grid-cols-3 gap-4 mt-8">
               {[
-                { icon: "Palette", label: "Brand Identity" },
-                { icon: "Globe", label: "Digital Presence" },
-                { icon: "Megaphone", label: "Brand Strategy" },
-                { icon: "Layout", label: "Visual Systems" },
-                { icon: "Video", label: "Motion Design" },
-                { icon: "Package", label: "Brand Packaging" }
+                { icon: "Cpu", label: "VLSI Design" },
+                { icon: "CircuitBoard", label: "Digital Design" },
+                { icon: "Zap", label: "Analog Design" },
+                { icon: "Layers", label: "Physical Design" },
+                { icon: "CheckCircle", label: "Verification" },
+                { icon: "Factory", label: "Fabrication" }
               ]?.map((service, index) => (
                 <motion.div
                   key={index}

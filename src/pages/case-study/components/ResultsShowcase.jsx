@@ -9,10 +9,10 @@ const ResultsShowcase = ({ beforeAfter, businessMetrics, testimonial }) => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-black text-primary mb-4">
-              Transformation Results
+              Learning Impact
             </h2>
             <p className="text-xl text-muted-foreground">
-              Measurable impact that goes beyond aesthetics
+              Measurable results that transform careers and industry readiness
             </p>
           </div>
 

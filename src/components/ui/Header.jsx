@@ -12,13 +12,10 @@ const Header = () => {
 
   const navigationItems = [
     { name: 'Home', path: '/homepage', icon: 'Home' },
-    { name: 'Case Studies', path: '/case-study', icon: 'FolderOpen' },
-    { name: 'Services', path: '/services', icon: 'Briefcase' },
-    { name: 'Process', path: '/process', icon: 'GitBranch' },
+    { name: 'Programs & Case Studies', path: '/case-study', icon: 'FolderOpen' },
+    { name: 'Courses', path: '/services', icon: 'Briefcase' },
+    { name: 'Learning Process', path: '/process', icon: 'GitBranch' },
     { name: 'About', path: '/about', icon: 'Users' },
-  ];
-
-  const moreItems = [
     { name: 'Contact', path: '/contact', icon: 'Mail' },
   ];
 
@@ -92,31 +89,6 @@ const Header = () => {
                   <div className="absolute inset-0 bg-concrete-light transform -skew-x-12 scale-0 group-hover:scale-110 transition-transform duration-300"></div>
                 </Link>
               ))}
-              
-              {/* More Menu */}
-              <div className="relative group">
-                <button className="flex items-center space-x-1 px-3 py-2 text-sm font-semibold text-muted-foreground hover:text-primary transition-colors duration-300">
-                  <span>More</span>
-                  <Icon name="ChevronDown" size={16} />
-                </button>
-                
-                <div className="absolute top-full right-0 mt-2 w-48 bg-card border-2 border-concrete opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 brutalist-shadow">
-                  {moreItems?.map((item) => (
-                    <Link
-                      key={item?.path}
-                      to={item?.path}
-                      className={`flex items-center space-x-3 px-4 py-3 text-sm font-medium transition-colors duration-300 ${
-                        isActivePath(item?.path)
-                          ? 'bg-accent text-accent-foreground'
-                          : 'text-card-foreground hover:bg-concrete-light'
-                      }`}
-                    >
-                      <Icon name={item?.icon} size={16} />
-                      <span>{item?.name}</span>
-                    </Link>
-                  ))}
-                </div>
-              </div>
             </nav>
 
             {/* CTA Button */}
@@ -126,7 +98,7 @@ const Header = () => {
                 onClick={handleBriefPopupOpen}
                 className="bg-conversion hover:bg-conversion/90 text-white font-bold border-2 border-conversion brutalist-shadow hover:shadow-brutalist-sm transition-all duration-300"
               >
-                Start a Brief
+                Start Your Cohort
               </Button>
             </div>
 
@@ -146,7 +118,7 @@ const Header = () => {
               ? 'max-h-screen opacity-100' :'max-h-0 opacity-0 overflow-hidden'
           }`}>
             <nav className="px-6 py-4 bg-card border-t-2 border-concrete">
-              {[...navigationItems, ...moreItems]?.map((item) => (
+              {navigationItems?.map((item) => (
                 <Link
                   key={item?.path}
                   to={item?.path}
@@ -169,7 +141,7 @@ const Header = () => {
                   onClick={handleBriefPopupOpen}
                   className="bg-conversion hover:bg-conversion/90 text-white font-bold border-2 border-conversion"
                 >
-                  Start a Brief
+                  Start Your Cohort
                 </Button>
               </div>
             </nav>
