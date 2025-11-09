@@ -5,22 +5,20 @@ const CaseStudyHero = ({ caseStudy, onNavigate }) => {
   return (
     <section className="relative min-h-screen bg-background pt-16">
       {/* Navigation Controls */}
-      <div className="absolute top-24 left-6 lg:left-8 z-10">
+      <div className="absolute top-20 left-4 right-4 lg:left-8 lg:right-auto lg:w-auto z-10 flex justify-between lg:block">
         <button
           onClick={() => onNavigate('prev')}
-          className="flex items-center space-x-2 px-4 py-2 bg-card border-2 border-concrete text-card-foreground hover:bg-concrete-light transition-colors duration-300 brutalist-shadow"
+          className="flex items-center space-x-1 lg:space-x-2 px-3 lg:px-4 py-2 bg-card border-2 border-concrete text-card-foreground hover:bg-concrete-light transition-colors duration-300 brutalist-shadow text-sm lg:text-base"
         >
-          <Icon name="ChevronLeft" size={20} />
-          <span className="font-semibold">Previous</span>
+          <Icon name="ChevronLeft" size={16} />
+          <span className="font-semibold hidden sm:inline">Previous</span>
         </button>
-      </div>
-      <div className="absolute top-24 right-6 lg:right-8 z-10">
         <button
           onClick={() => onNavigate('next')}
-          className="flex items-center space-x-2 px-4 py-2 bg-card border-2 border-concrete text-card-foreground hover:bg-concrete-light transition-colors duration-300 brutalist-shadow"
+          className="flex items-center space-x-1 lg:space-x-2 px-3 lg:px-4 py-2 bg-card border-2 border-concrete text-card-foreground hover:bg-concrete-light transition-colors duration-300 brutalist-shadow text-sm lg:text-base"
         >
-          <span className="font-semibold">Next</span>
-          <Icon name="ChevronRight" size={20} />
+          <span className="font-semibold hidden sm:inline">Next</span>
+          <Icon name="ChevronRight" size={16} />
         </button>
       </div>
       <div className="container mx-auto px-6 lg:px-8 pt-16">

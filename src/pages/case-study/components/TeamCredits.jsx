@@ -16,29 +16,29 @@ const TeamCredits = ({ teamMembers, projectLead }) => {
           </div>
 
           {/* Project Lead */}
-          <div className="mb-16">
-            <div className="bg-accent text-accent-foreground p-8 lg:p-12 border-4 border-accent brutalist-shadow">
-              <div className="flex flex-col lg:flex-row items-center lg:items-start space-y-6 lg:space-y-0 lg:space-x-8">
+          <div className="mb-12 lg:mb-16">
+            <div className="bg-accent text-accent-foreground p-6 lg:p-8 xl:p-12 border-2 lg:border-4 border-accent brutalist-shadow">
+              <div className="flex flex-col lg:flex-row items-center lg:items-start space-y-4 lg:space-y-0 lg:space-x-6 xl:space-x-8">
                 <div className="relative">
-                  <div className="w-32 h-32 border-4 border-accent-foreground flex items-center justify-center">
-                    <Icon name="User" size={48} color="white" />
+                  <div className="w-20 h-20 lg:w-28 lg:h-28 xl:w-32 xl:h-32 border-2 lg:border-4 border-accent-foreground flex items-center justify-center">
+                    <Icon name="User" size={32} className="lg:w-10 lg:h-10 xl:w-12 xl:h-12" color="white" />
                   </div>
-                  <div className="absolute -bottom-2 -right-2 bg-accent-foreground text-accent px-2 py-1 text-xs font-bold">
+                  <div className="absolute -bottom-1 -right-1 lg:-bottom-2 lg:-right-2 bg-transparent text-accent px-1.5 py-0.5 lg:px-2 lg:py-1 text-xs font-bold">
                     LEAD
                   </div>
                 </div>
-                
+
                 <div className="flex-1 text-center lg:text-left">
-                  <h3 className="text-2xl font-black mb-2">{projectLead?.name}</h3>
-                  <div className="text-lg font-semibold mb-4 opacity-90">{projectLead?.role}</div>
-                  <p className="text-accent-foreground/80 leading-relaxed mb-4">
+                  <h3 className="text-xl lg:text-2xl font-black mb-1 lg:mb-2">{projectLead?.name}</h3>
+                  <div className="text-base lg:text-lg font-semibold mb-3 lg:mb-4 opacity-90">{projectLead?.role}</div>
+                  <p className="text-accent-foreground/80 leading-relaxed text-sm lg:text-base mb-3 lg:mb-4">
                     {projectLead?.bio}
                   </p>
-                  <div className="flex flex-wrap justify-center lg:justify-start gap-2">
+                  <div className="flex flex-wrap justify-center lg:justify-start gap-1.5 lg:gap-2">
                     {projectLead?.skills?.map((skill, index) => (
                       <span
                         key={index}
-                        className="px-3 py-1 bg-accent-foreground text-accent text-sm font-semibold"
+                        className="px-2 lg:px-3 py-1 bg-transparent text-accent text-xs lg:text-sm font-semibold border border-accent"
                       >
                         {skill}
                       </span>

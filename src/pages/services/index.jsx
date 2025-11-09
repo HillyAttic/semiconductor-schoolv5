@@ -513,10 +513,10 @@ const ServicesPage = () => {
               <div>
                 <h4 className="font-bold text-primary mb-4">Courses</h4>
                 <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li><a href="#" className="hover:text-accent transition-colors">Semiconductor Fundamentals</a></li>
-                  <li><a href="#" className="hover:text-accent transition-colors">VLSI Design</a></li>
-                  <li><a href="#" className="hover:text-accent transition-colors">Physical Design</a></li>
-                  <li><a href="#" className="hover:text-accent transition-colors">Verification</a></li>
+                  <li><a className="hover:text-accent transition-colors cursor-default">Semiconductor Fundamentals</a></li>
+                  <li><a className="hover:text-accent transition-colors cursor-default">VLSI Design</a></li>
+                  <li><a className="hover:text-accent transition-colors cursor-default">Physical Design</a></li>
+                  <li><a className="hover:text-accent transition-colors cursor-default">Verification</a></li>
                 </ul>
               </div>
 

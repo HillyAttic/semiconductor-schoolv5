@@ -8,26 +8,26 @@ const ProcessNavigation = () => {
     {
       id: 1,
       number: "01",
-      title: "DISCOVER",
-      description: "Understand your market position and opportunities."
+      title: "PURIFY THE SILICON",
+      description: "Convert raw quartz sand (SiO₂) into high-purity metallurgical silicon, then refine into electronic-grade polysilicon ready for crystal growth."
     },
     {
       id: 2,
-      number: "02", 
-      title: "DEFINE",
-      description: "Craft strategy that sets you apart."
+      number: "02",
+      title: "GROW CRYSTAL WAFERS",
+      description: "Use the Czochralski or Float-Zone method to grow single-crystal ingots, slice them into thin wafers, and polish for circuit fabrication."
     },
     {
       id: 3,
       number: "03",
-      title: "DESIGN",
-      description: "Create visual systems that convert."
+      title: "BUILD MICRO DEVICES",
+      description: "Form transistors and circuits through repeated cycles of oxidation, photolithography, etching, ion implantation."
     },
     {
       id: 4,
       number: "04",
-      title: "DELIVER",
-      description: "Launch with maximum market impact."
+      title: "TEST & PACKAGE",
+      description: "Test each wafer for functionality, dice the chips, package them using wire-bonding or flip-chip, and prepare for device integration."
     }
   ];
 
@@ -126,16 +126,16 @@ const ProcessNavigation = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.2, duration: 0.6 }}
           >
-            HOW WE WORK
+            FROM SAND TO SILICON CHIP
           </motion.h2>
-          <motion.p 
+          <motion.p
             className="text-base md:text-lg brutalist-text text-foreground"
             initial={shouldReduceMotion ? false : { opacity: 0, y: 20 }}
             whileInView={shouldReduceMotion ? false : { opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.4, duration: 0.6 }}
           >
-            Four steps to transform your brand.
+            Four essential stages that transform raw sand into powerful semiconductor chips.
           </motion.p>
         </motion.div>
 

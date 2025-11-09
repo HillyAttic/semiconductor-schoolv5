@@ -12,21 +12,21 @@ const ProjectTimeline = ({ timeline }) => {
 
           <div className="relative">
             {/* Timeline Line */}
-            <div className="absolute left-8 top-0 bottom-0 w-1 bg-concrete"></div>
+            <div className="absolute left-4 sm:left-6 lg:left-8 top-0 bottom-0 w-1 bg-concrete"></div>
 
             <div className="space-y-12">
               {timeline?.map((phase, index) => (
-                <div key={index} className="relative flex items-start space-x-8">
+                <div key={index} className="relative flex items-start space-x-4 sm:space-x-6 lg:space-x-8">
                   {/* Timeline Dot */}
                   <div className="relative z-10 flex-shrink-0">
-                    <div className="w-16 h-16 bg-accent border-4 border-accent flex items-center justify-center brutalist-shadow">
-                      <Icon name={phase?.icon} size={24} color="white" />
+                    <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-accent border-2 sm:border-4 border-accent flex items-center justify-center brutalist-shadow">
+                      <Icon name={phase?.icon} size={16} className="sm:w-5 sm:h-5 lg:w-6 lg:h-6" color="white" />
                     </div>
                   </div>
 
                   {/* Content */}
                   <div className="flex-1 pb-8">
-                    <div className="bg-background border-2 border-concrete p-6 brutalist-shadow">
+                    <div className="bg-background border-2 border-concrete p-4 sm:p-6 brutalist-shadow">
                       <div className="flex items-center justify-between mb-4">
                         <h3 className="text-xl font-bold text-primary">
                           {phase?.title}

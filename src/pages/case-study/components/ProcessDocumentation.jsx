@@ -18,38 +18,39 @@ const ProcessDocumentation = ({ processSteps }) => {
           </div>
 
           {/* Step Navigation */}
-          <div className="flex flex-wrap justify-center gap-4 mb-12">
+          <div className="flex flex-wrap justify-center gap-2 sm:gap-4 mb-8 sm:mb-12 px-2">
             {processSteps?.map((step, index) => (
               <button
                 key={index}
                 onClick={() => setActiveStep(index)}
-                className={`px-6 py-3 font-bold border-2 transition-all duration-300 ${
+                className={`px-3 sm:px-6 py-2 sm:py-3 font-bold border-2 transition-all duration-300 text-sm sm:text-base ${
                   activeStep === index
                     ? 'bg-accent text-accent-foreground border-accent brutalist-shadow'
                     : 'bg-card text-card-foreground border-concrete hover:bg-concrete-light'
                 }`}
               >
-                {step?.title}
+                <span className="hidden lg:inline">{step?.title}</span>
+                <span className="lg:hidden">Step {index + 1}</span>
               </button>
             ))}
           </div>
 
           {/* Active Step Content */}
-          <div className="grid lg:grid-cols-2 gap-12 items-start">
+          <div className="grid lg:grid-cols-2 gap-6 lg:gap-12 items-start">
             {/* Content */}
-            <div className="space-y-8">
+            <div className="space-y-6 sm:space-y-8">
               <div>
-                <h3 className="text-2xl font-bold text-primary mb-4">
+                <h3 className="text-xl sm:text-2xl font-bold text-primary mb-3 sm:mb-4">
                   {processSteps?.[activeStep]?.title}
                 </h3>
-                <p className="text-muted-foreground leading-relaxed mb-6">
+                <p className="text-muted-foreground leading-relaxed text-sm sm:text-base mb-4 sm:mb-6">
                   {processSteps?.[activeStep]?.description}
                 </p>
               </div>
 
               {/* Challenge & Solution */}
-              <div className="space-y-6">
-                <div className="p-6 bg-card border-2 border-concrete">
+              <div className="space-y-4 sm:space-y-6">
+                <div className="p-4 sm:p-6 bg-card border-2 border-concrete">
                   <div className="flex items-center space-x-3 mb-3">
                     <Icon name="AlertTriangle" size={20} className="text-warning" />
                     <h4 className="font-bold text-primary">Challenge</h4>

@@ -434,10 +434,10 @@ const Contact = () => {
               </p>
               <div className="flex space-x-6 mt-4 md:mt-0">
                 <a href="#" className="text-sm text-muted-foreground hover:text-accent transition-colors">
-                  Student/Tutor Terms
+                  Privacy Policy
                 </a>
                 <a href="#" className="text-sm text-muted-foreground hover:text-accent transition-colors">
-                  Code of Conduct
+                  Terms and Conditions
                 </a>
               </div>
             </div>

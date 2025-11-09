@@ -32,7 +32,7 @@ const Homepage = () => {
                 <span className="text-xl font-black text-primary">Semiconductor School</span>
               </div>
               <p className="text-muted-foreground mb-4 text-sm md:text-base max-w-md">
-                Making brands impossible to ignore through brutalist design principles and strategic thinking.
+                Building India's chip talent pipeline through industry-aligned education and mentorship.
               </p>
               <div className="flex space-x-4">
                 <a
@@ -76,12 +76,12 @@ const Homepage = () => {
 
             {/* Services */}
             <div>
-              <h4 className="font-bold text-primary mb-4">Services</h4>
+              <h4 className="font-bold text-primary mb-4">Programs</h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><a href="/services" className="hover:text-accent transition-colors">Brand Identity</a></li>
-                <li><a href="/services" className="hover:text-accent transition-colors">Digital Experience</a></li>
-                <li><a href="/services" className="hover:text-accent transition-colors">Brand Strategy</a></li>
-                <li><a href="/services" className="hover:text-accent transition-colors">Motion Design</a></li>
+                <li><a href="/services" className="hover:text-accent transition-colors">VLSI Design</a></li>
+                <li><a href="/services" className="hover:text-accent transition-colors">Physical Design</a></li>
+                <li><a href="/services" className="hover:text-accent transition-colors">Verification</a></li>
+                <li><a href="/services" className="hover:text-accent transition-colors">Cleanroom Ops</a></li>
               </ul>
             </div>
 

@@ -7,18 +7,18 @@ const WorkShowcase = () => {
   const projects = [
     {
       id: 1,
-      title: "TECHFLOW REBRAND",
-      category: "FINTECH"
+      title: "VLSI CHIP DESIGN",
+      category: "DIGITAL VLSI"
     },
     {
       id: 2,
-      title: "ECOVIBE LAUNCH",
-      category: "FASHION"
+      title: "PHYSICAL DESIGN",
+      category: "PnR TOOLS"
     },
     {
       id: 3,
-      title: "MEDICORE PLATFORM",
-      category: "HEALTHCARE"
+      title: "CLEANROOM OPS",
+      category: "FAB PROCESS"
     }
   ];
 
@@ -57,10 +57,10 @@ const WorkShowcase = () => {
           {...motionProps}
         >
           <h2 className="text-3xl md:text-4xl lg:text-6xl brutalist-heading text-primary mb-4">
-            WORK THAT WORKS
+            HANDS-ON TRAINING
           </h2>
           <p className="text-base md:text-lg brutalist-text text-foreground">
-            Results speak louder than awards and accolades.
+            Real projects, real tools, real semiconductor experience.
           </p>
         </motion.div>
 

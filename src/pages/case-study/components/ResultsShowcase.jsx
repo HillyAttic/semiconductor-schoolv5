@@ -91,20 +91,20 @@ const ResultsShowcase = ({ beforeAfter, businessMetrics, testimonial }) => {
           </div>
 
           {/* Client Testimonial */}
-          <div className="bg-primary text-primary-foreground p-8 lg:p-12 border-4 border-primary brutalist-shadow">
+          <div className="bg-primary text-primary-foreground p-6 sm:p-8 lg:p-12 border-2 lg:border-4 border-primary brutalist-shadow">
             <div className="max-w-4xl mx-auto text-center">
-              <Icon name="Quote" size={48} className="mx-auto mb-6 opacity-50" />
-              <blockquote className="text-xl lg:text-2xl font-medium leading-relaxed mb-8">
+              <Icon name="Quote" size={32} className="mx-auto mb-4 sm:mb-6 opacity-50" />
+              <blockquote className="text-lg sm:text-xl lg:text-2xl font-medium leading-relaxed mb-6 sm:mb-8">
                 "{testimonial?.quote}"
               </blockquote>
-              <div className="flex items-center justify-center space-x-4">
-                <div className="w-16 h-16 rounded-full border-2 border-primary-foreground bg-accent flex items-center justify-center">
-                  <Icon name="User" size={24} color="white" />
+              <div className="flex flex-col sm:flex-row items-center justify-center space-y-3 sm:space-y-0 sm:space-x-4">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-full border-2 border-primary-foreground bg-accent flex items-center justify-center">
+                  <Icon name="User" size={20} className="sm:w-5 sm:h-5 lg:w-6 lg:h-6" color="white" />
                 </div>
-                <div className="text-left">
-                  <div className="font-bold text-lg">{testimonial?.author?.name}</div>
+                <div className="text-center sm:text-left">
+                  <div className="font-bold text-base sm:text-lg">{testimonial?.author?.name}</div>
                   <div className="text-sm opacity-80">{testimonial?.author?.title}</div>
-                  <div className="text-sm opacity-60">{testimonial?.author?.company}</div>
+                  <div className="text-xs sm:text-sm opacity-60">{testimonial?.author?.company}</div>
                 </div>
               </div>
             </div>

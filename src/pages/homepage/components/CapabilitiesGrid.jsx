@@ -7,23 +7,23 @@ const CapabilitiesGrid = () => {
   const capabilities = [
     {
       id: 1,
-      title: "BRAND STRATEGY",
-      description: "Clear positioning that cuts through market noise."
+      title: "VLSI DESIGN",
+      description: "RTL design, synthesis, and timing analysis for digital chips."
     },
     {
       id: 2,
-      title: "VISUAL IDENTITY",
-      description: "Memorable design systems that demand attention."
+      title: "PHYSICAL DESIGN",
+      description: "Place & route, optimization, and signoff for complex ASICs."
     },
     {
       id: 3,
-      title: "DIGITAL EXPERIENCE",
-      description: "Interfaces that convert visitors into customers."
+      title: "VERIFICATION",
+      description: "UVM, formal verification, and simulation for chip validation."
     },
     {
       id: 4,
-      title: "CAMPAIGN CREATIVE",
-      description: "Messages that stick and drive real results."
+      title: "FAB OPERATIONS",
+      description: "Cleanroom processes, photolithography, and wafer testing."
     }
   ];
 
@@ -113,14 +113,14 @@ const CapabilitiesGrid = () => {
               }
             }}
           >
-            WHAT WE DO
+            WHAT WE TEACH
           </motion.h2>
-          <motion.p 
+          <motion.p
             className="text-base md:text-lg brutalist-text text-foreground"
             variants={shouldReduceMotion ? {} : {
               initial: { opacity: 0, y: 20 },
-              animate: { 
-                opacity: 1, 
+              animate: {
+                opacity: 1,
                 y: 0,
                 transition: {
                   duration: 0.5,
@@ -130,7 +130,7 @@ const CapabilitiesGrid = () => {
               }
             }}
           >
-            Four core services. Maximum impact.
+            Four core areas. Industry-ready skills.
           </motion.p>
         </motion.div>
 

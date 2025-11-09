@@ -25,25 +25,26 @@ const TechnicalSpecs = ({ specifications, challenges }) => {
           </div>
 
           {/* Tab Navigation */}
-          <div className="flex flex-wrap justify-center gap-4 mb-12">
+          <div className="flex flex-wrap justify-center gap-2 sm:gap-4 mb-8 sm:mb-12 px-2">
             {tabs?.map((tab) => (
               <button
                 key={tab?.id}
                 onClick={() => setActiveTab(tab?.id)}
-                className={`flex items-center space-x-2 px-6 py-3 font-bold border-2 transition-all duration-300 ${
+                className={`flex items-center space-x-1 sm:space-x-2 px-3 sm:px-6 py-2 sm:py-3 font-bold border-2 transition-all duration-300 text-sm sm:text-base ${
                   activeTab === tab?.id
                     ? 'bg-accent text-accent-foreground border-accent brutalist-shadow'
                     : 'bg-card text-card-foreground border-concrete hover:bg-concrete-light'
                 }`}
               >
-                <Icon name={tab?.icon} size={20} />
-                <span>{tab?.label}</span>
+                <Icon name={tab?.icon} size={16} className="sm:w-5 sm:h-5" />
+                <span className="hidden xs:inline">{tab?.label}</span>
+                <span className="xs:hidden">{tab?.label.split(' ')[0]}</span>
               </button>
             ))}
           </div>
 
           {/* Tab Content */}
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="grid lg:grid-cols-2 gap-6 lg:gap-12">
             {/* Specifications */}
             <div className="space-y-6">
               <h3 className="text-2xl font-bold text-primary mb-6">

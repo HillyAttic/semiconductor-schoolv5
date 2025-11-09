@@ -86,21 +86,21 @@ const AboutSection = () => {
 
   const cards = [
     {
-      id: 'strategy',
-      title: 'STRATEGY',
-      description: 'Data-driven decisions that cut through market noise.',
+      id: 'theory',
+      title: 'THEORY',
+      description: 'Solid fundamentals in semiconductor physics and circuit design.',
       gradient: 'from-blue-500/10 to-indigo-500/10'
     },
     {
-      id: 'design',
-      title: 'DESIGN',
-      description: 'Visual identity that stops scrolling and starts conversations.',
+      id: 'practice',
+      title: 'PRACTICE',
+      description: 'Hands-on experience with industry-standard tools and processes.',
       gradient: 'from-purple-500/10 to-pink-500/10'
     },
     {
-      id: 'results',
-      title: 'RESULTS',
-      description: 'Measurable impact that transforms businesses and drives growth.',
+      id: 'career',
+      title: 'CAREER',
+      description: 'Job-ready skills with direct pathways to semiconductor companies.',
       gradient: 'from-emerald-500/10 to-teal-500/10'
     }
   ];
@@ -120,20 +120,20 @@ const AboutSection = () => {
             className="col-span-12 p-4 md:p-8 text-center"
             variants={headerVariants}
           >
-            <motion.h2 
+            <motion.h2
               className="text-3xl md:text-5xl lg:text-7xl brutalist-heading text-primary mb-4 md:mb-6"
               whileHover={shouldReduceMotion ? {} : {
                 scale: 1.02,
                 transition: { duration: 0.2 }
               }}
             >
-              NO FLUFF. PURE RESULTS.
+              SKILLS THAT MATTER.
             </motion.h2>
-            <motion.p 
+            <motion.p
               className="text-base md:text-xl brutalist-text text-foreground max-w-2xl mx-auto"
               variants={subtitleVariants}
             >
-              We build brands that demand attention through strategic creativity.
+              We teach semiconductor engineering that industry actually uses.
             </motion.p>
           </motion.div>
 

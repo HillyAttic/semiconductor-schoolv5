@@ -24,10 +24,10 @@ const ContactForm = () => {
             {...motionProps}
           >
             <h2 className="text-3xl md:text-5xl lg:text-7xl brutalist-heading text-white mb-4 md:mb-6">
-              READY TO START?
+              READY TO ENROLL?
             </h2>
             <p className="text-base md:text-xl brutalist-text text-white max-w-2xl mx-auto mb-8 md:mb-12">
-              Stop blending in. Start demanding attention. Get results.
+              Join India's first industry-aligned semiconductor school. Start your chip design journey today.
             </p>
           </motion.div>
 
@@ -47,11 +47,11 @@ const ContactForm = () => {
                 </div>
                 <div>
                   <div className="text-sm font-black text-accent mb-1">PHONE</div>
-                  <div className="brutalist-text text-foreground">+1 (555) 123-4567</div>
+                  <div className="brutalist-text text-foreground">+91 87553 96383</div>
                 </div>
                 <div>
                   <div className="text-sm font-black text-accent mb-1">LOCATION</div>
-                  <div className="brutalist-text text-foreground">New York, NY</div>
+                  <div className="brutalist-text text-foreground">Delhi-NCR, India</div>
                 </div>
               </div>
             </div>
@@ -63,12 +63,12 @@ const ContactForm = () => {
             {...motionProps}
           >
             <div className="w-full text-center">
-              <Button 
-                variant="default" 
+              <Button
+                variant="default"
                 size="lg"
                 className="bg-accent hover:bg-accent text-white font-black px-6 py-4 md:px-12 md:py-6 brutalist-border brutalist-shadow uppercase tracking-wider text-base md:text-xl w-full"
               >
-                START YOUR PROJECT
+                ENROLL NOW
               </Button>
             </div>
           </motion.div>

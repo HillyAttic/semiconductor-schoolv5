@@ -607,10 +607,10 @@ const CaseStudyPage = () => {
         {/* Scroll to Top Button */}
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className="fixed bottom-8 right-8 w-12 h-12 bg-accent text-accent-foreground border-2 border-accent hover:bg-accent/90 transition-colors duration-300 brutalist-shadow z-50"
+          className="fixed bottom-4 right-4 sm:bottom-8 sm:right-8 w-10 h-10 sm:w-12 sm:h-12 bg-accent text-accent-foreground border-2 border-accent hover:bg-accent/90 transition-colors duration-300 brutalist-shadow z-50"
           aria-label="Scroll to top"
         >
-          <AppIcon name="ArrowUp" size={20} className="mx-auto" />
+          <AppIcon name="ArrowUp" size={16} className="sm:w-5 sm:h-5 mx-auto" />
         </button>
       </div>
     </>
