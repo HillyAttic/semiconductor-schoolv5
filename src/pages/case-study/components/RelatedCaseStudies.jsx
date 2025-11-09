@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Image from '../../../components/AppImage';
 import Icon from '../../../components/AppIcon';
 
 const RelatedCaseStudies = ({ relatedStudies }) => {
@@ -24,13 +23,12 @@ const RelatedCaseStudies = ({ relatedStudies }) => {
                 to={`/case-study/${study?.slug}`}
                 className="group block bg-card border-2 border-concrete hover:border-accent transition-all duration-300 brutalist-shadow hover:shadow-none"
               >
-                {/* Image */}
-                <div className="aspect-video bg-concrete-light overflow-hidden">
-                  <Image
-                    src={study?.thumbnail}
-                    alt={study?.thumbnailAlt}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
+                {/* Image Placeholder */}
+                <div className="aspect-video bg-concrete-light flex items-center justify-center">
+                  <div className="text-center">
+                    <Icon name="Folder" size={32} className="text-concrete-dark mx-auto mb-2" />
+                    <div className="text-concrete-dark text-sm">Case Study</div>
+                  </div>
                 </div>
 
                 {/* Content */}

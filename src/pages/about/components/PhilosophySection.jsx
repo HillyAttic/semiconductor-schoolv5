@@ -5,33 +5,33 @@ import Icon from '../../../components/AppIcon';
 const PhilosophySection = () => {
   const philosophyPrinciples = [
     {
-      icon: "Zap",
-      title: "Brutal Honesty",
-      description: `We strip away the unnecessary to reveal the powerful core. No fluff, no filler—just raw creative truth that cuts through market noise.`
+      icon: "Eye",
+      title: "Visual-First Clarity",
+      description: `If you can see it, you can master it. We use process animations, lab sims, and annotated waveforms to make invisible physics and flows intuitive.`
     },
     {
       icon: "Target",
-      title: "Impossible to Ignore",
-      description: `Every brand we touch becomes a force that demands attention. We don't create wallflowers; we architect experiences that refuse to be forgotten.`
+      title: "Outcome > Outline",
+      description: `Curricula map directly to roles: Materials & Wafer Science, Lithography & Etch, VLSI/HDL, and Test. Every module ends in a portfolio-grade project.`
     },
     {
-      icon: "Compass",
-      title: "Strategic Precision",
-      description: `Creative brilliance without strategy is just art. We combine raw creative power with surgical precision to deliver results that matter.`
+      icon: "Users",
+      title: "Mentorship That Matters",
+      description: `Engineers, researchers, and educators review work, run mock interviews, and give practical feedback on timing, yield, and verification trade-offs.`
     },
     {
-      icon: "Layers",
-      title: "Architectural Thinking",
-      description: `Like brutalist architecture, we build brands with bold, uncompromising structures that stand the test of time and changing trends.`
+      icon: "Shield",
+      title: "Ethics & Safety by Design",
+      description: `Cleanroom norms, ESD & lab safety, data integrity, and academic honesty are embedded into every track.`
     }
   ];
 
   const manifestoPoints = [
-    "We believe brands should be bold, not bland",
-    "Authenticity trumps perfection every time",
-    "Great design is invisible until it\'s impossible to ignore",
-    "Strategy without creativity is boring; creativity without strategy is useless",
-    "The best brands don't follow trends—they create them"
+    "Learning should reveal what textbooks hide",
+    "Labs must teach why, not only how",
+    "Portfolios beat promises. Evidence over hype",
+    "Mentors exist to accelerate, not intimidate",
+    "Education should track real fabs and design floors, not wishful syllabi"
   ];
 
   return (
@@ -49,8 +49,7 @@ const PhilosophySection = () => {
             Our Philosophy
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            We operate at the intersection of brutal honesty and creative brilliance. 
-            Our philosophy isn't just about making things look good—it's about making them impossible to ignore.
+            Visual-first learning that transforms complex semiconductor science into clear, job-ready skills through simulations, mentors, and outcome-driven projects.
           </p>
         </motion.div>
 
@@ -100,7 +99,7 @@ const PhilosophySection = () => {
         >
           <div className="max-w-4xl mx-auto text-center">
             <h3 className="text-3xl lg:text-4xl font-black text-white mb-8 leading-tight">
-              The Brand Forge Manifesto
+              The Semiconductor School Manifesto
             </h3>
             
             <div className="space-y-6">

@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from '../../../components/AppImage';
 import Icon from '../../../components/AppIcon';
 
 const ResultsShowcase = ({ beforeAfter, businessMetrics, testimonial }) => {
@@ -30,12 +29,11 @@ const ResultsShowcase = ({ beforeAfter, businessMetrics, testimonial }) => {
                     Before
                   </span>
                 </div>
-                <div className="aspect-video bg-concrete-light border-2 border-concrete overflow-hidden">
-                  <Image
-                    src={beforeAfter?.before?.image}
-                    alt={beforeAfter?.before?.imageAlt}
-                    className="w-full h-full object-cover"
-                  />
+                <div className="aspect-video bg-concrete-light border-2 border-concrete flex items-center justify-center">
+                  <div className="text-center">
+                    <Icon name="Image" size={32} className="text-concrete-dark mx-auto mb-2" />
+                    <div className="text-concrete-dark text-sm">Before Visualization</div>
+                  </div>
                 </div>
                 <div className="p-4 bg-background border-2 border-concrete">
                   <p className="text-muted-foreground text-sm">
@@ -52,12 +50,11 @@ const ResultsShowcase = ({ beforeAfter, businessMetrics, testimonial }) => {
                   </span>
                   <Icon name="ArrowRight" size={20} className="text-accent" />
                 </div>
-                <div className="aspect-video bg-concrete-light border-2 border-accent overflow-hidden brutalist-shadow">
-                  <Image
-                    src={beforeAfter?.after?.image}
-                    alt={beforeAfter?.after?.imageAlt}
-                    className="w-full h-full object-cover"
-                  />
+                <div className="aspect-video bg-concrete-light border-2 border-accent brutalist-shadow flex items-center justify-center">
+                  <div className="text-center">
+                    <Icon name="Image" size={32} className="text-concrete-dark mx-auto mb-2" />
+                    <div className="text-concrete-dark text-sm">After Visualization</div>
+                  </div>
                 </div>
                 <div className="p-4 bg-accent/10 border-2 border-accent">
                   <p className="text-primary text-sm font-medium">
@@ -101,11 +98,9 @@ const ResultsShowcase = ({ beforeAfter, businessMetrics, testimonial }) => {
                 "{testimonial?.quote}"
               </blockquote>
               <div className="flex items-center justify-center space-x-4">
-                <Image
-                  src={testimonial?.author?.avatar}
-                  alt={testimonial?.author?.avatarAlt}
-                  className="w-16 h-16 rounded-full border-2 border-primary-foreground"
-                />
+                <div className="w-16 h-16 rounded-full border-2 border-primary-foreground bg-accent flex items-center justify-center">
+                  <Icon name="User" size={24} color="white" />
+                </div>
                 <div className="text-left">
                   <div className="font-bold text-lg">{testimonial?.author?.name}</div>
                   <div className="text-sm opacity-80">{testimonial?.author?.title}</div>

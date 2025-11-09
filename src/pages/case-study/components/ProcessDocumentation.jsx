@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Image from '../../../components/AppImage';
 import Icon from '../../../components/AppIcon';
 
 const ProcessDocumentation = ({ processSteps }) => {
@@ -98,22 +97,19 @@ const ProcessDocumentation = ({ processSteps }) => {
               </div>
             </div>
 
-            {/* Visual Documentation */}
+            {/* Visual Documentation Placeholder */}
             <div className="space-y-6">
-              {processSteps?.[activeStep]?.images?.map((image, index) => (
-                <div key={index} className="relative">
-                  <div className="aspect-video bg-concrete-light border-2 border-concrete overflow-hidden">
-                    <Image
-                      src={image?.src}
-                      alt={image?.alt}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div className="absolute -bottom-3 -right-3 bg-primary text-primary-foreground px-3 py-1 text-sm font-semibold border-2 border-primary">
-                    {image?.caption}
+              <div className="relative">
+                <div className="aspect-video bg-concrete-light border-2 border-concrete flex items-center justify-center">
+                  <div className="text-center">
+                    <Icon name="Image" size={32} className="text-concrete-dark mx-auto mb-2" />
+                    <div className="text-concrete-dark text-sm">Process Visualization</div>
                   </div>
                 </div>
-              ))}
+                <div className="absolute -bottom-3 -right-3 bg-primary text-primary-foreground px-3 py-1 text-sm font-semibold border-2 border-primary">
+                  Process Step
+                </div>
+              </div>
 
               {/* Metrics for this step */}
               {processSteps?.[activeStep]?.metrics && (

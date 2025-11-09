@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from '../../../components/AppImage';
 import Icon from '../../../components/AppIcon';
 
 const TeamCredits = ({ teamMembers, projectLead }) => {
@@ -21,12 +20,8 @@ const TeamCredits = ({ teamMembers, projectLead }) => {
             <div className="bg-accent text-accent-foreground p-8 lg:p-12 border-4 border-accent brutalist-shadow">
               <div className="flex flex-col lg:flex-row items-center lg:items-start space-y-6 lg:space-y-0 lg:space-x-8">
                 <div className="relative">
-                  <div className="w-32 h-32 border-4 border-accent-foreground overflow-hidden">
-                    <Image
-                      src={projectLead?.avatar}
-                      alt={projectLead?.avatarAlt}
-                      className="w-full h-full object-cover"
-                    />
+                  <div className="w-32 h-32 border-4 border-accent-foreground flex items-center justify-center">
+                    <Icon name="User" size={48} color="white" />
                   </div>
                   <div className="absolute -bottom-2 -right-2 bg-accent-foreground text-accent px-2 py-1 text-xs font-bold">
                     LEAD
@@ -60,12 +55,8 @@ const TeamCredits = ({ teamMembers, projectLead }) => {
               <div key={index} className="bg-background border-2 border-concrete p-6 brutalist-shadow hover:shadow-none transition-shadow duration-300">
                 <div className="text-center">
                   <div className="relative inline-block mb-4">
-                    <div className="w-24 h-24 border-2 border-concrete overflow-hidden mx-auto">
-                      <Image
-                        src={member?.avatar}
-                        alt={member?.avatarAlt}
-                        className="w-full h-full object-cover"
-                      />
+                    <div className="w-24 h-24 border-2 border-concrete flex items-center justify-center">
+                      <Icon name="User" size={32} className="text-concrete-dark" />
                     </div>
                     <div className="absolute -bottom-1 -right-1 bg-primary text-primary-foreground p-1">
                       <Icon name={member?.roleIcon} size={16} />

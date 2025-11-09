@@ -1,55 +1,45 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import Image from '../../../components/AppImage';
 import Icon from '../../../components/AppIcon';
 
 const TeamSection = () => {
   const teamMembers = [
-  {
-    id: 1,
-    name: "Marcus Chen",
-    role: "Founder & Creative Director",
-    image: "https://images.unsplash.com/photo-1731982648756-bb7f2d994834",
-    imageAlt: "Professional portrait of Marcus Chen, confident Asian man in black shirt with arms crossed",
-    expertise: ["Brand Strategy", "Creative Direction", "Design Systems"],
-    philosophy: `"Great brands aren't born from focus groups—they're forged from conviction and crafted with precision."`,
-    experience: "12 years",
-    background: "Former Creative Director at Pentagram, led rebrands for Fortune 500 companies"
-  },
-  {
-    id: 2,
-    name: "Sarah Rodriguez",
-    role: "Strategy Director",
-    image: "https://images.unsplash.com/photo-1684262855358-88f296a2cfc2",
-    imageAlt: "Professional headshot of Sarah Rodriguez, confident Latina woman with dark hair in navy blazer",
-    expertise: ["Market Research", "Brand Positioning", "Consumer Psychology"],
-    philosophy: `"Strategy without insight is just guessing. We dig deeper to find the truth that makes brands unstoppable."`,
-    experience: "10 years",
-    background: "Ex-McKinsey consultant, specialized in brand transformation for disruptive startups"
-  },
-  {
-    id: 3,
-    name: "David Kim",
-    role: "Design Director",
-    image: "https://images.unsplash.com/photo-1700168664856-133124b59170",
-    imageAlt: "Professional portrait of David Kim, focused Korean man with glasses in white shirt",
-    expertise: ["Visual Identity", "Digital Design", "Motion Graphics"],
-    philosophy: `"Design isn't decoration—it's communication. Every pixel should have a purpose and pack a punch."`,
-    experience: "8 years",
-    background: "Award-winning designer, former lead at IDEO, expertise in design thinking methodology"
-  },
-  {
-    id: 4,
-    name: "Emma Thompson",
-    role: "Brand Strategist",
-    image: "https://images.unsplash.com/photo-1684262855358-88f296a2cfc2",
-    imageAlt: "Professional headshot of Emma Thompson, confident blonde woman in black blazer smiling",
-    expertise: ["Brand Architecture", "Messaging", "Content Strategy"],
-    philosophy: `"Words shape worlds. The right message at the right moment can transform a business overnight."`,
-    experience: "7 years",
-    background: "Former brand strategist at Wieden+Kennedy, led campaigns for Nike and Coca-Cola"
+    {
+      id: 1,
+      name: "Dr. Kavya Menon",
+      role: "Program Director",
+      expertise: [" Design", "Industry Alignment", "Mentorship", "Outcomes"],
+      philosophy: `"If you can see it, you can master it. We make the invisible world of semiconductors visible."`,
+      experience: "10+ years",
+      background: "Curriculum, industry alignment, and mentor development across materials."
+    },
+    {
+      id: 2,
+      name: "Rajesh Patel",
+      role: "VLSI Mentor",
+      expertise: ["HDL/Verilog", "VLSI Design", "Timing Analysis", "Mentorship"],
+      philosophy: `"Great verification education is iterative and feedback-driven - like debugging itself."`,
+      experience: "12 years",
+      background: "HDL/Verilog coaching, timing closure basics, and project reviews"
+    },
+    {
+      id: 3,
+      name: "Sarah Chen",
+      role: "Learning Experience",
+      expertise: ["Learning Design", "User Experience", "Educational Technology", "Curriculum"],
+      philosophy: `"Visualization is not a luxury — it's the bridge between knowing and doing in semiconductor education."`,
+      experience: "8 years",
+      background: "Transforms complex flows into intuitive, stepwise labs with clear checkpoints"
+    },
+    {
+      id: 4,
+      name: "Michael Torres",
+      role: "Content & Assessment",
+      expertise: ["Content Creation", "Assessment Design", "Interview Preparation", "Technical Writing"],
+      philosophy: `"Every lesson answers: What is happening? Why now? How do we verify it?"`,
+      experience: "9 years",
+      background: "Explainers, rubrics, and interview-style tasks tied to real roles"
   }];
-
 
   return (
     <section className="py-24 bg-background">
@@ -83,15 +73,13 @@ const TeamSection = () => {
             className="group">
 
               <div className="bg-card border-2 border-concrete hover:border-accent transition-colors duration-300 overflow-hidden">
-                {/* Image Section */}
-                <div className="relative h-80 overflow-hidden">
-                  <Image
-                  src={member?.image}
-                  alt={member?.imageAlt}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                {/* Image Placeholder Section */}
+                <div className="relative h-80 overflow-hidden flex items-center justify-center bg-concrete-light">
+                  <div className="text-center">
+                    <Icon name="User" size={48} className="text-concrete-dark mx-auto mb-4" />
+                    <div className="text-concrete-dark font-medium">Team Member</div>
+                  </div>
 
-                  <div className="absolute inset-0 bg-primary/20 group-hover:bg-primary/10 transition-colors duration-300"></div>
-                  
                   {/* Floating Stats */}
                   <div className="absolute top-4 right-4 bg-accent text-white px-3 py-1 text-sm font-bold">
                     {member?.experience}

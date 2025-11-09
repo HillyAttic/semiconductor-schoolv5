@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from '../../../components/AppImage';
 import Icon from '../../../components/AppIcon';
 
 const CaseStudyHero = ({ caseStudy, onNavigate }) => {
@@ -63,11 +62,9 @@ const CaseStudyHero = ({ caseStudy, onNavigate }) => {
 
             {/* Client Info */}
             <div className="flex items-center space-x-4 p-4 bg-concrete-light border-2 border-concrete">
-              <Image
-                src={caseStudy?.client?.logo}
-                alt={caseStudy?.client?.logoAlt}
-                className="w-12 h-12 object-contain"
-              />
+              <div className="w-12 h-12 bg-accent border-2 border-accent flex items-center justify-center">
+                <Icon name="Building" size={24} color="white" />
+              </div>
               <div>
                 <div className="font-bold text-primary">{caseStudy?.client?.name}</div>
                 <div className="text-sm text-muted-foreground">{caseStudy?.client?.industry}</div>
@@ -75,14 +72,13 @@ const CaseStudyHero = ({ caseStudy, onNavigate }) => {
             </div>
           </div>
 
-          {/* Hero Image */}
+          {/* Hero Image Placeholder */}
           <div className="relative">
-            <div className="aspect-square bg-concrete-light border-4 border-concrete overflow-hidden brutalist-shadow">
-              <Image
-                src={caseStudy?.heroImage}
-                alt={caseStudy?.heroImageAlt}
-                className="w-full h-full object-cover"
-              />
+            <div className="aspect-square bg-concrete-light border-4 border-concrete flex items-center justify-center brutalist-shadow">
+              <div className="text-center">
+                <Icon name="Image" size={48} className="text-concrete-dark mx-auto mb-4" />
+                <div className="text-concrete-dark font-bold">Project Visualization</div>
+              </div>
             </div>
             
             {/* Floating Stats */}

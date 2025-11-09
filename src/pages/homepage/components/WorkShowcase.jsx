@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
-import Image from '../../../components/AppImage';
 
 const WorkShowcase = () => {
   const shouldReduceMotion = useReducedMotion();
@@ -9,23 +8,17 @@ const WorkShowcase = () => {
     {
       id: 1,
       title: "TECHFLOW REBRAND",
-      category: "FINTECH",
-      image: "https://images.unsplash.com/photo-1717037536218-abb38d2305a9",
-      alt: "Modern fintech interface design with clean typography and data visualization"
+      category: "FINTECH"
     },
     {
       id: 2,
       title: "ECOVIBE LAUNCH",
-      category: "FASHION",
-      image: "https://images.unsplash.com/photo-1638423045236-c48b7a56c3bd",
-      alt: "Sustainable fashion brand showcase with eco-friendly packaging design"
+      category: "FASHION"
     },
     {
       id: 3,
       title: "MEDICORE PLATFORM",
-      category: "HEALTHCARE",
-      image: "https://images.unsplash.com/photo-1665735373302-5eea4d200055",
-      alt: "Healthcare technology platform with user-friendly interface design"
+      category: "HEALTHCARE"
     }
   ];
 
@@ -85,14 +78,8 @@ const WorkShowcase = () => {
                           transform-gpu group"
                 {...cardHoverProps}
               >
-                <div className="overflow-hidden">
-                  <Image
-                    src={project?.image}
-                    alt={project?.alt}
-                    className="w-full h-48 md:h-64 object-cover brutalist-border-thin 
-                             transition-transform duration-500 ease-out
-                             group-hover:scale-105"
-                  />
+                <div className="aspect-video bg-concrete-light flex items-center justify-center">
+                  <div className="text-4xl font-black text-primary/10">0{project?.id}</div>
                 </div>
                 
                 <div className="p-4 md:p-6 transition-colors duration-300 group-hover:bg-gray-50">

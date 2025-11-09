@@ -21,8 +21,6 @@ const CASE_STUDIES = [
     category: "Semiconductor Education",
     year: "2025",
     description: "We rebuilt the semiconductor learning journey end-to-end — turning complex fabrication and VLSI fundamentals into an immersive, visual, mentor-guided experience. The result: more enrollments, deeper engagement, and higher course completion.",
-    heroImage: "https://images.unsplash.com/photo-1504868481965-a7679ed88ac1",
-    heroImageAlt: "Interactive semiconductor learning dashboard with wafer-to-chip visualizations",
     projectDuration: "16 Weeks",
     keyMetrics: [
       { value: "240%", label: "Qualified Enrollments" },
@@ -31,9 +29,7 @@ const CASE_STUDIES = [
     ],
     client: {
       name: "Semiconductor School",
-      industry: "EdTech – Semiconductor",
-      logo: "https://img.rocket.new/generatedImages/rocket_gen_img_13e214607-1762091722999.png",
-      logoAlt: "Semiconductor School logo featuring silicon wafer and circuit design elements"
+      industry: "EdTech – Semiconductor"
     }
   },
   {
@@ -43,8 +39,6 @@ const CASE_STUDIES = [
     category: "Verification & Validation",
     year: "2025",
     description: "A 14-week redesign of our beginner-to-junior verification track turned hesitant learners into confident debug engineers. By shifting to assertion-first learning and real bug hunts, we improved inquiry-to-enrollment conversion by 163% and cut time-to-first-lab by 54%.",
-    heroImage: "https://images.unsplash.com/photo-1558470598-a5dda9640f61",
-    heroImageAlt: "Code verification environment with waveforms, assertion properties, and debug analysis tools",
     projectDuration: "14 Weeks",
     keyMetrics: [
       { value: "163%", label: "Inquiry-to-Enrollment" },
@@ -53,9 +47,7 @@ const CASE_STUDIES = [
     ],
     client: {
       name: "Semiconductor School",
-      industry: "EdTech – Verification",
-      logo: "https://img.rocket.new/generatedImages/rocket_gen_img_13e214607-1762091722999.png",
-      logoAlt: "Semiconductor School logo featuring silicon wafer and circuit design elements"
+      industry: "EdTech – Verification"
     }
   },
   {
@@ -65,8 +57,6 @@ const CASE_STUDIES = [
     category: "Process & Fabrication",
     year: "2025",
     description: "Virtual fabrication initiative that turned dense wafer theory into interactive cleanroom simulations. Learner comprehension scores rose by 178% and cleanroom safety training completion improved by 92%.",
-    heroImage: "https://images.unsplash.com/photo-1581091870622-7c71c7f5c730",
-    heroImageAlt: "Virtual cleanroom simulation with wafer processing visualization and WebGL-based modeling interface",
     projectDuration: "16 Weeks",
     keyMetrics: [
       { value: "178%", label: "Comprehension Improvement" },
@@ -75,9 +65,7 @@ const CASE_STUDIES = [
     ],
     client: {
       name: "Semiconductor School",
-      industry: "EdTech – Process & Fabrication",
-      logo: "https://img.rocket.new/generatedImages/rocket_gen_img_13e214607-1762091722999.png",
-      logoAlt: "Semiconductor School logo featuring silicon wafer and circuit design elements"
+      industry: "EdTech – Process & Fabrication"
     }
   }
 ];
@@ -125,18 +113,6 @@ const PROCESS_STEPS = [
     solution: "Replace slide-based lessons with simulation-first learning. Start with visualized process animations for oxide growth, masking, and ion implantation.",
     insight: "Visualization is not a luxury — it's the bridge between knowing and doing in semiconductor education.",
     tools: ["WebGL", "Three.js", "TCAD datasets", "Process documentation", "Interview analysis"],
-    images: [
-      {
-        src: "https://images.unsplash.com/photo-1581091870622-7c71c7f5c730",
-        alt: "Virtual cleanroom simulation with wafer processing visualization",
-        caption: "Process Research"
-      },
-      {
-        src: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
-        alt: "Industry fab process documentation and flowcharts",
-        caption: "Process Mapping"
-      }
-    ],
     metrics: [
       { value: "10", label: "Fab Steps Documented" },
       { value: "3", label: "Partner Institutions" }
@@ -148,14 +124,7 @@ const PROCESS_STEPS = [
     challenge: "Dense theory about lithography, etching, and doping was impossible to visualize. Students couldn't connect abstract concepts to real manufacturing steps.",
     solution: "Interactive virtual tools: oxidation furnace, photo-aligner, etcher. Each learner receives virtual wafer batch ID for ownership and progress tracking.",
     insight: "Make fabrication visible, safe, and scalable for students without lab access through immersive 3D environments.",
-    tools: ["WebGL", "Three.js", "Blender", "Adobe Substance", "3D modeling"],
-    images: [
-      {
-        src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d",
-        alt: "3D WebGL wafer modeling and simulation interface development",
-        caption: "Simulation Development"
-      }
-    ]
+    tools: ["WebGL", "Three.js", "Blender", "Adobe Substance", "3D modeling"]
   },
   {
     title: "Platform Integration & Analytics",
@@ -164,18 +133,6 @@ const PROCESS_STEPS = [
     solution: "Run step-by-step wafer builds with variable controls. Check layer integrity and yield using simulation reports and real-time progress tracking.",
     insight: "Every virtual wafer batch should tell a story of learning progress with measurable outcomes for mentors and institutions.",
     tools: ["Firebase", "LMS API", "Python analytics", "Progress tracking", "Performance heatmaps"],
-    images: [
-      {
-        src: "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
-        alt: "LMS integration dashboard with student progress and performance analytics",
-        caption: "Platform Integration"
-      },
-      {
-        src: "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
-        alt: "Student progress tracking and performance metrics visualization",
-        caption: "Analytics Dashboard"
-      }
-    ],
     metrics: [
       { value: "100%", label: "LMS Integration" },
       { value: "Real-time", label: "Progress Tracking" }
@@ -188,13 +145,6 @@ const PROCESS_STEPS = [
     solution: "Virtual wafer batch IDs create sense of ownership. Validate layer integrity and yield using simulation reports. Continuous feedback loops for improvement.",
     insight: "Great fabrication education makes invisible processes visible through simulation while maintaining the safety and scalability of virtual learning.",
     tools: ["Cohort management", "Feedback systems", "Partner coordination", "Quality assurance", "Performance monitoring"],
-    images: [
-      {
-        src: "https://images.unsplash.com/photo-1607013402934-4d3b3b42d0ac",
-        alt: "Student cohort using virtual cleanroom simulations in classroom setting",
-        caption: "Cohort Launch"
-      }
-    ],
     metrics: [
       { value: "1,200+", label: "Learners Onboarded" },
       { value: "7", label: "Partner Colleges" }
@@ -243,13 +193,9 @@ const CaseStudyPage = () => {
   // Mock before/after and results data
   const beforeAfter = useMemo(() => ({
     before: {
-      image: "https://images.unsplash.com/photo-1581091870622-7c71c7f5c730",
-      imageAlt: "Dense theory slides and PDF documents about wafer fabrication processes",
       description: "Dense theory slides, abstract wafer processes, limited visualization, and high drop-off rates after week 3."
     },
     after: {
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d",
-      imageAlt: "Interactive 3D WebGL wafer simulation with virtual cleanroom environment",
       description: "Interactive 3D simulations, virtual cleanroom environment, step-by-step wafer builds, and measurable yield tracking."
     }
   }), []);
@@ -428,8 +374,6 @@ const CaseStudyPage = () => {
       category: "Materials Science",
       year: "2025",
       description: "Materials to polished wafers - Complete guide to silicon wafer manufacturing and quality control.",
-      thumbnail: "https://images.unsplash.com/photo-1693414854278-6b3703411629",
-      thumbnailAlt: "Silicon wafers in clean room environment with professional handling equipment",
       keyMetric: { value: "95%", label: "Lab Completion" }
     },
     {
@@ -438,8 +382,6 @@ const CaseStudyPage = () => {
       category: "Process Technology",
       year: "2025",
       description: "Masks, exposure, and patterns - Hands-on experience with photolithography and etching processes.",
-      thumbnail: "https://images.unsplash.com/photo-1735405072036-42b2208c157b",
-      thumbnailAlt: "Photolithography equipment in semiconductor fabrication facility",
       keyMetric: { value: "88%", label: "Process Mastery" }
     },
     {
@@ -448,8 +390,6 @@ const CaseStudyPage = () => {
       category: "Digital Design",
       year: "2025",
       description: "HDL, logic, and simple SoCs - Foundation course for VLSI design and verification.",
-      thumbnail: "https://images.unsplash.com/photo-1666886573531-48d2e3c2b684",
-      thumbnailAlt: "VLSI design workstation with HDL code and circuit layouts on multiple monitors",
       keyMetric: { value: "92%", label: "Design Success" }
     }
   ], []);

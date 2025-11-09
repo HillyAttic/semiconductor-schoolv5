@@ -5,59 +5,59 @@ import Icon from '../../../components/AppIcon';
 const ValuesSection = () => {
   const coreValues = [
     {
-      icon: "Shield",
-      title: "Uncompromising Quality",
-      description: "We'd rather lose a client than compromise our standards. Every project gets our full creative firepower, regardless of budget size.",
-      principle: "Excellence isn\'t negotiable"
-    },
-    {
-      icon: "Heart",
-      title: "Authentic Partnerships",
-      description: "We don't just work for our clients—we work with them. True collaboration creates brands that feel genuine and resonate deeply.",
-      principle: "Partnership over vendor relationships"
-    },
-    {
-      icon: "Zap",
-      title: "Fearless Innovation",
-      description: "Playing it safe is the riskiest strategy. We push boundaries, challenge conventions, and create solutions that didn't exist before.",
-      principle: "Innovation requires courage"
-    },
-    {
       icon: "Target",
-      title: "Results-Driven Creativity",
-      description: "Beautiful work that doesn't drive business results is just expensive art. Every creative decision serves a strategic purpose.",
-      principle: "Creativity with accountability"
+      title: "Job-Aligned Learning",
+      description: "Everything maps to work you'll do in fabs, EDA, or test—no filler. Every module ends in a portfolio-grade project.",
+      principle: "Outcome > Outline"
+    },
+    {
+      icon: "Eye",
+      title: "Relentless Clarity",
+      description: "Every lesson answers: What is happening? Why now? How do we verify it? No confusing theory without practical application.",
+      principle: "Clarity over complexity"
+    },
+    {
+      icon: "BarChart3",
+      title: "Evidence-Backed Progress",
+      description: "Dashboards track lab completion, error patterns, and concept mastery so mentors can intervene early.",
+      principle: "Data-driven learning"
     },
     {
       icon: "Users",
-      title: "Diverse Perspectives",
-      description: "The best ideas come from the collision of different viewpoints. We actively seek out voices that challenge our thinking.",
-      principle: "Diversity drives innovation"
+      title: "Inclusive On-Ramps",
+      description: "Bridge modules for math, physics, and coding bring newcomers up to speed—fast.",
+      principle: "Access for all"
     },
     {
-      icon: "Compass",
-      title: "Ethical Leadership",
-      description: "We use our creative power responsibly. The brands we build should make the world more interesting, not more manipulative.",
-      principle: "Power with purpose"
+      icon: "Shield",
+      title: "Safety & Integrity",
+      description: "Cleanroom etiquette, data ethics, and reproducible practice are non-negotiable.",
+      principle: "Ethics by design"
+    },
+    {
+      icon: "Bot",
+      title: "Human x AI Mentorship",
+      description: "Instant code/process guidance plus deep, human critique. AI accelerates, humans elevate.",
+      principle: "Technology + touch"
     }
   ];
 
   const culturalElements = [
     {
-      title: "No Bullshit Policy",
-      description: "We say what we mean and mean what we say. Honest feedback, transparent processes, and authentic relationships."
+      title: "Discover → Visualize → Practice → Prove",
+      description: "We establish gaps, make concepts visible, build labs with feedback, and ship projects that stand up in interviews."
     },
     {
-      title: "Continuous Learning",
-      description: "The creative industry evolves daily. We invest in our team\'s growth and stay ahead of emerging trends and technologies."
+      title: "Continuous Improvement",
+      description: "We ship updates weekly based on learner analytics and mentor notes. Education should evolve with industry needs."
     },
     {
-      title: "Work-Life Integration",
-      description: "Great work comes from fulfilled people. We support our team\'s personal growth and respect their time outside the office."
+      title: "Visual-First Methodology",
+      description: "Process animations, lab sims, and annotated waveforms make invisible physics and flows intuitive."
     },
     {
-      title: "Client Success Obsession",
-      description: "Our success is measured by our clients\' success. We celebrate their wins as our own and learn from every challenge."
+      title: "Mentor-Driven Success",
+      description: "Our success is measured by learner success. We celebrate placements and learn from every feedback session."
     }
   ];
 
@@ -76,8 +76,8 @@ const ValuesSection = () => {
             What We Stand For
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Our values aren't wall decorations—they're the foundation of every decision we make, 
-            every relationship we build, and every brand we forge.
+            Our values drive every decision we make, every relationship we build, and every learner we mentor
+            on their journey from sand to silicon.
           </p>
         </motion.div>
 
@@ -135,11 +135,11 @@ const ValuesSection = () => {
         >
           <div className="text-center mb-12">
             <h3 className="text-3xl lg:text-4xl font-black text-primary mb-6 leading-tight">
-              How We Work Together
+              How We Work
             </h3>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              Our culture is built on mutual respect, creative courage, and the shared mission 
-              to make every brand we touch impossible to ignore.
+              Our culture is built on visual-first learning, mentor excellence, and the shared mission
+              to make semiconductor education clear, practical, and job-ready.
             </p>
           </div>
 
@@ -174,28 +174,28 @@ const ValuesSection = () => {
         >
           <div className="bg-primary p-12 border-4 border-primary brutalist-shadow">
             <h3 className="text-3xl lg:text-4xl font-black text-white mb-6 leading-tight">
-              Ready to Join the Revolution?
+              Ready to Begin?
             </h3>
             <p className="text-lg text-white mb-8 max-w-2xl mx-auto leading-relaxed">
-              If you're tired of brands that blend in and ready to create something impossible to ignore, 
-              we should talk. Let's forge something extraordinary together.
+              Join a mentor-guided path that makes semiconductors visible, practical, and industry-ready —
+              from sand to silicon chip.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <motion.a
-                href="/contact"
+                href="/services"
                 className="inline-flex items-center justify-center px-8 py-4 bg-accent hover:bg-accent/90 text-white font-bold border-2 border-accent transition-colors duration-300"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                Start a Conversation
+                Start Your Cohort
               </motion.a>
               <motion.a
-                href="/case-study"
+                href="/contact"
                 className="inline-flex items-center justify-center px-8 py-4 bg-transparent hover:bg-white/10 text-white font-bold border-2 border-white transition-colors duration-300"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                See Our Work
+                Schedule a Call
               </motion.a>
             </div>
           </div>

@@ -152,10 +152,10 @@ const HeroSection = () => {
           >
             {/* H1 - Max 8 words */}
             <motion.h1 
-              className="text-3xl md:text-5xl lg:text-7xl brutalist-heading text-primary mb-3 md:mb-4"
+              className="text-2xl md:text-5xl lg:text-6 xl brutalist-heading text-primary mb-3 md:mb-4"
               variants={shouldReduceMotion ? {} : itemVariants}
             >
-              LEARN SEMICONDUCTORS FROM SAND TO SILICON
+              Solving Innovation from atom to algorithm
             </motion.h1>
             
             {/* Subline - Max 12 words */}
@@ -163,7 +163,7 @@ const HeroSection = () => {
               className="text-base md:text-xl lg:text-2xl brutalist-text text-foreground mb-6 md:mb-8"
               variants={shouldReduceMotion ? {} : itemVariants}
             >
-              Modern semiconductor education through visual, hands-on learning.
+              Empowering minds to engineer breakthroughs across materials, devices, and intelligent design.
             </motion.p>
 
             {/* CTA Buttons - Responsive stacking */}

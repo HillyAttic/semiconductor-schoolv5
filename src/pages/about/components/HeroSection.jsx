@@ -24,18 +24,18 @@ const HeroSection = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2, duration: 0.8 }}>
 
-                We Make Brands
-                <span className="block text-accent">Impossible</span>
-                <span className="block">to Ignore</span>
+                We Make Semiconductors
+                <span className="block text-accent">Visible. Practical.</span>
+                <span className="block">Job-Ready.</span>
               </motion.h1>
-              
+
               <motion.p
                 className="text-xl text-muted-foreground font-medium leading-relaxed max-w-lg"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4, duration: 0.8 }}>
 
-                At the intersection of brutal honesty and creative brilliance, we architect brand experiences that demand attention and refuse to be forgotten.
+                At the intersection of rigorous science and hands-on practice, we design learning experiences that turn the wafer-to-chip journey into confidence, portfolios, and placements.
               </motion.p>
             </div>
 
@@ -47,16 +47,16 @@ const HeroSection = () => {
               transition={{ delay: 0.6, duration: 0.8 }}>
 
               <div className="text-center">
-                <div className="text-3xl font-black text-primary">150+</div>
-                <div className="text-sm font-semibold text-muted-foreground uppercase tracking-wide">Brands Transformed</div>
+                <div className="text-3xl font-black text-primary">2,300+</div>
+                <div className="text-sm font-semibold text-muted-foreground uppercase tracking-wide">Learners Trained</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-black text-primary">8</div>
-                <div className="text-sm font-semibold text-muted-foreground uppercase tracking-wide">Years Experience</div>
+                <div className="text-3xl font-black text-primary">40+</div>
+                <div className="text-sm font-semibold text-muted-foreground uppercase tracking-wide">Industry Mentors</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-black text-primary">95%</div>
-                <div className="text-sm font-semibold text-muted-foreground uppercase tracking-wide">Client Retention</div>
+                <div className="text-3xl font-black text-primary">92%</div>
+                <div className="text-sm font-semibold text-muted-foreground uppercase tracking-wide">Completion Rate</div>
               </div>
             </motion.div>
           </motion.div>
@@ -72,18 +72,18 @@ const HeroSection = () => {
               {/* Main Image Container */}
               <div className="relative w-full h-[600px] overflow-hidden border-4 border-primary brutalist-shadow">
                 <Image
-                  src="https://images.unsplash.com/photo-1731511508481-983e1da5f0bd"
-                  alt="Professional portrait of Brand Forge founder, confident man in black shirt against concrete wall background"
+                  src="https://images.unsplash.com/photo-1581091870622-7c71c7f5c730"
+                  alt="Semiconductor laboratory with wafer processing equipment and educational visualization"
                   className="w-full h-full object-cover" />
 
-                
+
                 {/* Overlay Quote */}
                 <div className="absolute bottom-0 left-0 right-0 bg-primary/90 p-6">
                   <blockquote className="text-white font-bold text-lg leading-tight">
-                    "We don't create pretty designs. We architect experiences that make your competition irrelevant."
+                    "If you can see it, you can master it. We make the invisible world of semiconductors visible."
                   </blockquote>
                   <cite className="text-accent font-semibold text-sm mt-2 block">
-                    — Marcus Chen, Founder & Creative Director
+                    — Dr. Kavya Menon, Program Director
                   </cite>
                 </div>
               </div>

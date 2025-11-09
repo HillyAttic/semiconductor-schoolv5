@@ -5,36 +5,31 @@ import Icon from '../../../components/AppIcon';
 
 const FoundingStorySection = () => {
   const milestones = [
-  {
-    year: "2016",
-    title: "The Spark",
-    description: "Marcus Chen leaves Pentagram after realizing traditional agencies were playing it too safe. The idea for Brand Forge is born in a Brooklyn coffee shop.",
-    icon: "Lightbulb"
-  },
-  {
-    year: "2017",
-    title: "First Rebellion",
-    description: "Our first client, a fintech startup, sees 300% user growth after we completely reimagined their brand identity. The brutalist approach proves its worth.",
-    icon: "TrendingUp"
-  },
-  {
-    year: "2019",
-    title: "Team Assembly",
-    description: "Sarah Rodriguez joins from McKinsey, bringing strategic rigor to creative chaos. The Brand Forge methodology takes shape.",
-    icon: "Users"
-  },
-  {
-    year: "2021",
-    title: "Industry Recognition",
-    description: "Featured in Fast Company\'s \'Most Innovative Companies\' for our work with sustainable brands. The industry starts paying attention.",
-    icon: "Award"
-  },
-  {
-    year: "2024",
-    title: "Global Impact",
-    description: "150+ brands transformed, 95% client retention rate. Brand Forge becomes the go-to agency for companies ready to be impossible to ignore.",
-    icon: "Globe"
-  }];
+    {
+      year: "2023",
+      title: "The Spark",
+      description: "Pilot cohorts prove that visual labs + mentor reviews double concept mastery for wafer science basics.",
+      icon: "Lightbulb"
+    },
+    {
+      year: "2024",
+      title: "Tracks Launched",
+      description: "Materials & Wafer Science, Lithography & Etch, VLSI/HDL Beginner; 75+ labs published.",
+      icon: "Cpu"
+    },
+    {
+      year: "2025",
+      title: "AI Co-Mentor",
+      description: "Real-time HDL feedback and waveform hints cut debug time by 72% and lift project completions 2.8×.",
+      icon: "Zap"
+    },
+    {
+      year: "2025",
+      title: "Industry Alignment",
+      description: "Hiring-task rubrics and interview-style assessments adopted across all capstones.",
+      icon: "Target"
+    }
+  ];
 
 
   return (
@@ -52,8 +47,8 @@ const FoundingStorySection = () => {
             Our Origin Story
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Brand Forge wasn't born from a business plan—it was forged from frustration with an industry 
-            that had forgotten how to be bold. Here's how we became the agency that makes brands impossible to ignore.
+            Learners could recite steps—clean → grow → dope → pattern—but couldn't connect them to actual tools,
+            constraints, and hiring tasks. We built an outcomes-driven school where every concept is paired with simulation and feedback.
           </p>
         </motion.div>
 
@@ -72,32 +67,31 @@ const FoundingStorySection = () => {
               </h3>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  In 2016, the branding industry was drowning in safe choices and committee-approved mediocrity. 
-                  Agencies were more concerned with pleasing everyone than creating something that mattered to anyone.
+                  Learners could recite steps—clean → grow → dope → pattern—but couldn't connect them to actual tools,
+                  constraints, and hiring tasks.
                 </p>
                 <p>
-                  Marcus Chen, fresh from years at prestigious agencies, watched brilliant creative work get watered 
-                  down by fear. Brands were becoming invisible in their quest to be inoffensive.
+                  Traditional semiconductor education was all theory and slides, with no hands-on practice or real-world
+                  application. Students graduated without understanding how silicon actually becomes chips.
                 </p>
                 <p>
-                  The market was screaming for authenticity, but agencies kept delivering vanilla. Something had to change.
+                  The gap between textbook knowledge and industry expectations was widening, leaving graduates unprepared
+                  for careers in fabs, EDA, and test environments.
                 </p>
               </div>
             </div>
 
             <div className="bg-primary p-8 border-4 border-primary brutalist-shadow">
               <h3 className="text-2xl font-black text-white mb-6 leading-tight">
-                The Solution We Built
+                What We Built
               </h3>
               <div className="space-y-4 text-white leading-relaxed">
                 <p>
-                  Brand Forge was founded on a simple principle: brands should be impossible to ignore, 
-                  not impossible to remember. We developed a methodology that strips away the unnecessary 
-                  to reveal the powerful core.
+                  An outcomes-driven school where every concept is paired with a simulation, dataset, or HDL bench,
+                  and every milestone receives human feedback backed by AI-assist.
                 </p>
                 <p className="text-accent font-semibold">
-                  "We don't create brands that fit in—we create brands that stand out, 
-                  speak up, and refuse to be forgotten."
+                  "If you can see it, you can master it. We make the invisible world of semiconductors visible."
                 </p>
               </div>
             </div>
@@ -159,17 +153,17 @@ const FoundingStorySection = () => {
 
           <div className="relative h-96 overflow-hidden border-4 border-primary brutalist-shadow">
             <Image
-              src="https://images.unsplash.com/photo-1567521464027-f127ff144326"
-              alt="Modern creative office space with concrete walls, large windows, and collaborative work areas representing Brand Forge's founding environment"
+              src="https://images.unsplash.com/photo-1581091870622-7c71c7f5c730"
+              alt="Semiconductor laboratory and educational environment with wafer processing equipment and student learning spaces"
               className="w-full h-full object-cover" />
 
             <div className="absolute inset-0 bg-primary/60 flex items-center justify-center">
               <div className="text-center text-white max-w-2xl px-8">
                 <h3 className="text-3xl lg:text-4xl font-black mb-4 leading-tight">
-                  From Frustration to Foundation
+                  From Problem to Progress
                 </h3>
                 <p className="text-lg leading-relaxed">
-                  What started as one designer's rebellion against mediocrity became a movement that's transforming how brands think about their identity and impact.
+                  What started as frustration with traditional semiconductor education became a visual-first learning approach that's transforming how students master wafer-to-chip processes.
                 </p>
               </div>
             </div>
