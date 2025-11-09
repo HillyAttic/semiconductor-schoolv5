@@ -409,10 +409,10 @@ const Contact = () => {
               <div>
                 <h4 className="font-bold text-primary mb-4">Programs</h4>
                 <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li><a href="/services" className="hover:text-accent transition-colors">VLSI Design</a></li>
-                  <li><a href="/services" className="hover:text-accent transition-colors">Physical Design</a></li>
-                  <li><a href="/services" className="hover:text-accent transition-colors">Verification</a></li>
-                  <li><a href="/services" className="hover:text-accent transition-colors">Cleanroom Ops</a></li>
+                  <li><a href="/vlsi-design" className="hover:text-accent transition-colors">VLSI Design</a></li>
+                  <li><a href="/physical-design" className="hover:text-accent transition-colors">Physical Design</a></li>
+                  <li><a href="/verification" className="hover:text-accent transition-colors">Verification</a></li>
+                  <li><a href="/cleanroom-ops" className="hover:text-accent transition-colors">Cleanroom Ops</a></li>
                 </ul>
               </div>
 
