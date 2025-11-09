@@ -309,7 +309,7 @@ const CaseStudyPage = () => {
       skills: ["HDL/Verilog", "VLSI Design", "Timing Analysis", "Mentorship"],
       contact: {
         linkedin: "https://linkedin.com/in/rajesh-patel-vlsi",
-        email: "rajesh@semiconductorschools.com"
+        email: "schoolsemiconductor@gmail.com"
       }
     },
     {
@@ -335,7 +335,7 @@ const CaseStudyPage = () => {
       skills: ["Content Creation", "Assessment Design", "Interview Preparation", "Technical Writing"],
       contact: {
         linkedin: "https://linkedin.com/in/michael-torres-content",
-        email: "michael@semiconductorschools.com"
+        email: "schoolsemiconductor@gmail.com"
       }
     },
     {
@@ -361,7 +361,7 @@ const CaseStudyPage = () => {
       skills: ["Cohort Management", "Operations", "Learner Success", "Quality Assurance"],
       contact: {
         linkedin: "https://linkedin.com/in/james-wilson-ops",
-        email: "james@semiconductorschools.com"
+        email: "schoolsemiconductor@gmail.com"
       }
     }
   ], []);

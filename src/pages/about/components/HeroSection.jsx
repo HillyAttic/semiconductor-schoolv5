@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import Image from '../../../components/AppImage';
 
 const HeroSection = () => {
   return (
@@ -61,7 +60,7 @@ const HeroSection = () => {
             </motion.div>
           </motion.div>
 
-          {/* Right Content - Founder Image */}
+          {/* Right Content - Image Placeholder */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -70,12 +69,11 @@ const HeroSection = () => {
 
             <div className="relative">
               {/* Main Image Container */}
-              <div className="relative w-full h-[600px] overflow-hidden border-4 border-primary brutalist-shadow">
-                <Image
-                  src="https://images.unsplash.com/photo-1581091870622-7c71c7f5c730"
-                  alt="Semiconductor laboratory with wafer processing equipment and educational visualization"
-                  className="w-full h-full object-cover" />
-
+              <div className="relative w-full h-[600px] overflow-hidden border-4 border-primary brutalist-shadow flex items-center justify-center bg-concrete-light">
+                <div className="text-center">
+                  <div className="text-5xl font-black text-primary/20 mb-4">SEMICONDUCTOR</div>
+                  <div className="text-3xl font-bold text-primary/30">LABORATORY</div>
+                </div>
 
                 {/* Overlay Quote */}
                 <div className="absolute bottom-0 left-0 right-0 bg-primary/90 p-6">

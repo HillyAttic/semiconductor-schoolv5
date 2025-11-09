@@ -43,7 +43,7 @@ const ContactForm = () => {
               <div className="space-y-4">
                 <div>
                   <div className="text-sm font-black text-accent mb-1">EMAIL</div>
-                  <div className="brutalist-text text-foreground">hello@brandforge.com</div>
+                  <div className="brutalist-text text-foreground">schoolsemiconductor@gmail.com</div>
                 </div>
                 <div>
                   <div className="text-sm font-black text-accent mb-1">PHONE</div>

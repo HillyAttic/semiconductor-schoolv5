@@ -15,7 +15,7 @@ const ProcessHero = () => {
             transition={{ duration: 0.8 }}
             className="mb-8"
           >
-            <span className="inline-block px-4 py-2 bg-accent text-accent-foreground text-sm font-bold uppercase tracking-wider border-2 border-primary transform -rotate-1 mb-6">
+            <span className="inline-block px-4 py-2 bg-accent text-accent-foreground text-sm font-bold uppercase tracking-wider border-2 border-primary mb-6">
               Our Methodology
             </span>
 

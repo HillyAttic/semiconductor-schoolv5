@@ -7,14 +7,15 @@ import { X } from 'lucide-react';
 const BriefFormPopup = ({ isOpen, onClose }) => {
   const shouldReduceMotion = useReducedMotion();
   const [formData, setFormData] = useState({
-    name: '',
+    role: '',
+    fullName: '',
     email: '',
-    company: '',
-    projectType: '',
-    budget: '',
-    timeline: '',
-    description: ''
+    track: '',
+    availability: '',
+    goals: '',
+    resume: null
   });
+  const [resumeFile, setResumeFile] = useState(null);
 
   // Close popup when pressing Escape key
   useEffect(() => {
@@ -43,19 +44,50 @@ const BriefFormPopup = ({ isOpen, onClose }) => {
 
   const handleSubmit = (e) => {
     e?.preventDefault();
+
+    // Validation
+    if (!formData?.role) {
+      alert('Please select whether you are applying as a Student or Tutor');
+      return;
+    }
+    if (!formData?.fullName?.trim()) {
+      alert('Please enter your full name');
+      return;
+    }
+    if (!formData?.email?.trim()) {
+      alert('Please enter your email address');
+      return;
+    }
+    if (!formData?.track) {
+      alert('Please select a program track');
+      return;
+    }
+    if (!formData?.availability) {
+      alert('Please select your availability');
+      return;
+    }
+    if (!formData?.resume) {
+      alert('Please upload your resume (PDF only)');
+      return;
+    }
+
     console.log('Form submitted:', formData);
+    alert('Application submitted! We will review your details and get back to you within 24 hours.');
+
     // Handle form submission here
     onClose();
+
     // Reset form
     setFormData({
-      name: '',
+      role: '',
+      fullName: '',
       email: '',
-      company: '',
-      projectType: '',
-      budget: '',
-      timeline: '',
-      description: ''
+      track: '',
+      availability: '',
+      goals: '',
+      resume: null
     });
+    setResumeFile(null);
   };
 
   const handleChange = (e) => {
@@ -124,7 +156,7 @@ const BriefFormPopup = ({ isOpen, onClose }) => {
           >
             {/* Header */}
             <div className="flex items-center justify-between p-6 border-b-2 border-concrete bg-background">
-              <h2 className="text-3xl font-black text-primary">START YOUR BRIEF</h2>
+              <h2 className="text-3xl font-black text-primary">JOIN SEMICONDUCTOR SCHOOL</h2>
               <Button
                 variant="ghost"
                 size="sm"
@@ -138,16 +170,49 @@ const BriefFormPopup = ({ isOpen, onClose }) => {
             {/* Form Content */}
             <div className="overflow-y-auto max-h-[calc(90vh-120px)]">
               <form onSubmit={handleSubmit} className="p-6 space-y-6">
+                {/* Role Selection */}
+                <div>
+                  <label className="block text-sm font-black text-primary mb-2">
+                    APPLY AS *
+                  </label>
+                  <div className="grid grid-cols-2 gap-3">
+                    <button
+                      type="button"
+                      onClick={() => setFormData({...formData, role: 'student'})}
+                      className={`p-3 border-2 transition-all duration-300 ${
+                        formData?.role === 'student'
+                          ? 'border-accent bg-accent text-accent-foreground'
+                          : 'border-concrete bg-card text-card-foreground hover:border-accent/50'
+                      }`}
+                    >
+                      <div className="text-sm font-semibold">Student</div>
+                      <div className="text-xs opacity-80">Enroll in programs</div>
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => setFormData({...formData, role: 'tutor'})}
+                      className={`p-3 border-2 transition-all duration-300 ${
+                        formData?.role === 'tutor'
+                          ? 'border-accent bg-accent text-accent-foreground'
+                          : 'border-concrete bg-card text-card-foreground hover:border-accent/50'
+                      }`}
+                    >
+                      <div className="text-sm font-semibold">Tutor</div>
+                      <div className="text-xs opacity-80">Teach & mentor</div>
+                    </button>
+                  </div>
+                </div>
+
                 {/* Contact Information */}
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-sm font-black text-primary mb-2">
-                      NAME *
+                      FULL NAME *
                     </label>
                     <Input
                       type="text"
-                      name="name"
-                      value={formData?.name}
+                      name="fullName"
+                      value={formData?.fullName}
                       onChange={handleChange}
                       placeholder="Your full name"
                       required
@@ -170,94 +235,111 @@ const BriefFormPopup = ({ isOpen, onClose }) => {
                   </div>
                 </div>
 
-                {/* Company */}
+                {/* Program Track */}
                 <div>
                   <label className="block text-sm font-black text-primary mb-2">
-                    COMPANY
-                  </label>
-                  <Input
-                    type="text"
-                    name="company"
-                    value={formData?.company}
-                    onChange={handleChange}
-                    placeholder="Your company name"
-                    className="w-full brutalist-border"
-                  />
-                </div>
-
-                {/* Project Details */}
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-sm font-black text-primary mb-2">
-                      PROJECT TYPE *
-                    </label>
-                    <select
-                      name="projectType"
-                      value={formData?.projectType}
-                      onChange={handleChange}
-                      required
-                      className="w-full p-3 brutalist-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-accent"
-                    >
-                      <option value="">Select project type</option>
-                      <option value="brand-identity">Brand Identity</option>
-                      <option value="digital-experience">Digital Experience</option>
-                      <option value="brand-strategy">Brand Strategy</option>
-                      <option value="motion-design">Motion Design</option>
-                      <option value="other">Other</option>
-                    </select>
-                  </div>
-                  <div>
-                    <label className="block text-sm font-black text-primary mb-2">
-                      BUDGET RANGE
-                    </label>
-                    <select
-                      name="budget"
-                      value={formData?.budget}
-                      onChange={handleChange}
-                      className="w-full p-3 brutalist-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-accent"
-                    >
-                      <option value="">Select budget range</option>
-                      <option value="5k-15k">$5K - $15K</option>
-                      <option value="15k-30k">$15K - $30K</option>
-                      <option value="30k-50k">$30K - $50K</option>
-                      <option value="50k+">$50K+</option>
-                    </select>
-                  </div>
-                </div>
-
-                {/* Timeline */}
-                <div>
-                  <label className="block text-sm font-black text-primary mb-2">
-                    TIMELINE
+                    PROGRAM TRACK *
                   </label>
                   <select
-                    name="timeline"
-                    value={formData?.timeline}
+                    name="track"
+                    value={formData?.track}
                     onChange={handleChange}
+                    required
                     className="w-full p-3 brutalist-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-accent"
                   >
-                    <option value="">Select timeline</option>
-                    <option value="asap">ASAP</option>
-                    <option value="1-2-months">1-2 Months</option>
-                    <option value="3-6-months">3-6 Months</option>
-                    <option value="6+-months">6+ Months</option>
+                    <option value="">Select program track</option>
+                    <option value="digital-vlsi">Digital VLSI (RTL/Verilog)</option>
+                    <option value="physical-design">Physical Design (PnR)</option>
+                    <option value="verification">Verification (UVM)</option>
+                    <option value="fpga">FPGA Prototyping</option>
+                    <option value="embedded">Embedded Systems</option>
+                    <option value="analog-ic">Analog IC Design</option>
+                    <option value="wafer-fab">Wafer Fab & Photolithography</option>
+                    <option value="dft">DFT & Testing</option>
+                    <option value="packaging">Packaging & Reliability</option>
                   </select>
                 </div>
 
-                {/* Project Description */}
+                {/* Availability */}
                 <div>
                   <label className="block text-sm font-black text-primary mb-2">
-                    PROJECT DESCRIPTION *
+                    AVAILABILITY *
+                  </label>
+                  <select
+                    name="availability"
+                    value={formData?.availability}
+                    onChange={handleChange}
+                    required
+                    className="w-full p-3 brutalist-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-accent"
+                  >
+                    <option value="">Select availability</option>
+                    <option value="weekday-evening">Weekday Evening</option>
+                    <option value="weekend">Weekend</option>
+                    <option value="intensive-bootcamp">Intensive Bootcamp</option>
+                  </select>
+                </div>
+
+                {/* Goals/Notes */}
+                <div>
+                  <label className="block text-sm font-black text-primary mb-2">
+                    GOALS & INTERESTS (Optional)
                   </label>
                   <textarea
-                    name="description"
-                    value={formData?.description}
+                    name="goals"
+                    value={formData?.goals}
                     onChange={handleChange}
-                    placeholder="Tell us about your project goals, challenges, and what you're looking to achieve..."
-                    required
+                    placeholder="Tell us about your semiconductor career goals, specific interests, or any questions you have..."
                     rows={4}
                     className="w-full p-3 brutalist-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-accent resize-none"
                   />
+                </div>
+
+                {/* Resume Upload */}
+                <div>
+                  <label className="block text-sm font-black text-primary mb-2">
+                    UPLOAD RESUME (PDF) *
+                  </label>
+                  <div className="border-2 border-dashed border-concrete p-6 text-center hover:border-accent/50 transition-colors duration-300">
+                    <input
+                      type="file"
+                      accept=".pdf"
+                      onChange={(e) => {
+                        const file = e?.target?.files?.[0];
+                        if (file && file.type === 'application/pdf') {
+                          setResumeFile(file);
+                          setFormData({...formData, resume: file});
+                        } else {
+                          alert('Please select a PDF file only');
+                          e.target.value = '';
+                        }
+                      }}
+                      className="hidden"
+                      id="resume-upload-popup"
+                      required
+                    />
+                    <label htmlFor="resume-upload-popup" className="cursor-pointer">
+                      <svg className="w-8 h-8 text-muted-foreground mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                      </svg>
+                      <p className="text-sm text-muted-foreground mb-1">
+                        {resumeFile ? resumeFile.name : 'Click to upload or drag and drop'}
+                      </p>
+                      <p className="text-xs text-muted-foreground">PDF files only (max 5MB)</p>
+                    </label>
+                  </div>
+                </div>
+
+                {/* Info Note */}
+                <div className="p-3 bg-concrete-light border-2 border-concrete">
+                  <div className="flex items-start space-x-2">
+                    <svg className="w-4 h-4 text-accent mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <div className="text-xs text-muted-foreground">
+                      <p className="font-medium text-primary mb-1">Quick Application</p>
+                      <p>We'll review your application and get back to you within 24 hours. For detailed applications, visit our full registration page.</p>
+                    </div>
+                  </div>
                 </div>
 
                 {/* Submit Button */}
@@ -267,7 +349,7 @@ const BriefFormPopup = ({ isOpen, onClose }) => {
                     size="lg"
                     className="w-full bg-accent hover:bg-accent text-white font-black py-4 brutalist-border brutalist-shadow uppercase tracking-wider transition-all duration-300"
                   >
-                    SUBMIT BRIEF
+                    APPLY NOW
                   </Button>
                 </div>
               </form>

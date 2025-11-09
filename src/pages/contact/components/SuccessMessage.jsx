@@ -7,52 +7,52 @@ const SuccessMessage = ({ formData }) => {
   const nextSteps = [
     {
       step: 1,
-      title: 'Brief Review',
-      description: 'Our team will review your project details and requirements',
+      title: 'Application Review',
+      description: 'Our admissions team will review your application and requirements',
       timeframe: 'Within 24 hours',
       icon: 'FileText'
     },
     {
       step: 2,
-      title: 'Initial Consultation',
-      description: 'We\'ll schedule a call to discuss your project in detail',
+      title: 'Initial Assessment',
+      description: 'We\'ll assess your background and program fit',
       timeframe: '2-3 business days',
-      icon: 'Phone'
+      icon: 'UserCheck'
     },
     {
       step: 3,
-      title: 'Proposal Delivery',
-      description: 'Receive a detailed proposal with timeline and investment',
+      title: 'Interview/Orientation',
+      description: 'Schedule an interview or orientation session',
       timeframe: '3-5 business days',
-      icon: 'Send'
+      icon: 'Video'
     },
     {
       step: 4,
-      title: 'Project Kickoff',
-      description: 'Begin the brand transformation journey together',
-      timeframe: 'Upon agreement',
-      icon: 'Rocket'
+      title: 'Enrollment Confirmation',
+      description: 'Receive confirmation and next steps',
+      timeframe: 'Upon completion',
+      icon: 'CheckCircle'
     }
   ];
 
   const contactMethods = [
     {
       method: 'Email',
-      value: 'hello@brandforge.agency',
+      value: 'schoolsemiconductor@gmail.com',
       icon: 'Mail',
-      description: 'For general inquiries and follow-ups'
+      description: 'For application updates and questions'
     },
     {
       method: 'Phone',
-      value: '+1 (555) 123-4567',
+      value: '+91 87553 96383',
       icon: 'Phone',
-      description: 'Direct line for urgent matters'
+      description: 'Call us for urgent matters'
     },
     {
       method: 'LinkedIn',
-      value: '@brandforge-agency',
+      value: '@semiconductor-school',
       icon: 'Linkedin',
-      description: 'Connect with our team professionally'
+      description: 'Connect with our team'
     }
   ];
 
@@ -63,44 +63,76 @@ const SuccessMessage = ({ formData }) => {
         <div className="w-16 h-16 bg-success border-4 border-primary mx-auto flex items-center justify-center">
           <Icon name="CheckCircle" size={32} className="text-success-foreground" />
         </div>
-        
+
         <div className="space-y-2">
           <h1 className="text-3xl md:text-4xl font-black text-primary">
-            Brief Received!
+            Application Received!
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Thank you {formData?.firstName}, we've received your project brief and are excited to explore how we can make your brand impossible to ignore.
+            Thank you {formData?.fullName}, we've received your {formData?.role} application and are excited to review your details.
           </p>
         </div>
       </div>
-      {/* Project Summary */}
+
+      {/* Application Summary */}
       <div className="bg-concrete-light border-2 border-concrete p-6 space-y-4">
         <div className="flex items-center space-x-2 mb-4">
           <Icon name="Briefcase" size={20} className="text-accent" />
           <h2 className="text-xl font-bold text-primary">
-            Your Project Summary
+            Your Application Summary
           </h2>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
           <div>
-            <span className="font-semibold text-primary">Company:</span>
-            <span className="ml-2 text-muted-foreground">{formData?.company}</span>
+            <span className="font-semibold text-primary">Role:</span>
+            <span className="ml-2 text-muted-foreground capitalize">{formData?.role}</span>
           </div>
           <div>
             <span className="font-semibold text-primary">Contact:</span>
             <span className="ml-2 text-muted-foreground">{formData?.email}</span>
           </div>
           <div>
-            <span className="font-semibold text-primary">Budget Range:</span>
-            <span className="ml-2 text-muted-foreground">${formData?.budget?.toLocaleString()}</span>
+            <span className="font-semibold text-primary">Phone:</span>
+            <span className="ml-2 text-muted-foreground">{formData?.phone}</span>
           </div>
           <div>
-            <span className="font-semibold text-primary">Timeline:</span>
-            <span className="ml-2 text-muted-foreground">{formData?.timeline}</span>
+            <span className="font-semibold text-primary">City:</span>
+            <span className="ml-2 text-muted-foreground">{formData?.city}</span>
           </div>
+          {formData?.role === 'student' && formData?.tracks?.length > 0 && (
+            <div className="md:col-span-2">
+              <span className="font-semibold text-primary">Selected Tracks:</span>
+              <div className="mt-1 flex flex-wrap gap-1">
+                {formData?.tracks?.map((track, index) => (
+                  <span
+                    key={index}
+                    className="px-2 py-1 text-xs bg-accent text-accent-foreground"
+                  >
+                    {track}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
+          {formData?.role === 'tutor' && formData?.expertise?.length > 0 && (
+            <div className="md:col-span-2">
+              <span className="font-semibold text-primary">Areas of Expertise:</span>
+              <div className="mt-1 flex flex-wrap gap-1">
+                {formData?.expertise?.map((area, index) => (
+                  <span
+                    key={index}
+                    className="px-2 py-1 text-xs bg-accent text-accent-foreground"
+                  >
+                    {area}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </div>
+
       {/* Next Steps */}
       <div className="space-y-6">
         <div className="text-center">
@@ -108,13 +140,13 @@ const SuccessMessage = ({ formData }) => {
             What Happens Next?
           </h2>
           <p className="text-muted-foreground">
-            Here's our proven process for turning your brief into a brand transformation
+            Here's our process for reviewing your application
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {nextSteps?.map((step) => (
-            <div 
+            <div
               key={step?.step}
               className="bg-card border-2 border-concrete p-6 space-y-3"
             >
@@ -129,11 +161,11 @@ const SuccessMessage = ({ formData }) => {
                   {step?.title}
                 </h3>
               </div>
-              
+
               <p className="text-sm text-muted-foreground">
                 {step?.description}
               </p>
-              
+
               <div className="flex items-center space-x-2 text-xs text-accent font-medium">
                 <Icon name="Clock" size={12} />
                 <span>{step?.timeframe}</span>
@@ -142,6 +174,7 @@ const SuccessMessage = ({ formData }) => {
           ))}
         </div>
       </div>
+
       {/* Alternative Contact Methods */}
       <div className="bg-card border-2 border-concrete p-6 space-y-4">
         <div className="text-center mb-6">
@@ -149,13 +182,13 @@ const SuccessMessage = ({ formData }) => {
             Need to Reach Us Directly?
           </h3>
           <p className="text-sm text-muted-foreground">
-            We're here to help with any questions or urgent matters
+            We're here to help with any questions about your application
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {contactMethods?.map((contact) => (
-            <div 
+            <div
               key={contact?.method}
               className="text-center p-4 border border-concrete hover:border-accent transition-colors duration-300"
             >
@@ -173,6 +206,7 @@ const SuccessMessage = ({ formData }) => {
           ))}
         </div>
       </div>
+
       {/* Response Time Guarantee */}
       <div className="bg-accent/10 border-2 border-accent p-6 text-center">
         <div className="flex items-center justify-center space-x-2 mb-2">
@@ -182,27 +216,28 @@ const SuccessMessage = ({ formData }) => {
           </h3>
         </div>
         <p className="text-sm text-muted-foreground">
-          We commit to responding to every brief within 24 hours. 
-          If you don't hear from us, something went wrong – please call us directly.
+          We commit to responding to every application within 24 hours.
+          If you don't hear from us, please call us directly.
         </p>
       </div>
+
       {/* Action Buttons */}
       <div className="flex flex-col sm:flex-row gap-4 justify-center">
         <Link to="/case-study">
-          <Button 
-            variant="outline" 
+          <Button
+            variant="outline"
             size="lg"
             iconName="FolderOpen"
             iconPosition="left"
             className="border-2 border-concrete hover:border-accent"
           >
-            View Our Work
+            View Our Programs
           </Button>
         </Link>
-        
+
         <Link to="/process">
-          <Button 
-            variant="default" 
+          <Button
+            variant="default"
             size="lg"
             iconName="GitBranch"
             iconPosition="left"
@@ -212,17 +247,18 @@ const SuccessMessage = ({ formData }) => {
           </Button>
         </Link>
       </div>
+
       {/* Footer Note */}
       <div className="text-center text-xs text-muted-foreground">
         <p>
-          Brief submitted on {new Date()?.toLocaleDateString('en-US', { 
-            weekday: 'long', 
-            year: 'numeric', 
-            month: 'long', 
-            day: 'numeric' 
-          })} at {new Date()?.toLocaleTimeString('en-US', { 
-            hour: '2-digit', 
-            minute: '2-digit' 
+          Application submitted on {new Date()?.toLocaleDateString('en-US', {
+            weekday: 'long',
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+          })} at {new Date()?.toLocaleTimeString('en-US', {
+            hour: '2-digit',
+            minute: '2-digit'
           })}
         </p>
       </div>
