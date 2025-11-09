@@ -411,18 +411,18 @@ const ServicesPage = () => {
         <ServiceHero />
 
         {/* Services Grid */}
-        <section className="py-16 bg-background">
-          <div className="max-w-7xl mx-auto px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl lg:text-4xl font-black text-primary mb-4">
+        <section className="py-12 sm:py-16 bg-background">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-8 sm:mb-12">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-primary mb-3 sm:mb-4">
                 Capabilities Matrix
               </h2>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
                 Learn, Design, Verify, Fabricate — All Under One Platform. Each service is a practical step toward mastering the semiconductor ecosystem.
               </p>
             </div>
 
-            <div className="grid lg:grid-cols-2 gap-8">
+            <div className="grid lg:grid-cols-2 gap-6 sm:gap-8">
               {services?.map((service) => (
                 <ServiceCard
                   key={service?.id}
@@ -445,26 +445,26 @@ const ServicesPage = () => {
         <IndustryFocus />
 
         {/* CTA Section */}
-        <section className="py-16 bg-primary text-white">
-          <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+        <section className="py-12 sm:py-16 bg-primary text-white">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-3xl lg:text-4xl font-black mb-6">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black mb-4 sm:mb-6">
                 Ready to Start Your
                 <span className="block text-accent">Semiconductor Journey?</span>
               </h2>
-              <p className="text-lg text-white/80 mb-8 max-w-2xl mx-auto">
+              <p className="text-base sm:text-lg text-white/80 mb-6 sm:mb-8 max-w-2xl mx-auto">
                 Semiconductor School offers complete pathways — from foundation learning to silicon-ready expertise.
                 Choose your specialization, join a cohort, and become part of India's growing semiconductor ecosystem.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
                 <Button
                   variant="default"
-                  className="bg-conversion hover:bg-conversion/90 text-white font-bold border-2 border-conversion"
+                  className="bg-conversion hover:bg-conversion/90 text-white font-bold border-2 border-conversion w-full sm:w-auto"
                   iconName="MessageCircle"
                   iconPosition="left"
                 >
@@ -472,7 +472,7 @@ const ServicesPage = () => {
                 </Button>
                 <Button
                   variant="outline"
-                  className="border-white text-white hover:bg-white hover:text-primary"
+                  className="border-white text-white hover:bg-white hover:text-primary w-full sm:w-auto"
                   iconName="Calendar"
                   iconPosition="left"
                 >
@@ -484,35 +484,35 @@ const ServicesPage = () => {
         </section>
 
         {/* Footer */}
-        <footer className="bg-background border-t-2 border-concrete py-12">
-          <div className="max-w-7xl mx-auto px-6 lg:px-8">
-            <div className="grid md:grid-cols-4 gap-8">
-              <div className="md:col-span-2">
+        <footer className="bg-background border-t-2 border-concrete py-8 sm:py-12">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+              <div className="sm:col-span-2 lg:col-span-2">
                 <div className="flex items-center space-x-2 mb-4">
-                  <div className="w-8 h-8 bg-primary border-2 border-primary">
+                  <div className="w-6 h-6 sm:w-8 sm:h-8 bg-primary border-2 border-primary">
                     <div className="w-full h-full bg-accent transform translate-x-1 translate-y-1"></div>
                   </div>
-                  <span className="text-xl font-black text-primary">Semiconductor School</span>
+                  <span className="text-lg sm:text-xl font-black text-primary">Semiconductor School</span>
                 </div>
-                <p className="text-muted-foreground mb-4 max-w-md">
+                <p className="text-sm sm:text-base text-muted-foreground mb-4 max-w-md">
                   Empowering the next generation of chip engineers through structured, mentor-led, and visually engaging learning.
                 </p>
-                <div className="flex space-x-4">
+                <div className="flex space-x-3 sm:space-x-4">
                   {['Twitter', 'LinkedIn', 'Instagram', 'Dribbble']?.map((social) => (
                     <a
                       key={social}
                       href="#"
-                      className="w-10 h-10 bg-concrete-light border-2 border-concrete flex items-center justify-center hover:border-accent hover:bg-accent hover:text-white transition-colors duration-300"
+                      className="w-8 h-8 sm:w-10 sm:h-10 bg-concrete-light border-2 border-concrete flex items-center justify-center hover:border-accent hover:bg-accent hover:text-white transition-colors duration-300"
                     >
-                      <Icon name={social} size={16} />
+                      <Icon name={social} size={14} className="sm:w-4 sm:h-4" />
                     </a>
                   ))}
                 </div>
               </div>
-              
+
               <div>
-                <h4 className="font-bold text-primary mb-4">Courses</h4>
-                <ul className="space-y-2 text-sm text-muted-foreground">
+                <h4 className="font-bold text-primary mb-3 sm:mb-4 text-sm sm:text-base">Courses</h4>
+                <ul className="space-y-2 text-xs sm:text-sm text-muted-foreground">
                   <li><a className="hover:text-accent transition-colors cursor-default">Semiconductor Fundamentals</a></li>
                   <li><a className="hover:text-accent transition-colors cursor-default">VLSI Design</a></li>
                   <li><a className="hover:text-accent transition-colors cursor-default">Physical Design</a></li>
@@ -521,8 +521,8 @@ const ServicesPage = () => {
               </div>
 
               <div>
-                <h4 className="font-bold text-primary mb-4">Company</h4>
-                <ul className="space-y-2 text-sm text-muted-foreground">
+                <h4 className="font-bold text-primary mb-3 sm:mb-4 text-sm sm:text-base">Company</h4>
+                <ul className="space-y-2 text-xs sm:text-sm text-muted-foreground">
                   <li><a href="/about" className="hover:text-accent transition-colors">About</a></li>
                   <li><a href="/projects" className="hover:text-accent transition-colors">Student Projects</a></li>
                   <li><a href="/process" className="hover:text-accent transition-colors">Learning Process</a></li>
@@ -530,13 +530,13 @@ const ServicesPage = () => {
                 </ul>
               </div>
             </div>
-            
-            <div className="border-t-2 border-concrete-light mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-              <p className="text-sm text-muted-foreground">
+
+            <div className="border-t-2 border-concrete-light mt-6 sm:mt-8 pt-6 sm:pt-8 flex flex-col sm:flex-row justify-between items-center space-y-3 sm:space-y-0">
+              <p className="text-xs sm:text-sm text-muted-foreground">
                 © {new Date()?.getFullYear()} Semiconductor School. All rights reserved.
               </p>
-              <div className="flex space-x-6 mt-4 md:mt-0">
-                <a href="#" className="text-sm text-muted-foreground hover:text-accent transition-colors">Terms of Service</a>
+              <div className="flex space-x-4 sm:space-x-6">
+                <a href="/terms-conditions" className="text-xs sm:text-sm text-muted-foreground hover:text-accent transition-colors">Terms of Service</a>
               </div>
             </div>
           </div>

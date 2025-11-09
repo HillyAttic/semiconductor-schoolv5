@@ -9,6 +9,8 @@ import ProcessPage from './pages/process';
 import About from './pages/about';
 import CaseStudyPage from './pages/case-study';
 import Homepage from './pages/homepage';
+import PrivacyPolicy from './pages/privacy-policy';
+import TermsConditions from './pages/terms-conditions';
 
 const Routes = () => {
   return (
@@ -24,6 +26,8 @@ const Routes = () => {
         <Route path="/about" element={<About />} />
         <Route path="/case-study" element={<CaseStudyPage />} />
         <Route path="/case-study/:slug" element={<CaseStudyPage />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms-conditions" element={<TermsConditions />} />
         <Route path="/homepage" element={<Homepage />} />
         <Route path="*" element={<NotFound />} />
       </RouterRoutes>

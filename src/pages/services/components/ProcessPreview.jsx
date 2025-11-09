@@ -38,24 +38,24 @@ const ProcessPreview = () => {
   ];
 
   return (
-    <section className="py-16 bg-background">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl lg:text-4xl font-black text-primary mb-4">
+    <section className="py-12 sm:py-16 bg-background">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-8 sm:mb-12">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-primary mb-3 sm:mb-4">
             Our Learning Process
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
             Four structured phases that turn learners into professionals. Timeline: 8–24 weeks total depending on course track.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+        <div className="grid lg:grid-cols-2 gap-6 lg:gap-12 items-start">
           {/* Process Steps */}
-          <div className="space-y-6">
+          <div className="space-y-4 sm:space-y-6">
             {processSteps?.map((step, index) => (
               <motion.div
                 key={index}
-                className={`border-2 p-6 cursor-pointer transition-all duration-300 ${
+                className={`border-2 p-4 sm:p-6 cursor-pointer transition-all duration-300 ${
                   activeStep === index
                     ? 'border-accent bg-accent/5' :'border-concrete bg-card hover:border-accent/50'
                 }`}
@@ -66,24 +66,25 @@ const ProcessPreview = () => {
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.2 }}
               >
-                <div className="flex items-start space-x-4">
-                  <div className={`w-12 h-12 border-2 border-primary flex items-center justify-center transition-all duration-300 ${
+                <div className="flex items-start space-x-3 sm:space-x-4">
+                  <div className={`w-10 h-10 sm:w-12 sm:h-12 border-2 border-primary flex items-center justify-center transition-all duration-300 ${
                     activeStep === index ? 'bg-accent rotate-12' : 'bg-concrete-light'
                   }`}>
-                    <Icon 
-                      name={step?.icon} 
-                      size={24} 
-                      color={activeStep === index ? "#FFFFFF" : "#1A1A1A"} 
+                    <Icon
+                      name={step?.icon}
+                      size={20}
+                      className="sm:w-6 sm:h-6"
+                      color={activeStep === index ? "#FFFFFF" : "#1A1A1A"}
                     />
                   </div>
                   <div className="flex-1">
-                    <div className="flex items-center justify-between mb-2">
-                      <h3 className="text-lg font-bold text-primary">{step?.title}</h3>
-                      <span className="text-xs font-semibold text-accent bg-accent/10 px-2 py-1">
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2 space-y-1 sm:space-y-0">
+                      <h3 className="text-base sm:text-lg font-bold text-primary">{step?.title}</h3>
+                      <span className="text-xs font-semibold text-accent bg-accent/10 px-2 py-1 self-start">
                         {step?.duration}
                       </span>
                     </div>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
+                    <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
                       {step?.description}
                     </p>
                   </div>
@@ -98,49 +99,49 @@ const ProcessPreview = () => {
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.4 }}
-            className="bg-card border-2 border-concrete p-8"
+            className="bg-card border-2 border-concrete p-4 sm:p-8"
             style={{ boxShadow: '8px 8px 0px #000000' }}
           >
-            <div className="flex items-center space-x-4 mb-6">
-              <div className="w-16 h-16 bg-accent border-2 border-primary flex items-center justify-center rotate-12">
-                <Icon name={processSteps?.[activeStep]?.icon} size={32} color="#FFFFFF" />
+            <div className="flex items-center space-x-3 sm:space-x-4 mb-4 sm:mb-6">
+              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-accent border-2 border-primary flex items-center justify-center rotate-12">
+                <Icon name={processSteps?.[activeStep]?.icon} size={24} className="sm:w-8 sm:h-8" color="#FFFFFF" />
               </div>
               <div>
-                <h3 className="text-2xl font-black text-primary">
+                <h3 className="text-lg sm:text-2xl font-black text-primary">
                   {processSteps?.[activeStep]?.title}
                 </h3>
-                <p className="text-accent font-semibold">
+                <p className="text-accent font-semibold text-sm sm:text-base">
                   {processSteps?.[activeStep]?.duration}
                 </p>
               </div>
             </div>
 
-            <p className="text-muted-foreground mb-6 leading-relaxed">
+            <p className="text-muted-foreground mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base">
               {processSteps?.[activeStep]?.description}
             </p>
 
-            <div className="mb-6">
-              <h4 className="font-bold text-primary mb-4 flex items-center">
-                <Icon name="CheckCircle" size={20} className="mr-2 text-accent" />
+            <div className="mb-4 sm:mb-6">
+              <h4 className="font-bold text-primary mb-3 sm:mb-4 flex items-center text-sm sm:text-base">
+                <Icon name="CheckCircle" size={16} className="sm:w-5 sm:h-5 mr-2 text-accent" />
                 Key Deliverables
               </h4>
-              <div className="grid grid-cols-2 gap-3">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3">
                 {processSteps?.[activeStep]?.deliverables?.map((deliverable, index) => (
                   <div
                     key={index}
                     className="flex items-center space-x-2 p-2 bg-concrete-light"
                   >
                     <div className="w-2 h-2 bg-accent"></div>
-                    <span className="text-sm font-medium text-primary">{deliverable}</span>
+                    <span className="text-xs sm:text-sm font-medium text-primary">{deliverable}</span>
                   </div>
                 ))}
               </div>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <Button
                 variant="default"
-                className="bg-conversion hover:bg-conversion/90 text-white font-bold border-2 border-conversion"
+                className="bg-conversion hover:bg-conversion/90 text-white font-bold border-2 border-conversion w-full sm:w-auto"
                 iconName="MessageCircle"
                 iconPosition="left"
               >
@@ -150,6 +151,7 @@ const ProcessPreview = () => {
                 variant="outline"
                 iconName="ExternalLink"
                 iconPosition="right"
+                className="w-full sm:w-auto"
               >
                 View Full Curriculum
               </Button>

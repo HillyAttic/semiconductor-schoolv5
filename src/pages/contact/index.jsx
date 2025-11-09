@@ -433,10 +433,10 @@ const Contact = () => {
                 © {new Date()?.getFullYear()} Semiconductor School. Building India's chip talent pipeline.
               </p>
               <div className="flex space-x-6 mt-4 md:mt-0">
-                <a href="#" className="text-sm text-muted-foreground hover:text-accent transition-colors">
+                <a href="/privacy-policy" className="text-sm text-muted-foreground hover:text-accent transition-colors">
                   Privacy Policy
                 </a>
-                <a href="#" className="text-sm text-muted-foreground hover:text-accent transition-colors">
+                <a href="/terms-conditions" className="text-sm text-muted-foreground hover:text-accent transition-colors">
                   Terms and Conditions
                 </a>
               </div>

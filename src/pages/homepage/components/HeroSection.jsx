@@ -208,7 +208,7 @@ const HeroSection = () => {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 md:gap-4 w-full mt-6 md:mt-8 border border-concrete p-4">
               <div className="w-full">
                 <motion.div 
-                  className="border-3 border-concrete brutalist-shadow p-3 md:p-4 bg-background text-center hover:scale-105 transition-transform duration-300 w-full border"
+                  className="border-3 border-concrete brutalist-shadow p-3 md:p-4 bg-background text-center hover:scale-105 transition-transform duration-300 w-full"
                   variants={shouldReduceMotion ? {} : metricVariants}
                   whileHover={shouldReduceMotion ? {} : { scale: 1.05 }}
                 >
@@ -218,7 +218,7 @@ const HeroSection = () => {
               </div>
               <div className="w-full mt-3 sm:mt-0">
                 <motion.div 
-                  className="border-3 border-concrete brutalist-shadow p-3 md:p-4 bg-background text-center hover:scale-105 transition-transform duration-300 w-full border"
+                  className="border-3 border-concrete brutalist-shadow p-3 md:p-4 bg-background text-center hover:scale-105 transition-transform duration-300 w-full"
                   variants={shouldReduceMotion ? {} : metricVariants}
                   whileHover={shouldReduceMotion ? {} : { scale: 1.05 }}
                 >
@@ -228,7 +228,7 @@ const HeroSection = () => {
               </div>
               <div className="w-full mt-3 sm:mt-0">
                 <motion.div 
-                  className="border-3 border-concrete brutalist-shadow p-3 md:p-4 bg-background text-center hover:scale-105 transition-transform duration-300 w-full border"
+                  className="border-3 border-concrete brutalist-shadow p-3 md:p-4 bg-background text-center hover:scale-105 transition-transform duration-300 w-full"
                   variants={shouldReduceMotion ? {} : metricVariants}
                   whileHover={shouldReduceMotion ? {} : { scale: 1.05 }}
                 >
