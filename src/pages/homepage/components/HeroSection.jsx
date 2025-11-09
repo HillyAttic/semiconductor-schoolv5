@@ -138,7 +138,7 @@ const HeroSection = () => {
   };
 
   const handleViewWork = () => {
-    navigate('/case-study');
+    navigate('/services');
   };
 
   return (

@@ -60,10 +60,10 @@ const ProcessCTA = () => {
               className="bg-primary-foreground/10 border-2 border-primary-foreground/20 p-6"
             >
               <Icon name="Shield" size={32} className="text-accent mb-4" />
-              <h3 className="text-xl font-bold mb-3">Proven Process</h3>
+              <h3 className="text-xl font-bold mb-3">Industry-Aligned Learning</h3>
               <p className="text-primary-foreground/80">
-                Our methodology has transformed 200+ brands across industries. 
-                Every step is tested, refined, and results-driven.
+                Our methodology has trained 2,300+ learners across semiconductor roles.
+                Every step is mapped to real fab and design floor requirements.
               </p>
             </motion.div>
 
@@ -75,10 +75,10 @@ const ProcessCTA = () => {
               className="bg-primary-foreground/10 border-2 border-primary-foreground/20 p-6"
             >
               <Icon name="Users" size={32} className="text-accent mb-4" />
-              <h3 className="text-xl font-bold mb-3">True Partnership</h3>
+              <h3 className="text-xl font-bold mb-3">Mentor-Guided Success</h3>
               <p className="text-primary-foreground/80">
-                We're not vendors—we're strategic partners invested in your success. 
-                Your wins are our wins, your challenges are ours to solve.
+                We're not just educators—we're industry mentors invested in your career.
+                Your growth is our mission, your success is our measure.
               </p>
             </motion.div>
 
@@ -90,10 +90,10 @@ const ProcessCTA = () => {
               className="bg-primary-foreground/10 border-2 border-primary-foreground/20 p-6"
             >
               <Icon name="Target" size={32} className="text-accent mb-4" />
-              <h3 className="text-xl font-bold mb-3">Measurable Results</h3>
+              <h3 className="text-xl font-bold mb-3">Career-Ready Outcomes</h3>
               <p className="text-primary-foreground/80">
-                Every project includes clear success metrics and performance tracking. 
-                We measure impact, not just aesthetics.
+                Every cohort includes placement tracking and performance analytics.
+                We measure job readiness, not just course completion.
               </p>
             </motion.div>
           </div>
