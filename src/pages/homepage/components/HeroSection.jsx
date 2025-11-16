@@ -245,7 +245,13 @@ const HeroSection = () => {
             variants={shouldReduceMotion ? {} : visualVariants}
             animate={shouldReduceMotion ? {} : floatingAnimation}
           >
-            <div className="w-full h-64 md:h-96 brutalist-border brutalist-shadow bg-accent"></div>
+            <div className="w-full h-64 md:h-96 brutalist-border brutalist-shadow bg-accent">
+              <img 
+                src="https://i.ibb.co/twLjkjgL/Untitled-design-2.png" 
+                alt="Hero visual" 
+                className="w-full h-full object-cover"
+              />
+            </div>
           </motion.div>
         </div>
       </div>
