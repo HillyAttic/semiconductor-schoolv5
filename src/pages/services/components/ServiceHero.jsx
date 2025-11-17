@@ -79,7 +79,7 @@ const ServiceHero = () => {
               {/* Main Block */}
               <div className="w-full h-48 sm:h-64 lg:h-96 bg-primary border-2 border-primary relative overflow-hidden">
                 <div className="absolute inset-2 sm:inset-4 bg-accent border-2 border-primary flex items-center justify-center">
-                  <Icon name="Layers" size={32} className="sm:w-16 sm:h-16 lg:w-20 lg:h-20" color="#FFFFFF" />
+                  <img src="https://i.ibb.co/QFy1tRv8/7.png" alt="Service Layers" className="w-full h-full object-contain" />
                 </div>
 
                 {/* Floating Elements */}
@@ -122,7 +122,8 @@ const ServiceHero = () => {
                   className="bg-card border-2 border-concrete p-2 sm:p-4 text-center hover:border-accent transition-colors duration-300 group"
                   style={{ boxShadow: '2px 2px 0px #000000' }}
                 >
-                  <div className="w-6 h-6 sm:w-8 sm:h-8 bg-concrete-light border border-concrete mx-auto mb-1 sm:mb-2 flex items-center justify-center group-hover:bg-accent group-hover:border-accent transition-colors duration-300">
+                  <div className="w-6 h-6 sm:w-8 sm:h-8 bg-concrete-light border border-concrete mx-auto mb-1 sm:mb-2 flex items-center justify-center group-hover:bg-acc
+                  ent group-hover:border-accent transition-colors duration-300">
                     <Icon name={service?.icon} size={10} className="sm:w-4 sm:h-4 group-hover:text-white" />
                   </div>
                   <div className="text-xs font-semibold text-primary hidden xs:block">{service?.label}</div>

@@ -70,10 +70,7 @@ const HeroSection = () => {
             <div className="relative">
               {/* Main Image Container */}
               <div className="relative w-full h-64 sm:h-80 md:h-96 lg:h-[500px] xl:h-[600px] overflow-hidden border-2 lg:border-4 border-primary brutalist-shadow flex items-center justify-center bg-concrete-light">
-                <div className="text-center px-4">
-                  <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-primary/20 mb-2 sm:mb-4">SEMICONDUCTOR</div>
-                  <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-primary/30">LABORATORY</div>
-                </div>
+                <img src="/assets/image-assets/8.svg" alt="Semiconductor Laboratory" className="w-full h-full object-contain scale-125" />
 
                 {/* Overlay Quote */}
                 <div className="absolute bottom-0 left-0 right-0 bg-primary/90 p-3 sm:p-6">
