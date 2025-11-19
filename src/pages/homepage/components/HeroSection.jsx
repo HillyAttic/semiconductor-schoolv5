@@ -178,13 +178,20 @@ const HeroSection = () => {
                 style={{ pointerEvents: 'auto' }}
               >
                 <Button 
-                  onClick={openPopup}
+                  // onClick={openPopup}
                   variant="default" 
                   size="lg"
+                  asChild
                   className="w-full sm:w-auto bg-accent hover:bg-accent text-white font-black px-6 py-3 md:px-8 md:py-4 brutalist-border brutalist-shadow uppercase tracking-wider transition-all duration-300 cursor-pointer text-sm md:text-base"
                   style={{ pointerEvents: 'auto' }}
                 >
-                  ENROLL NOW
+                  <a 
+                    href="https://forms.gle/T9pB61dTkAWDHwkG7"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    ENROLL NOW
+                  </a>
                 </Button>
               </motion.div>
               <motion.div

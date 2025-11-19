@@ -23,8 +23,7 @@ const ServiceHero = () => {
             </div>
 
             <h1 className="text-3xl sm:text-4xl lg:text-6xl font-black text-primary mb-4 sm:mb-6 leading-tight">
-              Semiconductor School —
-              <span className="block text-accent">Our Services</span>
+              Semiconductor School <span className="text-accent">Courses</span>
             </h1>
 
             <p className="text-base sm:text-lg text-muted-foreground mb-6 sm:mb-8 leading-relaxed">
@@ -79,7 +78,7 @@ const ServiceHero = () => {
               {/* Main Block */}
               <div className="w-full h-48 sm:h-64 lg:h-96 bg-primary border-2 border-primary relative overflow-hidden">
                 <div className="absolute inset-2 sm:inset-4 bg-accent border-2 border-primary flex items-center justify-center">
-                  <img src="https://i.ibb.co/QFy1tRv8/7.png" alt="Service Layers" className="w-full h-full object-contain" />
+                  <img src="/assets/image-assets/ABOUT-- .svg" alt="Service Layers" className="w-full h-full object-contain" />
                 </div>
 
                 {/* Floating Elements */}

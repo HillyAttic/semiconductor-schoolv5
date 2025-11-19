@@ -70,17 +70,7 @@ const HeroSection = () => {
             <div className="relative">
               {/* Main Image Container */}
               <div className="relative w-full h-64 sm:h-80 md:h-96 lg:h-[500px] xl:h-[600px] overflow-hidden border-2 lg:border-4 border-primary brutalist-shadow flex items-center justify-center bg-concrete-light">
-                <img src="/assets/image-assets/8.svg" alt="Semiconductor Laboratory" className="w-full h-full object-contain scale-125" />
-
-                {/* Overlay Quote */}
-                <div className="absolute bottom-0 left-0 right-0 bg-primary/90 p-3 sm:p-6">
-                  <blockquote className="text-white font-bold text-sm sm:text-base lg:text-lg leading-tight">
-                    "If you can see it, you can master it. We make the invisible world of semiconductors visible."
-                  </blockquote>
-                  <cite className="text-accent font-semibold text-xs sm:text-sm mt-1 sm:mt-2 block">
-                    — Dr. Kavya Menon, Program Director
-                  </cite>
-                </div>
+                <img src="/assets/image-assets/_img2.png" alt="Semiconductor Laboratory" className="w-full h-full object-contain scale-100" />
               </div>
 
               {/* Floating Element */}

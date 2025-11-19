@@ -5,6 +5,7 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import NotFound from "./pages/NotFound";
 import ServicesPage from './pages/services';
 import Contact from './pages/contact';
+import ContactVersion2 from './pages/contact/ContactVersion2';
 import ProcessPage from './pages/process';
 import About from './pages/about';
 import CaseStudyPage from './pages/case-study';
@@ -22,6 +23,7 @@ const Routes = () => {
         <Route path="/" element={<Homepage />} />
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/contact-version-2" element={<ContactVersion2 />} />
         <Route path="/process" element={<ProcessPage />} />
         <Route path="/about" element={<About />} />
         <Route path="/case-study" element={<CaseStudyPage />} />

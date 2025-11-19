@@ -8,6 +8,7 @@ const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isBriefPopupOpen, setIsBriefPopupOpen] = useState(false);
+  const [isContactDropdownOpen, setIsContactDropdownOpen] = useState(false);
   const location = useLocation();
 
   const navigationItems = [
@@ -16,7 +17,16 @@ const Header = () => {
     { name: 'Courses', path: '/services', icon: 'Briefcase' },
     { name: 'Learning Process', path: '/process', icon: 'GitBranch' },
     { name: 'About', path: '/about', icon: 'Users' },
-    { name: 'Contact', path: '/contact', icon: 'Mail' },
+    { 
+      name: 'Contact', 
+      path: '/contact', 
+      icon: 'Mail'
+    },
+    { 
+      name: 'Contact V2', 
+      path: '/contact-version-2', 
+      icon: 'Mail'
+    },
   ];
 
   useEffect(() => {
@@ -34,6 +44,14 @@ const Header = () => {
 
   const closeMobileMenu = () => {
     setIsMobileMenuOpen(false);
+  };
+
+  const toggleContactDropdown = () => {
+    setIsContactDropdownOpen(!isContactDropdownOpen);
+  };
+
+  const closeContactDropdown = () => {
+    setIsContactDropdownOpen(false);
   };
 
   const isActivePath = (path) => {
@@ -74,20 +92,64 @@ const Header = () => {
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center space-x-8">
               {navigationItems?.map((item) => (
-                <Link
-                  key={item?.path}
-                  to={item?.path}
-                  className={`relative px-3 py-2 text-sm font-semibold transition-colors duration-300 group ${
-                    isActivePath(item?.path)
-                      ? 'text-primary' :'text-muted-foreground hover:text-primary'
-                  }`}
-                >
-                  <span className="relative z-10">{item?.name}</span>
-                  {isActivePath(item?.path) && (
-                    <div className="absolute inset-0 bg-accent transform -skew-x-12 scale-110"></div>
+                <div key={item?.path} className="relative">
+                  {item?.dropdown ? (
+                    <button
+                      onClick={toggleContactDropdown}
+                      onMouseEnter={() => setIsContactDropdownOpen(true)}
+                      onMouseLeave={() => setIsContactDropdownOpen(false)}
+                      className={`relative px-3 py-2 text-sm font-semibold transition-colors duration-300 group flex items-center ${
+                        isActivePath(item?.path) || isActivePath('/contact-version-2')
+                          ? 'text-primary' : 'text-muted-foreground hover:text-primary'
+                      }`}
+                    >
+                      <span className="relative z-10">{item?.name}</span>
+                      <Icon name="ChevronDown" size={16} className="ml-1" />
+                      {isActivePath(item?.path) || isActivePath('/contact-version-2') && (
+                        <div className="absolute inset-0 bg-accent transform -skew-x-12 scale-110"></div>
+                      )}
+                      <div className="absolute inset-0 bg-concrete-light transform -skew-x-12 scale-0 group-hover:scale-110 transition-transform duration-300"></div>
+                    </button>
+                  ) : (
+                    <Link
+                      to={item?.path}
+                      className={`relative px-3 py-2 text-sm font-semibold transition-colors duration-300 group ${
+                        isActivePath(item?.path)
+                          ? 'text-primary' :'text-muted-foreground hover:text-primary'
+                      }`}
+                    >
+                      <span className="relative z-10">{item?.name}</span>
+                      {isActivePath(item?.path) && (
+                        <div className="absolute inset-0 bg-accent transform -skew-x-12 scale-110"></div>
+                      )}
+                      <div className="absolute inset-0 bg-concrete-light transform -skew-x-12 scale-0 group-hover:scale-110 transition-transform duration-300"></div>
+                    </Link>
                   )}
-                  <div className="absolute inset-0 bg-concrete-light transform -skew-x-12 scale-0 group-hover:scale-110 transition-transform duration-300"></div>
-                </Link>
+
+                  {/* Dropdown Menu */}
+                  {item?.dropdown && isContactDropdownOpen && (
+                    <div 
+                      className="absolute left-0 mt-2 w-48 bg-card border-2 border-concrete shadow-lg z-50"
+                      onMouseEnter={() => setIsContactDropdownOpen(true)}
+                      onMouseLeave={() => setIsContactDropdownOpen(false)}
+                    >
+                      {item?.dropdown?.map((dropdownItem) => (
+                        <Link
+                          key={dropdownItem?.path}
+                          to={dropdownItem?.path}
+                          onClick={closeContactDropdown}
+                          className={`block px-4 py-2 text-sm transition-colors duration-300 ${
+                            isActivePath(dropdownItem?.path)
+                              ? 'bg-accent text-accent-foreground'
+                              : 'text-card-foreground hover:bg-concrete-light'
+                          }`}
+                        >
+                          {dropdownItem?.name}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </div>
               ))}
             </nav>
 
@@ -119,19 +181,58 @@ const Header = () => {
           }`}>
             <nav className="px-6 py-4 bg-card border-t-2 border-concrete">
               {navigationItems?.map((item) => (
-                <Link
-                  key={item?.path}
-                  to={item?.path}
-                  onClick={closeMobileMenu}
-                  className={`flex items-center space-x-3 px-4 py-3 text-base font-medium transition-colors duration-300 border-b border-concrete-light last:border-b-0 ${
-                    isActivePath(item?.path)
-                      ? 'bg-accent text-accent-foreground'
-                      : 'text-card-foreground hover:bg-concrete-light'
-                  }`}
-                >
-                  <Icon name={item?.icon} size={20} />
-                  <span>{item?.name}</span>
-                </Link>
+                <div key={item?.path}>
+                  {item?.dropdown ? (
+                    <>
+                      <button
+                        onClick={toggleContactDropdown}
+                        className={`flex items-center justify-between w-full space-x-3 px-4 py-3 text-base font-medium transition-colors duration-300 border-b border-concrete-light last:border-b-0 ${
+                          isActivePath(item?.path) || isActivePath('/contact-version-2')
+                            ? 'bg-accent text-accent-foreground'
+                            : 'text-card-foreground'
+                        }`}
+                      >
+                        <div className="flex items-center space-x-3">
+                          <Icon name={item?.icon} size={20} />
+                          <span>{item?.name}</span>
+                        </div>
+                        <Icon name={isContactDropdownOpen ? "ChevronUp" : "ChevronDown"} size={20} />
+                      </button>
+                      {isContactDropdownOpen && (
+                        <div className="bg-concrete-light border-b border-concrete-light">
+                          {item?.dropdown?.map((dropdownItem) => (
+                            <Link
+                              key={dropdownItem?.path}
+                              to={dropdownItem?.path}
+                              onClick={closeMobileMenu}
+                              className={`block px-8 py-3 text-sm transition-colors duration-300 ${
+                                isActivePath(dropdownItem?.path)
+                                  ? 'bg-accent text-accent-foreground'
+                                  : 'text-card-foreground hover:bg-concrete'
+                              }`}
+                            >
+                              {dropdownItem?.name}
+                            </Link>
+                          ))}
+                        </div>
+                      )}
+                    </>
+                  ) : (
+                    <Link
+                      key={item?.path}
+                      to={item?.path}
+                      onClick={closeMobileMenu}
+                      className={`flex items-center space-x-3 px-4 py-3 text-base font-medium transition-colors duration-300 border-b border-concrete-light last:border-b-0 ${
+                        isActivePath(item?.path)
+                          ? 'bg-accent text-accent-foreground'
+                          : 'text-card-foreground hover:bg-concrete-light'
+                      }`}
+                    >
+                      <Icon name={item?.icon} size={20} />
+                      <span>{item?.name}</span>
+                    </Link>
+                  )}
+                </div>
               ))}
               
               <div className="pt-4 mt-4 border-t border-concrete-light">

@@ -253,7 +253,7 @@ const Contact = () => {
                   Enroll as a <strong>Student</strong> or onboard as a <strong>Tutor</strong>. Transparent timelines, clear prerequisites, and focused learning paths.
                 </p>
               </div>
-              
+
               {/* Trust Indicators */}
               <div className="flex flex-wrap justify-center items-center gap-6 text-sm text-muted-foreground">
                 <div className="flex items-center space-x-2">
@@ -270,6 +270,9 @@ const Contact = () => {
                 </div>
               </div>
             </div>
+
+            {/* Contact Image Full Width */}
+            {/* Removed as per user request */}
           </section>
 
           {/* Form Section */}
